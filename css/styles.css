@@ -1,0 +1,211 @@
+@import url("../fontawesome/css/all.min.css");
+body {
+  background: url("../image/minimalism-hexagon-black-honeycomb-wallpaper.jpg");
+  position: relative; }
+  body #navigation {
+    position: fixed;
+    z-index: 100; }
+    body #navigation #nav-logo {
+      width: 30%;
+      border-radius: 0.5rem;
+      padding: 0.2rem; }
+  body header {
+    padding: 7%; }
+    body header > #header {
+      background: linear-gradient(to right, rgba(134, 95, 197, 0.2), rgba(134, 95, 197, 0.2));
+      padding: 5%;
+      border-radius: 1rem;
+      color: #00ACEC; }
+      body header > #header h1 {
+        background: linear-gradient(to top, white, #00acec), none;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      body header > #header .right-hand:hover i,
+      body header > #header .right-hand:hover a {
+        color: purple;
+        cursor: pointer; }
+      body header > #header #front-end {
+        cursor: pointer; }
+        body header > #header #front-end:hover {
+          color: purple; }
+    body header #data {
+      display: inline-block;
+      margin: 1rem auto;
+      text-align: left;
+      padding-right: 4.5rem; }
+    body header #see-more {
+      color: #fff;
+      border-color: #fff; }
+  body #education > .container {
+    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    border-radius: 1rem; }
+  body #education #softuni {
+    display: flex; }
+  body #experience h2,
+  body #skills h2 {
+    color: #fff; }
+  body #experience .container {
+    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    border-radius: 1rem; }
+    body #experience .container #js {
+      background: linear-gradient(rgba(245, 222, 25, 0.9), rgba(245, 222, 25, 0.9)); }
+    body #experience .container #js-plugins {
+      background: linear-gradient(rgba(182, 167, 32, 0.9), rgba(182, 167, 32, 0.9)); }
+    body #experience .container #html {
+      background: linear-gradient(rgba(228, 77, 38, 0.9), rgba(228, 77, 38, 0.9)); }
+    body #experience .container #css {
+      background: linear-gradient(rgba(1, 108, 180, 0.9), rgba(1, 108, 180, 0.9)); }
+    body #experience .container #csharp {
+      background: linear-gradient(rgba(101, 32, 118, 0.9), rgba(101, 32, 118, 0.9)); }
+    body #experience .container #java {
+      background: linear-gradient(rgba(229, 31, 36, 0.9), rgba(229, 31, 36, 0.9)); }
+    body #experience .container .card-body {
+      padding: 1rem; }
+    body #experience .container p {
+      margin-bottom: 2rem; }
+    body #experience .container .btn {
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 0.4rem;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0; }
+    body #experience .container .card:nth-of-type(1) .btn:hover,
+    body #experience .container .card:nth-of-type(3) .btn:hover {
+      border: 1px solid #fff;
+      background: none;
+      color: #fff; }
+    body #experience .container .card:nth-of-type(2) .btn:hover,
+    body #experience .container .card:nth-of-type(4) .btn:hover,
+    body #experience .container .card:nth-of-type(5) .btn:hover,
+    body #experience .container .card:nth-of-type(6) .btn:hover {
+      border: 1px solid #000;
+      background: none;
+      color: #000; }
+  body #skills > .container {
+    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    border-radius: 1rem; }
+  body #projects {
+    padding: 5%; }
+    body #projects .card:nth-of-type(1) {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); }
+    body #projects .card:nth-of-type(2) {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)); }
+    body #projects .card:nth-of-type(3) {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)); }
+    body #projects #link {
+      color: #007ACC;
+      text-shadow: 2px 2px black; }
+      body #projects #link:hover {
+        color: lightblue; }
+    body #projects .grade,
+    body #projects #sertificate {
+      color: #da8a26;
+      font-weight: bold;
+      text-shadow: 2px 2px black; }
+    body #projects #sertificate:hover {
+      color: #8D4E00; }
+  body #environment > .container {
+    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    border-radius: 1rem; }
+  body footer {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    position: relative;
+    z-index: 100; }
+    body footer > #icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto; }
+      body footer > #icons a:nth-of-type(1) {
+        color: #426A96;
+        cursor: pointer; }
+      body footer > #icons a:nth-of-type(2) {
+        color: #00ACEC;
+        cursor: pointer; }
+      body footer > #icons a:nth-of-type(3) {
+        color: #007ACC;
+        cursor: pointer; }
+      body footer > #icons a:nth-of-type(4) {
+        color: #000;
+        cursor: pointer; }
+      body footer > #icons a:nth-of-type(5) {
+        color: #D47500;
+        cursor: pointer; }
+  body #javascript h2,
+  body #js-library h2,
+  body #js-plugins h2 {
+    color: #f5de19;
+    text-shadow: 1px 1px white; }
+  body #javascript h3,
+  body #javascript h4,
+  body #js-library h3,
+  body #js-library h4,
+  body #js-plugins h3,
+  body #js-plugins h4 {
+    text-shadow: 2px 2px black; }
+  body #javascript .sertificate,
+  body #css .sertificate {
+    cursor: pointer;
+    text-decoration: none;
+    color: #da8a26; }
+    body #javascript .sertificate:hover,
+    body #css .sertificate:hover {
+      color: #8D4E00; }
+  body #js h3,
+  body #js h4 {
+    text-shadow: 1px 1px white; }
+  body #html h2 {
+    color: #e44d26;
+    text-shadow: 2px 2px black; }
+  body #html h3,
+  body #html h4 {
+    text-shadow: 1px 1px white; }
+  body #css h2 {
+    color: #016cb4;
+    text-shadow: 2px 2px black; }
+  body #css h3,
+  body #css h4 {
+    text-shadow: 2px 2px black; }
+  body #csharp img {
+    width: 3%;
+    margin-right: 3%; }
+  body #csharp h2 {
+    color: #652076;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 1px 1px white; }
+  body #csharp .sertificate {
+    cursor: pointer;
+    text-decoration: none;
+    color: #da8a26; }
+    body #csharp .sertificate:hover {
+      color: #8D4E00; }
+  body #csharp h3,
+  body #csharp h4 {
+    text-shadow: 2px 2px black; }
+  body #java h2 {
+    color: #e51f24;
+    text-shadow: 2px 2px black; }
+  body #java h3,
+  body #java h4 {
+    text-shadow: 2px 2px black; }
+  body #java .sertificate {
+    cursor: pointer;
+    text-decoration: none;
+    color: #da8a26; }
+    body #java .sertificate:hover {
+      color: #8D4E00; }
+  body #myBlog,
+  body #medieval-castles {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007ACC;
+    text-shadow: 2px 2px black; }
+    body #myBlog:hover,
+    body #medieval-castles:hover {
+      color: #00ACEC; }
+  body .grade,
+  body .sertificate {
+    color: #da8a26; }
