@@ -8,7 +8,7 @@
   margin: 1rem 0;
 }
 
-@mixin bacground-layout {
+@mixin background-layout {
   background: linear-gradient(rgba(68,110,155,0.5), rgba(68,110,155,0.5));
   border-radius: 1rem;
 }
@@ -24,24 +24,29 @@
 body {
   background: url('../image/minimalism-hexagon-black-honeycomb-wallpaper.jpg');
   position: relative;
+
     #navigation { 
       position: fixed; 
+      top: 0;
       z-index: 100; 
-      & #nav-logo {
-        width: 30%;
-        border-radius: 0.5rem;
-        padding: 0.2rem;
+      & .navbar-brand { margin-right: 11%; }
+      & #github { 
+        cursor: pointer; 
+        width: 5%;
+        background: #fff;
+        border-radius: 50%;
+        text-align: center;
       }
     }
 
     header {
+      margin-top: 2%;
       padding: 7%;
 
       & > #header {
-        background: linear-gradient(to right, rgba(134,95,197,0.2), rgba(134,95,197,0.2));
+        background: linear-gradient(rgba(68,110,155,0.5), rgba(68,110,155,0.5));
         padding: 5%;
         border-radius: 1rem;
-        color: #00ACEC;
 
         & h1 {
           background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,172,236, 1)),  none;
@@ -54,21 +59,23 @@ body {
 
         & .right-hand:hover i,
         & .right-hand:hover a {
-          color: purple;
+          color: rgb(0,172,236);
           cursor: pointer;
         }
 
         & #front-end {
           cursor: pointer;
-          &:hover { color: purple; }
+          &:hover { color: rgb(0,172,236); }
         }
+        & .card div { font-size: 18px; }
       }
 
       & #data {
         display: inline-block;
         margin: 1rem auto;
         text-align: left;
-        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+        font-size: 20px;
       }
 
       & #see-more { 
@@ -78,29 +85,25 @@ body {
     }
 
     #education {
-      & > .container { @include bacground-layout(); }
-      & #softuni { display: flex; } }
-    
-    #experience h2,
-    #skills h2 {
-      color: #fff;
+      & > .container { 
+        @include background-layout(); 
+        & div { font-size: 18px; } }
+        & #softuni { width: 100%; 
+        & img { width: 15%; } 
+      } 
     }
 
-    #experience {
+    #qualification {
       & .container {
-        @include bacground-layout();
-
-        & #js { background: linear-gradient(rgba(245,222,25,0.9), rgba(245,222,25,0.9)); }
-        & #js-plugins { background: linear-gradient(rgba(182,167,32,0.9), rgba(182,167,32,0.9)); }
-        & #html { background: linear-gradient(rgba(228,77,38,0.9), rgba(228,77,38,0.9)); }
-        & #css { background: linear-gradient(rgba(1,108,180,0.9), rgba(1,108,180,0.9)); }
-        & #csharp { background: linear-gradient(rgba(101,32,118,0.9), rgba(101,32,118,0.9)); }
-        & #java { background: linear-gradient(rgba(229,31,36,0.9), rgba(229,31,36,0.9)); }
+        @include background-layout();
 
         & .card-body {
           padding: 1rem;
         }
-        & p { margin-bottom: 2rem; }
+        & p { 
+          margin-bottom: 2rem; 
+          font-size: 18px;
+        }
 
         // HOVER EFFECT
         & .btn { @include experience-buttons(); }
@@ -108,52 +111,54 @@ body {
         & .card:nth-of-type(1) .btn,
         & .card:nth-of-type(3) .btn {
           &:hover {
-            border: 1px solid #fff;
-            background: none;
+            border: 1px solid #000;
+            background: #000;
             color: #fff;
           }
         }
 
         & .card:nth-of-type(2) .btn,
-        & .card:nth-of-type(4) .btn,
-        & .card:nth-of-type(5) .btn,
-        & .card:nth-of-type(6) .btn {
+        & .card:nth-of-type(5) .btn {
           &:hover {
             border: 1px solid #000;
             background: none;
             color: #000;
           }
         }
+
+        & .card:nth-of-type(4) .btn,
+        & .card:nth-of-type(6) .btn {
+          &:hover {
+            border: 1px solid #fff;
+            background: #fff;
+            color: #000;
+          }
+        }
       }
     }
 
-    #skills { & > .container { @include bacground-layout(); } }
+    #skills { & > .container { @include background-layout(); } }
 
     #projects {
-      padding: 5%;
-      .card:nth-of-type(1) { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
-      .card:nth-of-type(2) { background: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0.7)); }
-      .card:nth-of-type(3) { background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.5)); }
+      & .container {
+        @include background-layout();
+        padding: 5%;
+        & div,
+        & a { font-size: 18px; }
 
-      & #link {
-        color: #007ACC;
-        @include black-shadow();
-        &:hover { color: lightblue; }
-      }
-
-      & .grade,
-      & #sertificate {
-        color: rgb(218,138,38);
-        font-weight: bold;
-        @include black-shadow();
-      }
-
-      & #sertificate {
-        &:hover { color: #8D4E00; }
+        & .card:nth-of-type(1) { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
+        & .card:nth-of-type(2) { background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.5)); }
+        & .card:nth-of-type(3) { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
+        & button { font-size: 22px; }
       }
     }
 
-    #environment { & > .container { @include bacground-layout(); } }
+    #environment { 
+      & > .container { 
+        @include background-layout(); 
+        & div { font-size: 18px; }
+      } 
+    }
 
     footer {
       background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0.15));
@@ -165,99 +170,26 @@ body {
          flex-direction: column;
          justify-content: center;
          margin: 0 auto;
-         & a:nth-of-type(1) { color: #426A96; cursor:pointer; }
-         & a:nth-of-type(2) { color: #00ACEC; cursor:pointer; }
-         & a:nth-of-type(3) { color: #007ACC; cursor:pointer; }
-         & a:nth-of-type(4) { color: #000; cursor:pointer; }
-         & a:nth-of-type(5) { color: #D47500; cursor:pointer; }
-      }
-    }
-
-    & #javascript,
-    & #js-library,
-    & #js-plugins {
-      & h2 { 
-        color: rgb(245,222,25); 
-        @include white-shadow();
-      }
-      & h3,
-      & h4 { @include black-shadow(); }
-    }
-
-    & #javascript,
-    & #css {
-       & .sertificate {
          cursor: pointer;
-         text-decoration: none;
-         color: rgb(218,138,38);
-         &:hover { color: #8D4E00; }
-       }
+         color: #fff;
+      }
     }
 
-    & #js {
-      & h3,
-      & h4 { @include white-shadow(); }
-    }
-
-    & #html {  
-      & h2 { color: rgb(228,77,38); @include black-shadow(); } 
-
-      & h3,
-      & h4 { @include white-shadow(); }
-    }
-
-    & #css {
-      & h2 {  color: rgb(1,108,180); @include black-shadow(); } 
-
-      & h3,
-      & h4 { @include black-shadow(); }
-    }
+    & #js-library,
+    & #javascript,
+    & #html,
+    & #java,
+    & #css,
+    & #csharp { font-size: 18px; }
 
     & #csharp {
       & img { width: 3%; margin-right: 3%; }
       & h2 {
-        color: rgb(101,32,118);
         font-weight: bold;
         font-size: 45px;
         @include white-shadow();
       }
-
-      & .sertificate {
-        cursor: pointer;
-        text-decoration: none;
-        color: rgb(218,138,38);
-        &:hover { color: #8D4E00; }
-      }
-
-      & h3,
-      & h4 { @include black-shadow(); }
     }
 
-    & #java {
-      & h2 { color: rgb(229,31,36); @include black-shadow(); }
-      & h3,
-      & h4 { @include black-shadow(); }
-
-      & .sertificate {
-        cursor: pointer;
-        text-decoration: none;
-        color: rgb(218,138,38);
-        &:hover { color: #8D4E00; }
-      }
-    }
-
-    #myBlog,
-    #medieval-castles { 
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: none;
-      color: #007ACC;
-      @include black-shadow();
-      &:hover { color: #00ACEC; }
-    }
-
-    .grade,
-    .sertificate {
-      color: rgb(218,138,38);
-    }
+    & .link { cursor: pointer; }
 }

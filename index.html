@@ -21,13 +21,13 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-primary" id="navigation">
-                <a class="navbar-brand" href="/"><img src="image/portfolio.jpg" id="nav-logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarColor01">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-primary" id="navigation">   
+        <a class="link h4 mx-5 text-light">Portfolio</a>
+        <a class="navbar-brand" onclick="window.open('https://github.com/PavelRunchev')"><img src="image/github.svg" id="github" class="float-right" alt="logo"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse mx-5" id="navbarColor01">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mr-4">
                       <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
@@ -36,7 +36,7 @@
                       <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item mr-4">
-                      <a class="nav-link" href="#experience">Experience</a>
+                      <a class="nav-link" href="#qualification">Qualification</a>
                     </li>
                     <li class="nav-item mr-4">
                       <a class="nav-link" href="#skills">Skills</a>
@@ -48,7 +48,6 @@
                       <a class="nav-link" href="#environment">Environment</a>
                     </li>
                   </ul>
-                 
                 </div>
     </nav>
     <header class="container-fluid p-5" id="about">
@@ -57,28 +56,28 @@
           
           <h1 clas="m-4 font-weight-bold">PAVEL RUNCHEV</h1>
 
-          <span class="right-hand"><i class="fas fa-hand-point-right mr-3"></i><a class="font-weight-bold mt-4" onclick="window.open('image/20181223_120056.jpg','name','top=200, left=400,width=400,height=600')" id="front-end">Front-End Developer</a></span>
-          <hr class="text-light">
+          <h5 class="h5 right-hand text-light"><i class="fas fa-hand-point-right mr-3"></i><a class="mt-4" onclick="window.open('image/20181223_120056.jpg','name','top=200, left=400,width=400,height=600')" id="front-end">Full Stack Developer</a></h5>
+          <hr>
           <div id="data">
-            <p class="font-weight-bold"><i class="fas fa-thumbtack mr-3"></i> Gabrovo, BG</p>
-            <p class="font-weight-bold"><i class="fas fa-envelope mr-3"></i> PavelRunchev@gmail.com</p>
-            <p class="font-weight-bold"><i class="fab fa-github mr-3"></i> PavelRunchev</p>
-            <p class="font-weight-bold"><i class="fab fa-linkedin-in mr-3"></i> Pavel Runchev</p>
-            <p class="font-weight-bold"><i class="fab fa-skype mr-3"></i> raidersgb</p>
-            <p class="font-weight-bold"><i class="fas fa-phone mr-3"></i> 0879999436</p>
+            <p class="font-weight-bold text-light"><i class="fas fa-thumbtack mr-3"></i> Gabrovo, BG</p>
+            <p class="font-weight-bold text-light"><i class="fas fa-envelope mr-3"></i> PavelRunchev@gmail.com</p>
+            <p class="font-weight-bold text-light"><i class="fab fa-github mr-3"></i> PavelRunchev</p>
+            <p class="font-weight-bold text-light"><i class="fab fa-linkedin-in mr-3"></i> Pavel Runchev</p>
+            <p class="font-weight-bold text-light"><i class="fab fa-skype mr-3"></i> raidersgb</p>
+            <p class="font-weight-bold text-light"><i class="fas fa-phone mr-3"></i> 0879999436</p>
           </div>
           <div id="accordion">
               <div class="card bg-primary">
-                  <div class="card-header" id="headingTwo">
+                  <div class="card-header" id="headingFour">
                     <h5 class="mb-0">
-                      <button class="btn btn-outline-info collapsed" id="see-more" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="btn btn-outline-info collapsed" onclick="setTimeout(autoClosedSeeMore, 6000);" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         See More...
                       </button>
                     </h5>
                     
                   </div>
                   <div class="text-left text-light p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                    <div class="card-body collapse text-left text-light p-3" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body collapse text-left text-light p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
               </div>
@@ -91,18 +90,18 @@
         <h2 class="h2 text-uppercase m-5 text-center text-light">Education</h2>
         <div class="container mx-auto text-center p-5" >
           <h3 class="h3 text-light mb-5">Software Engineering - Software University</h3>
-          <div id="softuni">
-            <span class="w-35"><img src="image/softuni.png" class="img-thumbnail w-50" alt="logo"></span>
-            <div class="text-light text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms. All learning materials (videos, slides, demos, homework assignments) are free and available for everyone through SoftUni's learning system: https://softuni.bg.</div>
+          <div id="softuni" class="m-auto">
+            <p class="mb-3"><img src="image/softuni.png" class="img-thumbnail" alt="logo"></p>
+            <p class="text-light text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms. All learning materials (videos, slides, demos, homework assignments) are free and available for everyone through SoftUni's learning system: https://softuni.bg.</div>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="container-fluid text-center p-5">
-            <h2 class="h2 text-uppercase m-5">Experience</h2>
+      <section id="qualification" class="container-fluid text-center p-5">
+            <h2 class="h2 m-5 text-light">Qualification</h2>
             <div class="container p-4">
               <div class="row p-3">
-                  <div class="card text-light m-3" style="max-width: 20rem;" id="js">
+                  <div class="card text-light bg-light m-3" style="max-width: 20rem;" id="js">
                       <h3 class="card-header h3 text-dark">JS</h3>
                       <div class="card-body">
                         <h4 class="card-title text-dark">SoftUni</h4>
@@ -110,11 +109,11 @@
                         <a href="./views/js.html" class="btn btn-outline-dark font-weight-bold">See more...</a>
                       </div>
                   </div>
-                  <div class="card text-light m-3" style="max-width: 20rem;" id="js-plugins">
+                  <div class="card text-light bg-secondary m-3" style="max-width: 20rem;" id="js-plugins">
                     <h3 class="card-header h3 text-light">JS Library</h3>
                     <div class="card-body">
                       <h4 class="card-title">SoftUni</h4>
-                      <p class="card-text">This section show history on learning to JS Plugins in the university.</p>
+                      <p class="card-text">This section show history on learning to JS Library in the university.</p>
                       <a href="./views/js-library.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                     </div>
                   </div>
@@ -142,7 +141,7 @@
                           <a href="./views/csharp.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card text-light bg-secondary m-3" style="max-width: 20rem;" id="java">
+                  <div class="card text-light bg-dark m-3" style="max-width: 20rem;" id="java">
                     <h3 class="card-header h3 text-light">Java</h3>
                     <div class="card-body">
                       <h4 class="card-title">SoftUni</h4>
@@ -155,40 +154,40 @@
       </section>
 
       <section id="skills" class="container-fluid p-5">
-          <h2 class="h2 text-center text-uppercase m-5">Skills</h2>
+          <h2 class="h2 text-center text-uppercase text-light m-5">Skills</h2>
           <div class="container m-auto p-5">
             <div class="my-3">
                 <h3 class="h3 text-light">HTML</h3>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    <div class="progress-bar progress-bar-striped bg-primery" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
                 </div>
             </div>
 
             <div class="my-3">
                 <h3 class="h3 text-light">CSS</h3>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">100%</div>
                 </div>
             </div>
 
             <div class="my-3">
                 <h3 class="h3 text-light">JS</h3>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                  <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
                 </div>
             </div>
 
             <div class="my-3">
                 <h3 class="h3 text-light">C#</h3>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                  <div class="progress-bar progress-bar-striped bg-primary font-weight-bold" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
                 </div>
             </div>
 
             <div class="my-3">
                 <h3 class="h3 text-light">Java</h3>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+                  <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
                 </div>
             </div>
           </div>
@@ -201,7 +200,7 @@
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-light font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button onclick="setTimeout(autoClosedProject1, 6000);" class="btn btn-link collapsed text-light font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       CSS Advanced Project
                     </button>
                   </h5>
@@ -210,16 +209,16 @@
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body text-light">
                     I implement tehnology for create project - HTML5, SASS, GULP, JEKYLL!
-                    <div>Link -> <a onclick="window.open('https://pavelrunchev.github.io/Medieval-Castles')" class="btn btn-link font-weight-bold" id="link">Medieval Castles</a></div>
-                    <div >Grade - <span class="grade">6.00</span></div>
-                    <div>Sertificate -> <a onclick="window.open('sertificate/css-advanced.jpg','name','top=200, left=400,width=400,height=600')" class="btn btn-link font-weight-bold" id="sertificate">YES</a></div>
+                    <div>Link -> <a onclick="window.open('https://pavelrunchev.github.io/Medieval-Castles')" class="link font-italic text-light">Medieval Castles</a></div>
+                    <div >Grade - <span class="font-italic">6.00</span></div>
+                    <div>Sertificate -> <a onclick="window.open('sertificate/css-advanced.jpg','name','top=200, left=400,width=400,height=600')" class="link font-italic text-light">YES</a></div>
                   </div>
                 </div>
               </div>
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-dark  font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button onclick="setTimeout(autoClosedProject2, 6000);" class="btn btn-link collapsed text-dark  font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       React JS - Project
                     </button>
                   </h5>
@@ -227,26 +226,26 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
                     I implement tehnology for create project - HTML5, Bootstrap, Angular 2, Redux!
-                      <div>Link -> <a onclick="window.open('https://github.com/PavelRunchev/React-Defense')" class="btn btn-link font-weight-bold" id="link">Free Gems Catalog</a></div>
-                      <div>Grade - <span class="grade">5.85</span></div>
-                      <div>Sertificate -> <a onclick="window.open('sertificate/react-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="btn btn-link font-weight-bold" id="sertificate">YES</a></div>
+                      <div>Link -> <a onclick="window.open('https://github.com/PavelRunchev/React-Defense')" class="link font-italic text-dark">Free Gems Catalog</a></div>
+                      <div>Grade - <span class="font-italic">5.85</span></div>
+                      <div>Sertificate -> <a onclick="window.open('sertificate/react-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="link font-italic text-dark">YES</a></div>
                   </div>
                 </div>
               </div>
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-light font-weight-bold" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button onclick="setTimeout(autoClosedProject3, 6000);" class="btn btn-link collapsed text-light font-weight-bold" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Angular 2 - Project
                     </button>
                   </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
+                  <div class="card-body text-light">
                       I implement tehnology for create project - HTML5, Bootstrap, Angular 2, Redux!
-                      <div class="link">Link -> <a onclick="window.open('https://github.com/PavelRunchev/Angular-Defense')" class="btn btn-link font-weight-bold" id="link">Board Games</a></div>
-                      <div>Grade - <span class="grade">6.00</span></div>
-                      <div>Sertificate -> <a onclick="window.open('sertificate/angular-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="btn btn-link font-weight-bold" id="sertificate">YES</a></div>
+                      <div>Link -> <a onclick="window.open('https://github.com/PavelRunchev/Angular-Defense')" class="link font-italic text-light">Board Games</a></div>
+                      <div>Grade - <span class="font-italic">6.00</span></div>
+                      <div>Sertificate -> <a onclick="window.open('sertificate/angular-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="link font-italic text-light">YES</a></div>
                   </div>
                 </div>
               </div>
@@ -257,29 +256,29 @@
       <section id="environment" >
           <h2 class="h2 text-light text-center text-uppercase m-5">Development Environments</h2>
           <div class="container text-center text-light p-5 mb-5">
-            <h5 class="h5 text-info font-weight-bold">JS</h5>
-            <div class="font-weight-italic">VS Code</div>
-            <div>JetBrains - WebStorm</div>
-            <div>Data Base - MongoDb</div>
+            <h5 class="h5 text-light font-weight-bold">JS</h5>
+            <div class="font-italic">VS Code</div>
+            <div class="font-italic">JetBrains - WebStorm</div>
+            <div class="font-italic">Data Base - MongoDb</div>
             <hr>
-            <h5 class="h5 text-info font-weight-bold">HTML and CSS</h5>
-            <div>VS Code</div>
-            <div>JetBrains - WebStorm</div>
+            <h5 class="h5 text-light font-weight-bold">HTML and CSS</h5>
+            <div class="font-italic">VS Code</div>
+            <div class="font-italic">JetBrains - WebStorm</div>
             <hr>
-            <h5 class="h5 text-info font-weight-bold">C#</h5>
-            <div>Visual Studio 2017</div>
-            <div>Data Base - Microsoft SQL Server</div>
+            <h5 class="h5 text-light font-weight-bold">C#</h5>
+            <div class="font-italic">Visual Studio 2017</div>
+            <div class="font-italic">Data Base - Microsoft SQL Server</div>
             <hr>
-            <h5 class="h5 text-info font-weight-bold">Java</h5>
-            <div>JetBrains - IntelliJ IDEA</div>
-            <div>Data Base - MySQL</div>
+            <h5 class="h5 text-light font-weight-bold">Java</h5>
+            <div class="font-italic">JetBrains - IntelliJ IDEA</div>
+            <div class="font-italic">Data Base - MySQL</div>
           </div>
       </section>
       
     </main>
     <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center" id="footer">
         <section id="icons">
-              <p class="font-weight-bold text-light">Find me on somewhere...</p>
+              <div class="font-weight-bold text-light">Find me on somewhere...</div>
               <p class="font-weight-bold text-light">
                   <a class="fab fa-facebook-f mr-2" onclick="window.open('https://www.facebook.com')"></a>
                   <a class="fab fa-skype mr-2" onclick="window.open('https://www.skype.com')"></a>
@@ -287,7 +286,7 @@
                   <a class="fab fa-github mr-2" onclick="window.open('https://github.com/')"></a>
                   <a class="fab fa-gitlab" onclick="window.open('https://about.gitlab.com/')"></a>
               </p>
-              <p class="text-light font-weight-bold">&copy; 2018 Powered by Pavel Runchev</p>
+              <div class="text-light font-weight-bold">&copy; 2018 Powered by Pavel Runchev</div>
         </section>
     </footer>
 
@@ -298,5 +297,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scrolling.js"></script>
+    <script>
+        function autoClosedSeeMore() { $('#collapseFour').removeClass('show'); }
+        function autoClosedProject1() { $('#collapseOne').removeClass('show'); }
+        function autoClosedProject2() { $('#collapseTwo').removeClass('show'); }
+        function autoClosedProject3() { $('#collapseThree').removeClass('show'); }
+    </script>
 </body>
 </html>
