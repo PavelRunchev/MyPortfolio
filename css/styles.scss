@@ -8,6 +8,13 @@
   margin: 1rem 0;
 }
 
+@mixin global-ancher {
+  text-decoration: none;
+  cursor: pointer;
+  width: 10%;
+  margin: 2rem;
+}
+
 @mixin background-layout {
   background: linear-gradient(rgba(68,110,155,0.5), rgba(68,110,155,0.5));
   border-radius: 1rem;
@@ -30,12 +37,8 @@ body {
       top: 0;
       z-index: 100; 
       & .navbar-brand { margin-right: 11%; }
-      & #github { 
-        cursor: pointer; 
-        width: 5%;
-        background: #fff;
-        border-radius: 50%;
-        text-align: center;
+      & .navbar-collapse > ul > li > a {
+        font-size: 20px;
       }
     }
 
@@ -71,11 +74,11 @@ body {
       }
 
       & #data {
-        display: inline-block;
-        margin: 1rem auto;
-        text-align: left;
-        padding-left: 4.5rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
         font-size: 20px;
+        display: flex;
+        justify-content: space-between;
       }
 
       & #see-more { 
@@ -106,57 +109,46 @@ body {
         }
 
         // HOVER EFFECT
-        & .btn { @include experience-buttons(); }
-
-        & .card:nth-of-type(1) .btn,
-        & .card:nth-of-type(3) .btn {
+        & .btn { 
+          @include experience-buttons(); 
           &:hover {
-            border: 1px solid #000;
-            background: #000;
-            color: #fff;
-          }
-        }
-
-        & .card:nth-of-type(2) .btn,
-        & .card:nth-of-type(5) .btn {
-          &:hover {
-            border: 1px solid #000;
-            background: none;
-            color: #000;
-          }
-        }
-
-        & .card:nth-of-type(4) .btn,
-        & .card:nth-of-type(6) .btn {
-          &:hover {
-            border: 1px solid #fff;
-            background: #fff;
-            color: #000;
+            color: rgb(68,110,115);
+            background: rgb(255,255,255);
+            border-color: rgb(68,110,115);
           }
         }
       }
     }
-
-    #skills { & > .container { @include background-layout(); } }
 
     #projects {
       & .container {
         @include background-layout();
         padding: 5%;
-        & div,
-        & a { font-size: 18px; }
 
-        & .card:nth-of-type(1) { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
-        & .card:nth-of-type(2) { background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.5)); }
-        & .card:nth-of-type(3) { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
-        & button { font-size: 22px; }
+        & #accordion {
+          display: flex;
+          justify-content: space-between;
+          & .card { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
+          & button { font-size: 22px; }
+          & div,
+          & a { font-size: 18px; }
+        }
       }
     }
 
     #environment { 
+      margin-bottom: 3rem;
       & > .container { 
-        @include background-layout(); 
-        & div { font-size: 18px; }
+        @include background-layout();
+        & h5 { font-size: 30px; }
+        & .box {
+          display: flex;
+          justify-content: center;
+          & a {
+            @include global-ancher();
+            & img { width: 100%; }
+          }
+        }
       } 
     }
 
@@ -164,15 +156,6 @@ body {
       background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0.15));
       position: relative;
       z-index: 100;
-
-      & > #icons {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         margin: 0 auto;
-         cursor: pointer;
-         color: #fff;
-      }
     }
 
     & #js-library,
