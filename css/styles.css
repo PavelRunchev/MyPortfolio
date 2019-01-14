@@ -1,7 +1,38 @@
 @import url("../fontawesome/css/all.min.css");
+@keyframes navitemin {
+  from { }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0, 0); } }
+
+@keyframes growImage {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.3); } }
+
+@keyframes hoverEfect {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.9); } }
+
+@keyframes small {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.95); } }
+
+@keyframes grow {
+  from {
+    transform: scale(0.95); }
+  to {
+    transform: scale(1); } }
+
 body {
-  background: url("../image/minimalism-hexagon-black-honeycomb-wallpaper.jpg");
-  position: relative; }
+  position: relative;
+  background-image: url("../image/8601.jpg");
+  background-size: contain; }
   body #navigation {
     position: fixed;
     top: 0;
@@ -10,26 +41,59 @@ body {
       margin-right: 11%; }
     body #navigation .navbar-collapse > ul > li > a {
       font-size: 20px; }
+    body #navigation li {
+      opacity: 0;
+      animation: navitemin 0.5s ease forwards; }
+    body #navigation li:nth-child(1) {
+      animation-delay: 0.15s; }
+    body #navigation li:nth-child(2) {
+      animation-delay: 0.3s; }
+    body #navigation li:nth-child(3) {
+      animation-delay: 0.45s; }
+    body #navigation li:nth-child(4) {
+      animation-delay: 0.6s; }
+    body #navigation li:nth-child(5) {
+      animation-delay: 0.75s; }
+    body #navigation li:nth-child(6) {
+      animation-delay: 0.9s; }
   body header {
-    margin-top: 2%;
+    margin-top: 1%;
     padding: 7%; }
     body header > #header {
-      background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+      background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
       padding: 5%;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      -webkit-box-shadow: 0px 0px 31px -2px black;
+      -moz-box-shadow: 0px 0px 31px -2px black;
+      box-shadow: 0px 0px 31px -2px black; }
+      body header > #header #image {
+        cursor: pointer;
+        max-width: 25%;
+        padding: 3px;
+        border: 3px solid gray;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.5); }
+        body header > #header #image:active {
+          transform: scale(1);
+          transition-duration: 0.3s;
+          animation: growImage 0.3s ease-in;
+          animation-fill-mode: both;
+          animation-duration: 0.3s; }
       body header > #header h1 {
-        background: linear-gradient(to top, white, #00acec), none;
+        background: linear-gradient(to top, #212121, #636363), none;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
       body header > #header .right-hand:hover i,
       body header > #header .right-hand:hover a {
-        color: #00acec;
+        color: gainsboro;
         cursor: pointer; }
       body header > #header #front-end {
         cursor: pointer; }
         body header > #header #front-end:hover {
-          color: #00acec; }
+          color: gainsboro; }
       body header > #header .card div {
         font-size: 18px; }
     body header #data {
@@ -38,11 +102,23 @@ body {
       font-size: 20px;
       display: flex;
       justify-content: space-between; }
+      body header #data a:hover,
+      body header #data a:hover i {
+        color: #f0f0f0;
+        cursor: pointer; }
     body header #see-more {
       color: #fff;
       border-color: #fff; }
+      body header #see-more:hover {
+        color: #212121;
+        border-color: #fff;
+        background: #fff; }
   body #education > .container {
-    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    color: #fff;
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
     border-radius: 1rem; }
     body #education > .container div {
       font-size: 18px; }
@@ -51,8 +127,26 @@ body {
     body #education #softuni img {
       width: 15%; }
   body #qualification .container {
-    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
     border-radius: 1rem; }
+    body #qualification .container .card {
+      cursor: pointer;
+      background: #949494;
+      transition: background 0.4s ease-in, color 0.4s ease-in;
+      animation: grow 0.4s ease-out; }
+      body #qualification .container .card:hover {
+        background: #323232;
+        -webkit-box-shadow: 0px 0px 31px -2px black;
+        -moz-box-shadow: 0px 0px 31px -2px black;
+        box-shadow: 0px 0px 31px -2px black;
+        transform: scale(0.9);
+        transition-duration: 0.3s;
+        animation: small 0.3s ease-in;
+        animation-fill-mode: both;
+        animation-duration: 0.3s; }
     body #qualification .container .card-body {
       padding: 1rem; }
     body #qualification .container p {
@@ -69,7 +163,10 @@ body {
         background: white;
         border-color: #446e73; }
   body #projects .container {
-    background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
     border-radius: 1rem;
     padding: 5%; }
     body #projects .container #accordion {
@@ -81,41 +178,112 @@ body {
         font-size: 22px; }
       body #projects .container #accordion div,
       body #projects .container #accordion a {
-        font-size: 18px; }
+        font-size: 18px;
+        color: #fafafa;
+        cursor: pointer; }
+      body #projects .container #accordion a:hover {
+        color: #272727; }
   body #environment {
     margin-bottom: 3rem; }
     body #environment > .container {
-      background: linear-gradient(rgba(68, 110, 155, 0.5), rgba(68, 110, 155, 0.5));
+      background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+      -webkit-box-shadow: 0px 0px 31px -2px black;
+      -moz-box-shadow: 0px 0px 31px -2px black;
+      box-shadow: 0px 0px 31px -2px black;
       border-radius: 1rem; }
-      body #environment > .container h5 {
-        font-size: 30px; }
-      body #environment > .container .box {
-        display: flex;
-        justify-content: center; }
-        body #environment > .container .box a {
-          text-decoration: none;
+      body #environment > .container .row .jumbotron {
+        background: linear-gradient(rgba(185, 186, 190, 0), rgba(185, 186, 190, 0));
+        width: 30%;
+        text-align: center; }
+        body #environment > .container .row .jumbotron h5 {
+          font-size: 30px;
+          margin: 0 7%; }
+        body #environment > .container .row .jumbotron .row .vs-code,
+        body #environment > .container .row .jumbotron .row .mongo-db,
+        body #environment > .container .row .jumbotron .row .webstorm {
           cursor: pointer;
-          width: 10%;
-          margin: 2rem; }
-          body #environment > .container .box a img {
+          width: 60px;
+          border-radius: 50%;
+          padding: 7x;
+          border: 2px solid white;
+          overflow: hidden;
+          -webkit-box-shadow: 0px 0px 31px -2px black;
+          -moz-box-shadow: 0px 0px 31px -2px black;
+          box-shadow: 0px 0px 31px -2px black; }
+          body #environment > .container .row .jumbotron .row .vs-code img,
+          body #environment > .container .row .jumbotron .row .mongo-db img,
+          body #environment > .container .row .jumbotron .row .webstorm img {
             width: 100%; }
+          body #environment > .container .row .jumbotron .row .vs-code:hover,
+          body #environment > .container .row .jumbotron .row .mongo-db:hover,
+          body #environment > .container .row .jumbotron .row .webstorm:hover {
+            -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.85);
+            -moz-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.85);
+            box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.85);
+            transform: scale(0.9);
+            transition-duration: 0.3s;
+            animation: hoverEfect 0.3s ease-in;
+            animation-fill-mode: both;
+            animation-duration: 0.3s; }
   body footer {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     position: relative;
     z-index: 100; }
-  body #js-library,
-  body #javascript,
-  body #html,
-  body #java,
-  body #css,
-  body #csharp {
-    font-size: 18px; }
+  body #js-library .border,
+  body #javascript .border,
+  body #html .border,
+  body #java .border,
+  body #css .border,
+  body #csharp .border {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    padding: 5%;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black; }
+    body #js-library .border h4,
+    body #javascript .border h4,
+    body #html .border h4,
+    body #java .border h4,
+    body #css .border h4,
+    body #csharp .border h4 {
+      font-size: 28px; }
+    body #js-library .border a,
+    body #javascript .border a,
+    body #html .border a,
+    body #java .border a,
+    body #css .border a,
+    body #csharp .border a {
+      color: #fafafa;
+      cursor: pointer; }
+      body #js-library .border a:hover,
+      body #javascript .border a:hover,
+      body #html .border a:hover,
+      body #java .border a:hover,
+      body #css .border a:hover,
+      body #csharp .border a:hover {
+        color: #272727; }
   body #csharp img {
     width: 3%;
-    margin-right: 3%; }
+    margin-right: 3%;
+    border-radius: 50%; }
   body #csharp h2 {
     font-weight: bold;
     font-size: 45px;
     text-shadow: 1px 1px white; }
   body .link {
     cursor: pointer; }
+  body #js .inner-js {
+    width: 65%; }
+  body #js-library .inner-js-library {
+    width: 65%; }
+  body #css .inner-css {
+    width: 65%; }
+  body #csharp .inner-csharp {
+    width: 65%; }
+  body #html .inner-html {
+    width: 65%; }
+  body #java .inner-java {
+    width: 65%; }

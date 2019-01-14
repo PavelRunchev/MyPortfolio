@@ -1,5 +1,38 @@
 @import url('../fontawesome/css/all.min.css');
 
+//animation navigation
+@keyframes navitemin {
+  from {}
+  to {
+      opacity: 1;
+      transform: scale(1) translate(0,0);
+  }
+}
+
+//animation growImage
+@keyframes growImage {
+  from { transform: scale(1); }
+  to { transform: scale(1.3); }
+}
+
+//animation environment
+@keyframes hoverEfect {
+  from {  transform: scale(1); }
+  to {  transform: scale(0.9);  }
+}
+
+//animation qualification
+@keyframes small {
+  from { transform: scale(1); }
+  to { transform: scale(0.95); }
+}
+
+//animation qualification
+@keyframes grow {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}
+
 @mixin experience-buttons {
   text-decoration: none;
   cursor: pointer;
@@ -16,7 +49,10 @@
 }
 
 @mixin background-layout {
-  background: linear-gradient(rgba(68,110,155,0.5), rgba(68,110,155,0.5));
+  background: linear-gradient(rgba(185,186,190,0.9), rgba(185,186,190,0.9));
+  -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+  box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
   border-radius: 1rem;
 }
 
@@ -29,8 +65,9 @@
 }
 
 body {
-  background: url('../image/minimalism-hexagon-black-honeycomb-wallpaper.jpg');
   position: relative;
+  background-image: url("../image/8601.jpg");
+  background-size: contain;
 
     #navigation { 
       position: fixed; 
@@ -40,19 +77,49 @@ body {
       & .navbar-collapse > ul > li > a {
         font-size: 20px;
       }
+
+      & li {
+        opacity: 0;
+        animation: navitemin 0.5s ease forwards;
+      }
+
+      @for $i from 1 through 6 {
+        & li:nth-child(#{$i}) { animation-delay: $i * 0.15s; }
+      }
     }
 
     header {
-      margin-top: 2%;
+      margin-top: 1%;
       padding: 7%;
 
       & > #header {
-        background: linear-gradient(rgba(68,110,155,0.5), rgba(68,110,155,0.5));
+        background: linear-gradient(rgba(185,186,190,0.9), rgba(185,186,190,0.9));
         padding: 5%;
         border-radius: 1rem;
+        -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+        box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+
+        & #image {
+          cursor: pointer;
+          max-width: 25%;
+          padding: 3px;
+          border: 3px solid gray;
+          border-radius: 50%;
+          -webkit-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.5);
+          -moz-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.5);
+          &:active {
+            transform: scale(1);
+            transition-duration: 0.3s;
+            animation: growImage 0.3s ease-in;
+            animation-fill-mode: both;
+            animation-duration: 0.3s;
+          }
+        }
 
         & h1 {
-          background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,172,236, 1)),  none;
+          background: linear-gradient(to top, rgba(33,33,33,1), rgba(99,99,99, 1)),  none;
           //for Edge and FireFox
           background-clip: text;
           //For Chrome
@@ -62,13 +129,13 @@ body {
 
         & .right-hand:hover i,
         & .right-hand:hover a {
-          color: rgb(0,172,236);
+          color: rgb(220,220,220);
           cursor: pointer;
         }
 
         & #front-end {
           cursor: pointer;
-          &:hover { color: rgb(0,172,236); }
+          &:hover { color: rgb(220,220,220); }
         }
         & .card div { font-size: 18px; }
       }
@@ -79,16 +146,28 @@ body {
         font-size: 20px;
         display: flex;
         justify-content: space-between;
+
+        & a:hover,
+        & a:hover i{
+          color: rgb(240,240,240);
+          cursor: pointer;
+        }
       }
 
       & #see-more { 
         color: #fff; 
         border-color: #fff; 
+        &:hover {
+          color: rgb(33,33,33); 
+          border-color: #fff; 
+          background: #fff;
+        }
       }
     }
 
     #education {
       & > .container { 
+        color: #fff;
         @include background-layout(); 
         & div { font-size: 18px; } }
         & #softuni { width: 100%; 
@@ -99,7 +178,24 @@ body {
     #qualification {
       & .container {
         @include background-layout();
-
+        & .card {
+          cursor: pointer;
+          background: rgb(148,148,148);
+          transition: background 0.4s ease-in, color 0.4s ease-in;
+          animation: grow 0.4s ease-out;
+          &:hover {
+            background: rgb(50,50,50);
+            -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+            box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+            transform: scale(0.9);
+            transition-duration: 0.3s;
+            animation: small 0.3s ease-in;
+            animation-fill-mode: both;
+            animation-duration: 0.3s;
+          }
+        }
+        
         & .card-body {
           padding: 1rem;
         }
@@ -131,7 +227,13 @@ body {
           & .card { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
           & button { font-size: 22px; }
           & div,
-          & a { font-size: 18px; }
+          & a { 
+            font-size: 18px; 
+            color: rgb(250,250,250);
+            cursor: pointer;
+          }
+
+          a:hover { color: rgb(39,39,39); }
         }
       }
     }
@@ -140,15 +242,45 @@ body {
       margin-bottom: 3rem;
       & > .container { 
         @include background-layout();
-        & h5 { font-size: 30px; }
-        & .box {
-          display: flex;
-          justify-content: center;
-          & a {
-            @include global-ancher();
-            & img { width: 100%; }
-          }
-        }
+        & .row {
+          & .jumbotron {
+            background: linear-gradient(rgba(185,186,190,0), rgba(185,186,190,0));
+            width: 30%;
+            text-align: center;
+            & h5 { font-size: 30px; margin: 0 7%; }
+         
+            & .row {
+              & .vs-code,
+              & .mongo-db,
+              & .webstorm {
+                cursor: pointer;
+                width: 60px;
+                border-radius: 50%;
+                padding: 7x;
+                border: 2px solid white;
+                overflow: hidden;
+                -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+                -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+                box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+                & img {
+                  width: 100%;
+                }
+
+                &:hover {
+                  -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.85);
+                  -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.85);
+                  box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.85);
+                  transform: scale(0.9);
+                  transition-duration: 0.3s;
+                  animation: hoverEfect 0.3s ease-in;
+                  animation-fill-mode: both;
+                  animation-duration: 0.3s;
+                }
+              }
+            }
+           
+          }         
+        }     
       } 
     }
 
@@ -163,10 +295,27 @@ body {
     & #html,
     & #java,
     & #css,
-    & #csharp { font-size: 18px; }
+    & #csharp { 
+      & .border {
+        & h4 { font-size: 28px; }
+        font-size: 20px; 
+        font-weight: bold;
+        background: linear-gradient(rgba(185,186,190,0.9), rgba(185,186,190,0.9));
+        padding: 5%;
+        border-radius: 1rem;
+        -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+        box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+        & a { 
+          color: rgb(250,250,250);
+          cursor: pointer;
+          &:hover { color: rgb(39,39,39); }
+        }        
+      }    
+    }
 
     & #csharp {
-      & img { width: 3%; margin-right: 3%; }
+      & img { width: 3%; margin-right: 3%; border-radius: 50%; }
       & h2 {
         font-weight: bold;
         font-size: 45px;
@@ -175,4 +324,11 @@ body {
     }
 
     & .link { cursor: pointer; }
+
+    & #js { & .inner-js {  width: 65%; } }
+    & #js-library { & .inner-js-library{ width: 65%; } }
+    & #css { & .inner-css { width: 65%; } }
+    & #csharp { & .inner-csharp { width: 65%; } }
+    & #html { & .inner-html { width: 65%; } }
+    & #java { & .inner-java { width: 65%; } }
 }

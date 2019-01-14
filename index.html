@@ -20,8 +20,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-primary" id="navigation">   
+<body class="">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark" id="navigation">   
         <a class="link h4 mx-5 text-light">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,9 +38,6 @@
                       <a class="nav-link" href="#qualification">Qualification</a>
                     </li>
                     <li class="nav-item mr-4">
-                      <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item mr-4">
                       <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item mr-4">
@@ -51,22 +48,22 @@
     </nav>
     <header class="container-fluid p-5" id="about">
       <div class="container mx-auto text-center mt-5" id="header">
-          <img src="image/DSCF0009.JPG"  class="rounded-circle w-25 mb-4" id="image" alt="photo">
+          <img src="./image/2.gif" data-src="./image/DSCF0009.JPG" class="mb-4" id="image" alt="photo">
         
           <h1 clas="m-4 font-weight-bold">PAVEL RUNCHEV</h1>
-          <h5 class="h5 right-hand text-light"><i class="fas fa-hand-point-right mr-3"></i><a class="mt-4" onclick="window.open('image/20181223_120056.jpg','name','top=200, left=400,width=400,height=600')" id="front-end">Full Stack Developer</a></h5>
+          <h5 class="h5 right-hand text-dark"><i class="fas fa-hand-point-right mr-3"></i><a class="mt-4" onclick="window.open('image/20181223_120056.jpg','name','top=200, left=400,width=400,height=600')" id="front-end">Full Stack Developer</a></h5>
           <div id="data">
-            <a class="link text-light" onclick="window.open('https://www.jetbrains.com/webstorm/');"><i class="fas fa-envelope"></i> PavelRunchev@gmail.com</a>
-            <a class="link text-light"><i class="fab fa-github"></i> PavelRunchev</a>
-            <a class="link text-light"><i class="fab fa-linkedin-in"></i> Pavel Runchev</a>
-            <a class="link text-light"><i class="fab fa-skype"></i> raidersgb</a>
-            <a class="link text-light"><i class="fas fa-phone"></i> 0879999436</a>
+            <a class="link" onclick="window.open('https://www.jetbrains.com/webstorm/');"><i class="fas fa-envelope"></i> PavelRunchev@gmail.com</a>
+            <a class="link"><i class="fab fa-github"></i> PavelRunchev</a>
+            <a class="link"><i class="fab fa-linkedin-in"></i> Pavel Runchev</a>
+            <a class="link"><i class="fab fa-skype"></i> raidersgb</a>
+            <a class="link"><i class="fas fa-phone"></i> 0879999436</a>
           </div>
           <div id="accordion">
-              <div class="card bg-primary">
+              <div class="card bg-secondary">
                   <div class="card-header" id="headingFour">
                     <h5 class="mb-0">
-                      <button class="btn btn-outline-info collapsed" onclick="setTimeout(autoClosedSeeMore, 6000);" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <button class="btn btn-outline-light collapsed" onclick="setTimeout(autoClosedSeeMore, 6000);" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         See More...
                       </button>
                     </h5>
@@ -74,7 +71,7 @@
                   </div>
                   <div class="text-center text-light p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit... </div>
                     <div class="card-body collapse text-left text-light p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
                     </div>
               </div>
               
@@ -83,24 +80,24 @@
     </header>
     <main>
       <section id="education">
-        <h2 class="h2 text-uppercase m-5 text-center text-light">Education</h2>
+        <h2 class="h2 text-uppercase m-5 text-center text-dark">Education</h2>
         <div class="container mx-auto text-center p-5" >
           <h3 class="h3 text-light mb-5">Software Engineering - Software University</h3>
           <div id="softuni" class="m-auto">
             <p class="mb-3"><img src="image/softuni.png" class="img-thumbnail" alt="logo"></p>
-            <p class="text-light text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
+            <p class="text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
             <div>
-              <a class="link text-light" href="#">My Diploma...</a>
+              <a class="diploma" href="#">My Diploma...</a>
             </div>
           </div>
         </div>
       </section>
 
       <section id="qualification" class="container-fluid text-center p-5">
-            <h2 class="h2 m-5 text-light">Qualification</h2>
+            <h2 class="h2 m-5 text-dark">QUALIFICATION</h2>
             <div class="container p-4">
               <div class="row p-3">
-                  <div class="card text-light bg-primary m-3" style="width: 20rem;" id="js">
+                  <div class="card text-light m-3" style="width: 20rem;" id="js">
                       <h3 class="card-header h3 text-light">JS</h3>
                       <div class="card-body">
                         <h4 class="card-title text-light"></h4>
@@ -108,7 +105,7 @@
                         <a href="./views/js.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                       </div>
                   </div>
-                  <div class="card text-light bg-primary m-3" style="width: 20rem;" id="js-plugins">
+                  <div class="card text-light m-3" style="width: 20rem;" id="js-plugins">
                     <h3 class="card-header h3 text-light">JS Library</h3>
                     <div class="card-body">
                       <h4 class="card-title"></h4>
@@ -116,7 +113,7 @@
                       <a href="./views/js-library.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                     </div>
                   </div>
-                  <div class="card text-dark bg-primary m-3" style="width: 20rem;" id="html">
+                  <div class="card text-dark m-3" style="width: 20rem;" id="html">
                         <h3 class="card-header text-light h3">HTML</h3>
                         <div class="card-body">
                           <h4 class="card-title"></h4>
@@ -124,7 +121,7 @@
                           <a href="./views/html.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card text-white bg-primary m-3" style="width: 20rem;" id="css">
+                  <div class="card text-white m-3" style="width: 20rem;" id="css">
                         <h3 class="card-header h3 text-light">CSS</h3>
                         <div class="card-body">
                           <h4 class="card-title"></h4>
@@ -132,7 +129,7 @@
                           <a href="./views/css.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card text-white bg-primary m-3" style="width: 20rem;" id="csharp">
+                  <div class="card text-white m-3" style="width: 20rem;" id="csharp">
                         <h3 class="card-header h3 text-light">C#</h3>
                         <div class="card-body">
                           <h4 class="card-title"></h4>
@@ -140,7 +137,7 @@
                           <a href="./views/csharp.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card text-light bg-primary m-3" style="width: 20rem;" id="java">
+                  <div class="card text-light m-3" style="width: 20rem;" id="java">
                     <h3 class="card-header h3 text-light">Java</h3>
                     <div class="card-body">
                       <h4 class="card-title"></h4>
@@ -153,58 +150,58 @@
       </section>
 
       <section id="projects" class="container-fluid ">
-          <h2 class="h2 text-light text-center text-uppercase m-5">Projects</h2>
+          <h2 class="h2 text-dark text-center text-uppercase m-5">Projects</h2>
           <div class="container font-weight-bold">
             <div id="accordion">
               <div class="card m-3" style="width: 20rem;">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-light font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       CSS Advanced Project
                     </button>
                   </h5>
                 </div>
             
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body text-light">
+                  <div class="card-body text-dark">
                     I implement tehnology for create project - HTML5, SASS, GULP, JEKYLL!
-                    <div>Link -> <a onclick="window.open('https://pavelrunchev.github.io/Medieval-Castles')" class="link font-italic text-light">Medieval Castles</a></div>
-                    <div >Grade - <span class="font-italic">6.00</span></div>
-                    <div>Sertificate -> <a onclick="window.open('sertificate/css-advanced.jpg','name','top=200, left=400,width=400,height=600')" class="link font-italic text-light">YES</a></div>
+                    <div class="text-dark">Link -> <a onclick="window.open('https://pavelrunchev.github.io/Medieval-Castles')" class="font-italic">Medieval Castles</a></div>
+                    <div class="text-dark">Grade - <span class="font-italic">6.00</span></div>
+                    <div class="text-dark">Sertificate -> <a onclick="window.open('sertificate/css-advanced.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
                   </div>
                 </div>
               </div>
               <div class="card m-3" style="width: 20rem;">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-light  font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link collapsed text-dark  font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       React JS - Project
                     </button>
                   </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body text-light">
+                  <div class="card-body text-dark">
                     I implement tehnology for create project - HTML5, Bootstrap, Angular 2, Redux!
-                      <div>Link -> <a onclick="window.open('https://github.com/PavelRunchev/React-Defense')" class="link font-italic text-light">Free Gems Catalog</a></div>
-                      <div>Grade - <span class="font-italic">5.85</span></div>
-                      <div>Sertificate -> <a onclick="window.open('sertificate/react-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="link font-italic text-light">YES</a></div>
+                      <div class="text-dark">Link -> <a onclick="window.open('https://github.com/PavelRunchev/React-Defense')" class="font-italic">Free Gems Catalog</a></div>
+                      <div class="text-dark">Grade - <span class="font-italic">5.85</span></div>
+                      <div class="text-dark">Sertificate -> <a onclick="window.open('sertificate/react-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
                   </div>
                 </div>
               </div>
               <div class="card m-3" style="width: 20rem;">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-light font-weight-bold" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Angular 2 - Project
                     </button>
                   </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body text-light">
+                  <div class="card-body text-dark">
                       I implement tehnology for create project - HTML5, Bootstrap, Angular 2, Redux!
-                      <div>Link -> <a onclick="window.open('https://github.com/PavelRunchev/Angular-Defense')" class="link font-italic text-light">Board Games</a></div>
-                      <div>Grade - <span class="font-italic">6.00</span></div>
-                      <div>Sertificate -> <a onclick="window.open('sertificate/angular-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="link font-italic text-light">YES</a></div>
+                      <div class="text-dark">Link -> <a onclick="window.open('https://github.com/PavelRunchev/Angular-Defense')" class="font-italic">Board Games</a></div>
+                      <div class="text-dark">Grade - <span class="font-italic">6.00</span></div>
+                      <div class="text-dark">Sertificate -> <a onclick="window.open('sertificate/angular-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
                   </div>
                 </div>
               </div>
@@ -213,44 +210,53 @@
       </section>
 
       <section id="environment" >
-          <h2 class="h2 text-light text-center text-uppercase m-5">Development Environments</h2>
+          <h2 class="h2 text-dark text-center text-uppercase m-5">Development Environments</h2>
           <div class="container text-center text-light p-5 my-3">
-            <h5 class="h5 text-light font-weight-bold">JS</h5>
-            <div class="box">
-              <a class="vs-code" onclick="window.open('https://code.visualstudio.com/');">
-                <img src="image/visual-studio-code-logo.png">
-              </a>
-              <a class="webstorm" onclick="window.open('https://www.jetbrains.com/webstorm/');">
-                <img src="image/webstorm_logo_300x300.png">
-              </a>
-                <a class="mongo-db" onclick="window.open('https://www.mongodb.com/brand-resources');">
-                  <img src="image/mongodb-logo-1.png">
-                </a>
-            </div>
-            <h5 class="h5 text-light font-weight-bold mt-2">C#</h5>
-            <div class="box">
-                <a class="vs-code" onclick="window.open('https://visualstudio.microsoft.com/');">
-                  <img src="image/vidualStudio.png">
-                </a>
-                <a class="webstorm" onclick="window.open('https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017');">
-                  <img src="image/SQL Server Management Studio.png">
-                </a>
-            </div>
-            <h5 class="h5 text-light font-weight-bold mt-2">Java</h5>
-            <div class="box">
-                <a class="vs-code" onclick="window.open('https://www.jetbrains.com/idea/');">
-                  <img src="image/intellij-idea_logo_300x300.png">
-                </a>
-                <a class="webstorm" onclick="window.open('https://www.mysql.com/');">
-                  <img src="image/MySQL.png">
-                </a>
-            </div>
+            <div class="row justify-content-between">
+              <div class="jumbotron">
+                <h5 class="h5 text-dark font-weight-bold mb-2">JS</h5>
+                <div class="row justify-content-between p-2">
+                    <a class="vs-code" onclick="window.open('https://code.visualstudio.com/');">
+                      <img src="./image/visual-studio-code-logo.png" alt="logo">
+                    </a>
+                    <a class="webstorm" onclick="window.open('https://www.jetbrains.com/webstorm/');">
+                      <img src="./image/webstorm_logo_300x300.png">
+                    </a>
+                      <a class="mongo-db" onclick="window.open('https://www.mongodb.com/brand-resources');">
+                        <img src="./image/mongodb-logo-1.png">
+                    </a>
+                </div>
+              </div>
+              <div class="jumbotron">
+                  <h5 class="h5 text-dark font-weight-bold mb-2">C#</h5>
+                  <div class="row justify-content-center p2">
+                      <a class="vs-code mx-3" onclick="window.open('https://visualstudio.microsoft.com/');">
+                        <img src="./image/vidualStudio.png">
+                      </a>
+                      <a class="webstorm mx-3" onclick="window.open('https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017');">
+                        <img src="./image/SQL Server Management Studio.png">
+                      </a>
+                  </div>
+              </div>
+
+              <div class="jumbotron">
+                  <h5 class="h5 text-dark font-weight-bold mb-2">Java</h5>
+                  <div class="row justify-content-center">
+                      <a class="vs-code mx-3" onclick="window.open('https://www.jetbrains.com/idea/');">
+                        <img src="./image/intellij-idea_logo_300x300.png">
+                      </a>
+                      <a class="webstorm mx-3" onclick="window.open('https://www.mysql.com/');">
+                        <img src="./image/MySQL.png">
+                      </a>
+                  </div>
+              </div>                  
+            </div>           
           </div>
         </div>
       </section>
       
     </main>
-    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center" id="footer">
+    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center bg-dark" id="footer">
       <div class="text-light m-auto py-3">&copy; 2018 Powered by Pavel Runchev</div>
     </footer>
 
@@ -261,5 +267,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scrolling.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        let allimages= document.getElementsByTagName('img')[0];        
+        allimages.setAttribute('src', allimages.getAttribute('data-src'));                 
+      }, false)
+    </script>
 </body>
 </html>
