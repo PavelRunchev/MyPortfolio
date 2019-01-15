@@ -60,21 +60,22 @@ body {
     margin-top: 1%;
     padding: 7%; }
     body header > #header {
-      background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
-      padding: 5%;
-      border-radius: 1rem;
+      background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
       -webkit-box-shadow: 0px 0px 31px -2px black;
       -moz-box-shadow: 0px 0px 31px -2px black;
-      box-shadow: 0px 0px 31px -2px black; }
+      box-shadow: 0px 0px 31px -2px black;
+      border-radius: 1rem;
+      background: radial-gradient(circle, rgba(185, 186, 190, 0.8) 24%, rgba(68, 110, 155, 0.8) 54%);
+      padding: 5%; }
       body header > #header #image {
         cursor: pointer;
         max-width: 25%;
         padding: 3px;
         border: 3px solid gray;
         border-radius: 50%;
-        -webkit-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.5); }
+        -webkit-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7); }
         body header > #header #image:active {
           transform: scale(1);
           transition-duration: 0.3s;
@@ -82,18 +83,22 @@ body {
           animation-fill-mode: both;
           animation-duration: 0.3s; }
       body header > #header h1 {
-        background: linear-gradient(to top, #212121, #636363), none;
+        background: linear-gradient(to top, #969696, black), none;
+        text-shadow: 3px 3px white;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
       body header > #header .right-hand:hover i,
       body header > #header .right-hand:hover a {
-        color: gainsboro;
+        color: #323232;
         cursor: pointer; }
+      body header > #header i {
+        color: #fff; }
       body header > #header #front-end {
-        cursor: pointer; }
+        cursor: pointer;
+        color: white; }
         body header > #header #front-end:hover {
-          color: gainsboro; }
+          color: #323232; }
       body header > #header .card div {
         font-size: 18px; }
     body header #data {
@@ -101,10 +106,11 @@ body {
       margin-bottom: 1rem;
       font-size: 20px;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      color: #f0f0f0; }
       body header #data a:hover,
       body header #data a:hover i {
-        color: #f0f0f0;
+        color: #323232;
         cursor: pointer; }
     body header #see-more {
       color: #fff;
@@ -115,11 +121,12 @@ body {
         background: #fff; }
   body #education > .container {
     color: #fff;
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
     -webkit-box-shadow: 0px 0px 31px -2px black;
     -moz-box-shadow: 0px 0px 31px -2px black;
     box-shadow: 0px 0px 31px -2px black;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    background: radial-gradient(circle, rgba(68, 110, 155, 0.8) 59%, rgba(185, 186, 190, 0.8) 94%); }
     body #education > .container div {
       font-size: 18px; }
   body #education #softuni {
@@ -127,18 +134,19 @@ body {
     body #education #softuni img {
       width: 15%; }
   body #qualification .container {
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    background: linear-gradient(rgba(185, 186, 190, 0.8), rgba(185, 186, 190, 0.8));
     -webkit-box-shadow: 0px 0px 31px -2px black;
     -moz-box-shadow: 0px 0px 31px -2px black;
     box-shadow: 0px 0px 31px -2px black;
     border-radius: 1rem; }
     body #qualification .container .card {
       cursor: pointer;
-      background: #949494;
+      background: #446e9b;
       transition: background 0.4s ease-in, color 0.4s ease-in;
       animation: grow 0.4s ease-out; }
       body #qualification .container .card:hover {
         background: #323232;
+        color: #fff;
         -webkit-box-shadow: 0px 0px 31px -2px black;
         -moz-box-shadow: 0px 0px 31px -2px black;
         box-shadow: 0px 0px 31px -2px black;
@@ -163,7 +171,7 @@ body {
         background: white;
         border-color: #446e73; }
   body #projects .container {
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
     -webkit-box-shadow: 0px 0px 31px -2px black;
     -moz-box-shadow: 0px 0px 31px -2px black;
     box-shadow: 0px 0px 31px -2px black;
@@ -172,25 +180,24 @@ body {
     body #projects .container #accordion {
       display: flex;
       justify-content: space-between; }
-      body #projects .container #accordion .card {
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); }
       body #projects .container #accordion button {
         font-size: 22px; }
       body #projects .container #accordion div,
       body #projects .container #accordion a {
         font-size: 18px;
-        color: #fafafa;
+        color: #446e9b;
         cursor: pointer; }
       body #projects .container #accordion a:hover {
         color: #272727; }
   body #environment {
     margin-bottom: 3rem; }
     body #environment > .container {
-      background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+      background: linear-gradient(rgba(185, 186, 190, 0.8), rgba(185, 186, 190, 0.8));
       -webkit-box-shadow: 0px 0px 31px -2px black;
       -moz-box-shadow: 0px 0px 31px -2px black;
       box-shadow: 0px 0px 31px -2px black;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      background: linear-gradient(128deg, rgba(185, 186, 190, 0.8) 32%, rgba(68, 110, 155, 0.8) 72%); }
       body #environment > .container .row .jumbotron {
         background: linear-gradient(rgba(185, 186, 190, 0), rgba(185, 186, 190, 0));
         width: 30%;

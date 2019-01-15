@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="">
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark" id="navigation">   
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-primary" id="navigation">   
         <a class="link h4 mx-5 text-light">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
           <img src="./image/2.gif" data-src="./image/DSCF0009.JPG" class="mb-4" id="image" alt="photo">
         
           <h1 clas="m-4 font-weight-bold">PAVEL RUNCHEV</h1>
-          <h5 class="h5 right-hand text-dark"><i class="fas fa-hand-point-right mr-3"></i><a class="mt-4" onclick="window.open('image/20181223_120056.jpg','name','top=200, left=400,width=400,height=600')" id="front-end">Full Stack Developer</a></h5>
+          <h5 class="h5 right-hand"><i class="fas fa-hand-point-right mr-3"></i><a class="mt-4" onclick="window.open('image/20181223_120056.jpg','name','top=200, left=400,width=400,height=600')" id="front-end">Full Stack Developer</a></h5>
           <div id="data">
             <a class="link" onclick="window.open('https://www.jetbrains.com/webstorm/');"><i class="fas fa-envelope"></i> PavelRunchev@gmail.com</a>
             <a class="link"><i class="fab fa-github"></i> PavelRunchev</a>
@@ -60,7 +60,7 @@
             <a class="link"><i class="fas fa-phone"></i> 0879999436</a>
           </div>
           <div id="accordion">
-              <div class="card bg-secondary">
+              <div class="card bg-primary">
                   <div class="card-header" id="headingFour">
                     <h5 class="mb-0">
                       <button class="btn btn-outline-light collapsed" onclick="setTimeout(autoClosedSeeMore, 6000);" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -71,7 +71,13 @@
                   </div>
                   <div class="text-center text-light p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit... </div>
                     <div class="card-body collapse text-left text-light p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                      <h5 class="h5">Knowledge of languages</h5>
+
+                      <p>English:</p>
+                      <p>speak - no good</p>
+                      <p>write - good</p>
+                      <h5 class="h5">Hobbies:</h5>
+                      <p>Video Games, walk to nature and montains</p>
                     </div>
               </div>
               
@@ -80,24 +86,24 @@
     </header>
     <main>
       <section id="education">
-        <h2 class="h2 text-uppercase m-5 text-center text-dark">Education</h2>
+        <h2 class="h2 text-uppercase m-5 text-center text-dark font-weight-bold">Education</h2>
         <div class="container mx-auto text-center p-5" >
           <h3 class="h3 text-light mb-5">Software Engineering - Software University</h3>
           <div id="softuni" class="m-auto">
             <p class="mb-3"><img src="image/softuni.png" class="img-thumbnail" alt="logo"></p>
             <p class="text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
             <div>
-              <a class="diploma" href="#">My Diploma...</a>
+              <a class="diploma text-light font-weight-bold" href="#">My Diploma...</a>
             </div>
           </div>
         </div>
       </section>
 
       <section id="qualification" class="container-fluid text-center p-5">
-            <h2 class="h2 m-5 text-dark">QUALIFICATION</h2>
+            <h2 class="h2 m-5 text-dark font-weight-bold">QUALIFICATION</h2>
             <div class="container p-4">
               <div class="row p-3">
-                  <div class="card text-light m-3" style="width: 20rem;" id="js">
+                  <div class="card m-3" style="width: 20rem;" id="js">
                       <h3 class="card-header h3 text-light">JS</h3>
                       <div class="card-body">
                         <h4 class="card-title text-light"></h4>
@@ -150,10 +156,10 @@
       </section>
 
       <section id="projects" class="container-fluid ">
-          <h2 class="h2 text-dark text-center text-uppercase m-5">Projects</h2>
+          <h2 class="h2 text-dark text-center text-uppercase m-5 font-weight-bold">Projects</h2>
           <div class="container font-weight-bold">
             <div id="accordion">
-              <div class="card m-3" style="width: 20rem;">
+              <div class="card m-3 bg-light" style="width: 20rem;">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -171,10 +177,10 @@
                   </div>
                 </div>
               </div>
-              <div class="card m-3" style="width: 20rem;">
+              <div class="card m-3 bg-light" style="width: 20rem;">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-dark  font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       React JS - Project
                     </button>
                   </h5>
@@ -188,7 +194,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card m-3" style="width: 20rem;">
+              <div class="card m-3 bg-light" style="width: 20rem;">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -210,7 +216,7 @@
       </section>
 
       <section id="environment" >
-          <h2 class="h2 text-dark text-center text-uppercase m-5">Development Environments</h2>
+          <h2 class="h2 text-dark text-center text-uppercase m-5 font-weight-bold">Development Environments</h2>
           <div class="container text-center text-light p-5 my-3">
             <div class="row justify-content-between">
               <div class="jumbotron">
@@ -256,7 +262,7 @@
       </section>
       
     </main>
-    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center bg-dark" id="footer">
+    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center bg-primary" id="footer">
       <div class="text-light m-auto py-3">&copy; 2018 Powered by Pavel Runchev</div>
     </footer>
 

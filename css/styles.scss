@@ -48,8 +48,16 @@
   margin: 2rem;
 }
 
-@mixin background-layout {
-  background: linear-gradient(rgba(185,186,190,0.9), rgba(185,186,190,0.9));
+@mixin background-layout-blue {
+  background: linear-gradient(rgba(68,110,155,0.8), rgba(68,110,155,0.8));
+  -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+  box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+  border-radius: 1rem;
+}
+
+@mixin background-layout-gray {
+  background: linear-gradient(rgba(185,186,190,0.8), rgba(185,186,190,0.8));
   -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
   box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
@@ -93,12 +101,9 @@ body {
       padding: 7%;
 
       & > #header {
-        background: linear-gradient(rgba(185,186,190,0.9), rgba(185,186,190,0.9));
+        @include background-layout-blue();
+        background: radial-gradient(circle,rgba(185,186,190,0.8) 24%,  rgba(68,110,155,0.8) 54%);
         padding: 5%;
-        border-radius: 1rem;
-        -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
-        -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
-        box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
 
         & #image {
           cursor: pointer;
@@ -106,9 +111,9 @@ body {
           padding: 3px;
           border: 3px solid gray;
           border-radius: 50%;
-          -webkit-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.5);
-          -moz-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.5);
-          box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.5);
+          -webkit-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+          -moz-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+          box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
           &:active {
             transform: scale(1);
             transition-duration: 0.3s;
@@ -119,7 +124,8 @@ body {
         }
 
         & h1 {
-          background: linear-gradient(to top, rgba(33,33,33,1), rgba(99,99,99, 1)),  none;
+          background: linear-gradient(to top, rgba(150,150,150, 1), rgba(0,0,0, 1)),  none;
+          text-shadow: 3px 3px rgba(255,255,255, 1);
           //for Edge and FireFox
           background-clip: text;
           //For Chrome
@@ -129,13 +135,17 @@ body {
 
         & .right-hand:hover i,
         & .right-hand:hover a {
-          color: rgb(220,220,220);
+          color: rgb(50,50,50);
           cursor: pointer;
         }
 
+        & i { color: #fff; }
+
         & #front-end {
           cursor: pointer;
-          &:hover { color: rgb(220,220,220); }
+          color: rgb(255,255,255);
+          
+          &:hover { color: rgb(50,50,50); }
         }
         & .card div { font-size: 18px; }
       }
@@ -146,10 +156,11 @@ body {
         font-size: 20px;
         display: flex;
         justify-content: space-between;
+        color: rgb(240,240,240);
 
         & a:hover,
         & a:hover i{
-          color: rgb(240,240,240);
+          color: rgb(50,50,50);
           cursor: pointer;
         }
       }
@@ -168,7 +179,8 @@ body {
     #education {
       & > .container { 
         color: #fff;
-        @include background-layout(); 
+        @include background-layout-blue(); 
+        background: radial-gradient(circle,rgba(68,110,155,0.8) 59%, rgba(185,186,190,0.8) 94%);
         & div { font-size: 18px; } }
         & #softuni { width: 100%; 
         & img { width: 15%; } 
@@ -177,14 +189,16 @@ body {
 
     #qualification {
       & .container {
-        @include background-layout();
+        @include background-layout-gray();
+
         & .card {
           cursor: pointer;
-          background: rgb(148,148,148);
+          background: rgb(68,110,155);
           transition: background 0.4s ease-in, color 0.4s ease-in;
           animation: grow 0.4s ease-out;
           &:hover {
             background: rgb(50,50,50);
+            color: #fff;
             -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
             -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
             box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
@@ -218,18 +232,18 @@ body {
 
     #projects {
       & .container {
-        @include background-layout();
+        @include background-layout-blue();
         padding: 5%;
 
         & #accordion {
           display: flex;
           justify-content: space-between;
-          & .card { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
+          //& .card { background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2)); }
           & button { font-size: 22px; }
           & div,
           & a { 
             font-size: 18px; 
-            color: rgb(250,250,250);
+            color: rgb(68,110,155);
             cursor: pointer;
           }
 
@@ -241,7 +255,8 @@ body {
     #environment { 
       margin-bottom: 3rem;
       & > .container { 
-        @include background-layout();
+        @include background-layout-gray();
+        background: linear-gradient(128deg,rgba(185,186,190,0.8) 32%,  rgba(68,110,155,0.8) 72%);
         & .row {
           & .jumbotron {
             background: linear-gradient(rgba(185,186,190,0), rgba(185,186,190,0));
