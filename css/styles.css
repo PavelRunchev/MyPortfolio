@@ -29,6 +29,21 @@
   to {
     transform: scale(1); } }
 
+@keyframes transparency {
+  0% {
+    opacity: 0.8; }
+  25% {
+    opacity: 0.7; }
+  50% {
+    opacity: 0.6; }
+  75% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0.4;
+    -webkit-box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.89);
+    -moz-box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.89);
+    box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.89); } }
+
 #navigation {
   position: fixed;
   top: 0;
@@ -152,11 +167,10 @@ header {
   #qualification .container .card {
     cursor: pointer;
     background: #446e9b;
+    color: #fff;
     transition: background 0.4s ease-in, color 0.4s ease-in;
     animation: grow 0.4s ease-out; }
     #qualification .container .card:hover {
-      background: #323232;
-      color: #fff;
       -webkit-box-shadow: 0px 0px 31px -2px black;
       -moz-box-shadow: 0px 0px 31px -2px black;
       box-shadow: 0px 0px 31px -2px black;
@@ -164,7 +178,8 @@ header {
       transition-duration: 0.3s;
       animation: small 0.3s ease-in;
       animation-fill-mode: both;
-      animation-duration: 0.3s; }
+      animation-duration: 0.3s;
+      animation: transparency 0.3s ease-in 0.3s forwards; }
   #qualification .container .card-body {
     padding: 1rem; }
   #qualification .container p {
@@ -177,9 +192,8 @@ header {
     padding: 0.5rem 1rem;
     margin: 1rem 0; }
     #qualification .container .btn:hover {
-      color: #446e73;
-      background: white;
-      border-color: #446e73; }
+      color: black;
+      border-color: black; }
 
 @media screen and (max-width: 1200px) {
   #qualification .container .row {
