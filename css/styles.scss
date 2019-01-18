@@ -5,6 +5,7 @@
 @import 'navigation';
 @import 'header';
 @import 'education';
+@import 'skills';
 @import 'qualification';
 @import 'projects';
 @import 'environment';
@@ -12,9 +13,9 @@
 
 body {
   position: relative;
-  background-image: url("../image/8601.jpg");
-  background-size: contain;
-
+  //background-image: url("../image/8601.jpg");
+  //background-size: contain;
+  background: rgb(238,238,238);
     footer {
       background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0.15));
       position: relative;

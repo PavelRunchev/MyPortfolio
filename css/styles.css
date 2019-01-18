@@ -31,27 +31,51 @@
 
 @keyframes transparency {
   0% {
-    opacity: 0.8; }
-  25% {
-    opacity: 0.7; }
-  50% {
-    opacity: 0.6; }
-  75% {
-    opacity: 0.5; }
+    opacity: 1; }
   100% {
-    opacity: 0.4;
-    -webkit-box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.89);
-    -moz-box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.89);
-    box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.89); } }
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.6); } }
+
+@keyframes shakeIt {
+  0% {
+    transform: translate(0, 0); }
+  25% {
+    transform: translate(-2rem, 0); }
+  50% {
+    transform: translate(-4rem, 0); }
+  75% {
+    transform: translate(-2rem, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes shake {
+  0% {
+    transform: skewX(0deg); }
+  25% {
+    transform: skewX(3deg); }
+  50% {
+    transform: skewX(0deg); }
+  75% {
+    transform: skewX(-3deg); }
+  100% {
+    transform: skewX(0deg); } }
 
 #navigation {
   position: fixed;
+  padding: 0.3rem 0;
   top: 0;
   z-index: 100; }
   #navigation .navbar-brand {
     margin-right: 11%; }
   #navigation .navbar-collapse > ul > li > a {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #000;
+    border-bottom: 2px solid #949494; }
+    #navigation .navbar-collapse > ul > li > a:hover {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
   #navigation li {
     opacity: 0;
     animation: navitemin 0.5s ease forwards; }
@@ -76,12 +100,12 @@ header {
   margin-top: 1%;
   padding: 7%; }
   header > #header {
-    background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
     -webkit-box-shadow: 0px 0px 31px -2px black;
     -moz-box-shadow: 0px 0px 31px -2px black;
     box-shadow: 0px 0px 31px -2px black;
     border-radius: 1rem;
-    background: radial-gradient(circle, rgba(185, 186, 190, 0.8) 1%, rgba(68, 110, 155, 0.8) 34%);
+    background: linier-gradient(circle, rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
     padding: 5%; }
     header > #header #image {
       cursor: pointer;
@@ -106,15 +130,15 @@ header {
       -webkit-text-fill-color: transparent; }
     header > #header .right-hand:hover i,
     header > #header .right-hand:hover a {
-      color: #323232;
+      color: white;
       cursor: pointer; }
     header > #header i {
-      color: #fff; }
+      color: #000; }
     header > #header #front-end {
       cursor: pointer;
-      color: white; }
+      color: black; }
       header > #header #front-end:hover {
-        color: #323232; }
+        color: white; }
     header > #header .card div {
       font-size: 18px; }
   header #data {
@@ -123,10 +147,10 @@ header {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-    color: #f0f0f0; }
+    color: black; }
     header #data a:hover,
     header #data a:hover i {
-      color: #323232;
+      color: white;
       cursor: pointer; }
   header #see-more {
     color: #fff;
@@ -142,31 +166,70 @@ header {
     text-align: left;
     margin-left: 30%; } }
 
-#education > .container {
-  color: #fff;
-  background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
+#education {
+  cursor: pointer; }
+  #education > .container {
+    color: #000;
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
+    border-radius: 1rem; }
+    #education > .container div {
+      font-size: 18px; }
+    #education > .container #softuni {
+      width: 100%; }
+    #education > .container img {
+      width: 15%; }
+  #education:hover {
+    animation: shakeIt 0.5s ease-in-out 0.3s forwards; }
+  #education #diploma {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000; }
+    #education #diploma:hover {
+      color: #fff; }
+
+#skills > .container {
+  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
   -webkit-box-shadow: 0px 0px 31px -2px black;
   -moz-box-shadow: 0px 0px 31px -2px black;
   box-shadow: 0px 0px 31px -2px black;
-  border-radius: 1rem;
-  background: radial-gradient(circle, rgba(68, 110, 155, 0.8) 59%, rgba(185, 186, 190, 0.8) 94%); }
-  #education > .container div {
-    font-size: 18px; }
+  border-radius: 1rem; }
+  #skills > .container .subheading {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    color: #000; }
+  #skills > .container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #skills > .container ul li a {
+      font-size: 60px;
+      text-decoration: none;
+      cursor: pointer;
+      color: #000;
+      font-style: normal;
+      margin: 0.7rem; }
+      #skills > .container ul li a:hover {
+        color: #fff; }
 
-#education #softuni {
-  width: 100%; }
-  #education #softuni img {
-    width: 15%; }
+@media screen and (max-width: 1000px) {
+  #skills .container ul {
+    flex-direction: column;
+    text-align: center; }
+    #skills .container ul li {
+      display: block; } }
 
 #qualification .container {
-  background: linear-gradient(rgba(185, 186, 190, 0.8), rgba(185, 186, 190, 0.8));
+  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
   -webkit-box-shadow: 0px 0px 31px -2px black;
   -moz-box-shadow: 0px 0px 31px -2px black;
   box-shadow: 0px 0px 31px -2px black;
   border-radius: 1rem; }
   #qualification .container .card {
     cursor: pointer;
-    background: #446e9b;
     color: #fff;
     transition: background 0.4s ease-in, color 0.4s ease-in;
     animation: grow 0.4s ease-out; }
@@ -230,14 +293,17 @@ header {
       width: 95%; } }
 
 #environment {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  cursor: pointer; }
+  #environment:hover {
+    animation: shake 1.5s ease-in-out 0.3s forwards; }
   #environment > .container {
-    background: linear-gradient(rgba(185, 186, 190, 0.8), rgba(185, 186, 190, 0.8));
+    overflow: hidden;
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
     -webkit-box-shadow: 0px 0px 31px -2px black;
     -moz-box-shadow: 0px 0px 31px -2px black;
     box-shadow: 0px 0px 31px -2px black;
-    border-radius: 1rem;
-    background: linear-gradient(128deg, rgba(185, 186, 190, 0.8) 32%, rgba(68, 110, 155, 0.8) 72%); }
+    border-radius: 1rem; }
     #environment > .container .row .jumbotron {
       background: linear-gradient(rgba(185, 186, 190, 0), rgba(185, 186, 190, 0));
       width: 30%;
@@ -361,8 +427,7 @@ body #java .inner-java {
 
 body {
   position: relative;
-  background-image: url("../image/8601.jpg");
-  background-size: contain; }
+  background: #eeeeee; }
   body footer {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     position: relative;

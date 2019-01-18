@@ -21,8 +21,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="">
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-primary" id="navigation">   
-        <a class="link h4 mx-5 text-light">Portfolio</a>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark" id="navigation">   
+        <a class="link h4 mx-5 text-dark">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,6 +34,9 @@
                     <li class="nav-item mr-4">
                       <a class="nav-link" href="#education">Education</a>
                     </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#skills">Skills</a>
+                      </li>
                     <li class="nav-item mr-4">
                       <a class="nav-link" href="#qualification">Qualification</a>
                     </li>
@@ -60,7 +63,7 @@
             <a class="link"><i class="fas fa-phone"></i> 0879999436</a>
           </div>
           <div id="accordion">
-              <div class="card bg-primary">
+              <div class="card bg-dark">
                   <div class="card-header" id="headingFour">
                     <h5 class="mb-0">
                       <button class="btn btn-outline-light collapsed" onclick="setTimeout(autoClosedSeeMore, 6000);" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -69,15 +72,16 @@
                     </h5>
                     
                   </div>
-                  <div class="text-center text-light p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit... </div>
+                  <div class="text-center text-light p-3"></div>
                     <div class="card-body collapse text-left text-light p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
                       <h5 class="h5">Knowledge of languages</h5>
 
                       <p>English:</p>
                       <p>speak - no good</p>
                       <p>write - good</p>
-                      <h5 class="h5">Hobbies:</h5>
-                      <p>Video Games, walk to nature and montains</p>
+                      <h5 class="h5">Interests:</h5>
+                      <p>Apart from being a Web JS Developer, I enjoy most of my time being outdoors. In the cold and dark days i love watch fantasy genre movies and astronomy or playing video games with adventure and logically styles. During the warmer months I enjoy the fresh mountain air exploring strange places related to interesting historical events.</p>
+                      <p>During my free time i exploring the latest technology advancements in the front-end web development world.</p>
                     </div>
               </div>
               
@@ -86,24 +90,60 @@
     </header>
     <main>
       <section id="education" class="p-5">
-        <h2 class="h2 text-uppercase m-5 text-center text-dark font-weight-bold">Education</h2>
-        <div class="container mx-auto text-center p-5" >
-          <h3 class="h3 text-light mb-5">Software Engineering - Software University</h3>
+        <h2 class="h2 text-uppercase m-5 text-center text-dark font-weight-bold">EDUCATION</h2>
+        <div class="container mx-auto text-center p-5">
+          <h3 class="h3 text-dark mb-5">Software Engineering - Software University</h3>
           <div id="softuni" class="m-auto">
             <p class="mb-3"><img src="image/softuni.png" class="img-thumbnail" alt="logo"></p>
             <p class="text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
             <div>
-              <a class="diploma text-light font-weight-bold" href="#">My Diploma...</a>
+              <a id="diploma" href="#">Diploma Sertificate...</a>
             </div>
           </div>
         </div>
       </section>
 
+      <section id="skills" class="p-5">
+        <h2 class="h2 text-uppercase m-5 text-center text-dark font-weight-bold">SKILLS</h2>
+        <div class="container p-5">
+          <div class="subheading text-center font-weight-bold font-italic">Programming Languages &amp; Tools</div>
+          <ul>
+              <li class="list-inline-item">
+                <a href="#" class="fab fa-html5 w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-css3-alt w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-js-square w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-angular w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-react w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-node-js w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-sass w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-gulp w-25"></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" class="fab fa-npm w-25"></a>
+              </li>
+          </ul>
+        </div>
+      </section>
+
       <section id="qualification" class="container-fluid text-center p-5">
             <h2 class="h2 m-5 text-dark font-weight-bold">QUALIFICATION</h2>
-            <div class="container p-4">
+            <div class="container p-4">             
               <div class="row p-3">
-                  <div class="card m-3" style="width: 20rem;" id="js">
+                  <div class="card m-3 bg-primary" style="width: 20rem;" id="js">
                       <h3 class="card-header h3">JS</h3>
                       <div class="card-body">
                         <h4 class="card-title"></h4>
@@ -111,7 +151,7 @@
                         <a href="./views/js.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                       </div>
                   </div>
-                  <div class="card m-3" style="width: 20rem;" id="js-plugins">
+                  <div class="card m-3 bg-secondary" style="width: 20rem;" id="js-plugins">
                     <h3 class="card-header h3">JS Library</h3>
                     <div class="card-body">
                       <h4 class="card-title"></h4>
@@ -119,7 +159,7 @@
                       <a href="./views/js-library.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                     </div>
                   </div>
-                  <div class="card m-3" style="width: 20rem;" id="html">
+                  <div class="card m-3 bg-primary" style="width: 20rem;" id="html">
                         <h3 class="card-header h3">HTML</h3>
                         <div class="card-body">
                           <h4 class="card-title"></h4>
@@ -127,7 +167,7 @@
                           <a href="./views/html.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card m-3" style="width: 20rem;" id="css">
+                  <div class="card m-3 bg-secondary" style="width: 20rem;" id="css">
                         <h3 class="card-header h3">CSS</h3>
                         <div class="card-body">
                           <h4 class="card-title"></h4>
@@ -135,7 +175,7 @@
                           <a href="./views/css.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card m-3" style="width: 20rem;" id="csharp">
+                  <div class="card m-3 bg-dark" style="width: 20rem;" id="csharp">
                         <h3 class="card-header h3">C#</h3>
                         <div class="card-body">
                           <h4 class="card-title"></h4>
@@ -143,7 +183,7 @@
                           <a href="./views/csharp.html" class="btn btn-outline-light font-weight-bold">See more...</a>
                         </div>
                   </div>
-                  <div class="card m-3" style="width: 20rem;" id="java">
+                  <div class="card m-3 bg-secondary" style="width: 20rem;" id="java">
                     <h3 class="card-header h3">Java</h3>
                     <div class="card-body">
                       <h4 class="card-title"></h4>
@@ -156,7 +196,7 @@
       </section>
 
       <section id="projects" class="container-fluid p-5">
-          <h2 class="h2 text-dark text-center text-uppercase m-5 font-weight-bold">Projects</h2>
+          <h2 class="h2 text-dark text-center text-uppercase m-5 font-weight-bold">PROJECTS</h2>
           <div class="container font-weight-bold">
             <div id="accordion">
               <div class="card m-3 bg-light">
@@ -189,7 +229,7 @@
                   <div class="card-body text-dark">
                     I implement tehnology for create project - HTML5, Bootstrap, Angular 2, Redux!
                       <div class="text-dark">Link -> <a onclick="window.open('https://github.com/PavelRunchev/React-Defense')" class="font-italic">Free Gems Catalog</a></div>
-                      <div class="text-dark">Grade - <span class="font-italic">5.85</span></div>
+                      <div class="text-dark">Grade - <span class="font-italic">5.80</span></div>
                       <div class="text-dark">Sertificate -> <a onclick="window.open('sertificate/react-fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
                   </div>
                 </div>
@@ -217,7 +257,7 @@
 
       <section id="environment" class="p-5">
           <h2 class="h2 text-dark text-center text-uppercase m-5 font-weight-bold">Development Environments</h2>
-          <div class="container text-center text-light p-5 my-3">
+          <div class="container text-center text-light p-5">
             <div class="row justify-content-between">
               <div class="jumbotron">
                 <h5 class="h5 text-dark font-weight-bold mb-2">JS</h5>
@@ -262,8 +302,8 @@
       </section>
       
     </main>
-    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center bg-primary" id="footer">
-      <div class="text-light m-auto py-3">&copy; 2018 Powered by Pavel Runchev</div>
+    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center bg-dark" id="footer">
+      <div class="text-dark font-weight-bold m-auto py-3">&copy; 2018 Powered by Pavel Runchev</div>
     </footer>
 
     <!-- loading jQuery -->
