@@ -1,4 +1,4 @@
-@import url("../fontawesome/css/all.min.css");
+@import url("../fontawesome/css/all.css");
 @keyframes navitemin {
   from { }
   to {
@@ -94,7 +94,11 @@
 
 @media screen and (max-width: 991px) {
   #navigation {
-    position: relative; } }
+    position: relative; }
+    #navigation .navbar-collapse > ul > li > a {
+      border-bottom: none; }
+      #navigation .navbar-collapse > ul > li > a:hover {
+        border-bottom: none; } }
 
 header {
   margin-top: 1%;
@@ -131,7 +135,8 @@ header {
     header > #header .right-hand:hover i,
     header > #header .right-hand:hover a {
       color: white;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
     header > #header i {
       color: #000; }
     header > #header #front-end {
@@ -427,8 +432,16 @@ body #java .inner-java {
 
 body {
   position: relative;
+  top: 0;
+  left: 0;
   background: #eeeeee; }
   body footer {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     position: relative;
-    z-index: 100; }
+    z-index: 100;
+    font-size: 18px; }
+    body footer .container {
+      display: flex;
+      flex-direction: column; }
+      body footer .container .fa-suse {
+        font-size: 35px; }
