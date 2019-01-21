@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change View Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/otherView.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="sideNav">   
+            <a class="link h4 mx-5 text-dark font-weight-bold">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../image/2.gif" data-src="../image/DSCF0009.JPG" class="mb-4" id="image" alt="photo">
+
+            <ul class="navbar-nav">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link active" href="#about">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#hr-education">Education</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#hr-skills">Skills</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#qualification">Qualification</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#environment">Environment</a>
+                    </li>
+            </ul>
+    </nav>
+
+    <div class="container-fluid" id="about"> 
+
+        <section class="about">
+            <h1 class="h1">Pavel Runchev</h1>
+            <p class="">44 Angel Kunchev STREET, <i class="fas fa-phone"></i> 0879999436, <i class="fas fa-envelope"></i> PavelRunchev@gmail.com</p>
+            <a class="font-weight-bold" href="../index.html"><i class="fas fa-hand-point-right mr-3"></i> Full Stack Developer</a>
+            <p>I’m a passionate developer who tends to be mindful for the entire product lifetime. I really enjoy being part of a team which creates a friendly and helpful environment. I truly believe our software can make a profound impact for the end users.</p>
+            <div class="row">
+                <i class="fab fa-github"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-skype"></i><i class="fab fa-facebook-f"></i>
+            </div>
+        </section>
+
+        <hr id="hr-education">
+
+        <section id="education">
+            <h2 class="h2 text-uppercase text-dark font-weight-bold">EDUCATION</h2>
+            <div class="container">
+                <h3 class="h3 text-dark mb-5">Software Engineering - Software University</h3>
+                <div id="softuni" class="m-auto">
+                    <img src="../image/softuni.png" class="img-thumbnail" alt="logo">
+                    <p class="inner text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</p>
+                    
+                    <a id="diploma" href="#" class="font-weight-bold"><i class="fas fa-graduation-cap"></i> Diploma Sertificate...</a>
+                </div>
+            </div>
+        </section>
+
+        <hr id="hr-skills">
+
+        <section id="skills">
+                <h2 class="h2 text-uppercase text-dark font-weight-bold">SKILLS</h2>           
+                <h3 class="h3 font-weight-bold font-italic mb-5">Programming Languages &amp; Tools</h3>
+                <ul>
+                        <li class="list-inline-item">
+                            <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5');" class="fab fa-html5 w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3');" class="fab fa-css3-alt w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://developer.mozilla.org/bg/docs/Web/JavaScript');" class="fab fa-js-square w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://angular.io/');" class="fab fa-angular w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://reactjs.org/');" class="fab fa-react w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://nodejs.org/en/');" class="fab fa-node-js w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://sass-lang.com/');" class="fab fa-sass w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://gulpjs.com/');" class="fab fa-gulp w-25"></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a onclick="window.open('https://www.npmjs.com/');" class="fab fa-npm w-25"></a>
+                        </li>
+                </ul>
+        </section>
+
+        
+
+        <hr/>
+        
+    </div>
+    <!-- loading jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- loading Popper.min.js - needed after respone navigation click show nav menu -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scrolling.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+        let allimages= document.getElementsByTagName('img')[0];        
+        allimages.setAttribute('src', allimages.getAttribute('data-src'));                 
+        }, false)
+    </script>
+</body>
+</html>
