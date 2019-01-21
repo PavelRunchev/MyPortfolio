@@ -67,15 +67,17 @@
   padding: 0.3rem 0;
   top: 0;
   z-index: 100; }
+  #navigation > a {
+    color: #fff; }
+    #navigation > a:hover {
+      color: #000; }
   #navigation .navbar-brand {
     margin-right: 11%; }
   #navigation .navbar-collapse > ul > li > a {
     font-size: 20px;
-    color: #000;
-    border-bottom: 2px solid #949494; }
+    color: #fff; }
     #navigation .navbar-collapse > ul > li > a:hover {
-      color: #fff;
-      border-bottom: 2px solid #fff; }
+      color: #000; }
   #navigation li {
     opacity: 0;
     animation: navitemin 0.5s ease forwards; }
@@ -132,18 +134,12 @@ header {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    header > #header .right-hand:hover i,
-    header > #header .right-hand:hover a {
-      color: white;
-      cursor: pointer;
-      text-decoration: none; }
-    header > #header i {
-      color: #000; }
     header > #header #front-end {
       cursor: pointer;
-      color: black; }
+      text-decoration: none;
+      color: #000; }
       header > #header #front-end:hover {
-        color: white; }
+        color: #426b96; }
     header > #header .card div {
       font-size: 18px; }
   header #data {
@@ -152,10 +148,10 @@ header {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-    color: black; }
+    color: #000; }
     header #data a:hover,
     header #data a:hover i {
-      color: white;
+      color: #426b96;
       cursor: pointer; }
   header #see-more {
     color: #fff;
@@ -175,7 +171,7 @@ header {
   cursor: pointer; }
   #education > .container {
     color: #000;
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
     -webkit-box-shadow: 0px 0px 31px -2px black;
     -moz-box-shadow: 0px 0px 31px -2px black;
     box-shadow: 0px 0px 31px -2px black;
@@ -192,9 +188,9 @@ header {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    color: #000; }
+    color: #fff; }
     #education #diploma:hover {
-      color: #fff; }
+      color: #000; }
 
 #skills > .container {
   background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
