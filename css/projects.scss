@@ -1,0 +1,38 @@
+@import 'mixins';
+
+#projects {
+    & .container {
+      @include background-layout-blue();
+      padding: 5%;
+
+      & #accordion {
+        display: flex;
+        justify-content: space-between;
+
+        & .card {
+          width: 30%;
+          & button { font-size: 22px; }
+          & div,
+          & a { 
+            font-size: 18px; 
+            color: rgb(68,110,155);
+            cursor: pointer;
+        }
+
+        a:hover { color: rgb(39,39,39); }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  #projects {
+    & .container {
+      & #accordion {
+        flex-direction: column;
+        text-align: left;
+        & .card { width: 95%; }
+      }
+    }
+  }
+}

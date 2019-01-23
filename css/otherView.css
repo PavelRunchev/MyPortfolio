@@ -1,4 +1,4 @@
-
+@import url('../fontawesome/css/all');
 
 @media (min-width: 992px) {
     #sideNav {
@@ -49,7 +49,9 @@
         font-weight: bold;
         cursor: pointer;
     }
-    #sideNav ul li a:hover { color: #FFF; }              
+    #sideNav ul li a:hover { color: #FFF; }     
+    
+    #sideNav .development { margin-top: 65%; font-size: 12; }
 
      /*
     //Section ABOUT
@@ -66,23 +68,27 @@
     }
 
     .container-fluid .about h1 { 
-        color: #bdcebe; 
+        color: #000; 
         text-transform: uppercase;
         font-size: 60px;
     }
-    .container-fluid .about > p:nth-of-type(1) {
+    .container-fluid .about h1 > span { color: #bdcebe; }
+
+    .container-fluid .about > p:nth-of-type(1),
+    .container-fluid .about > p:nth-of-type(2) {
         font-size: 30px;
         text-transform: uppercase;
+        margin-bottom: 0;
     }
 
-    .container-fluid .about p:nth-of-type(2) {
+    .container-fluid .about > p:nth-of-type(2) { margin-bottom: 2rem; }
+
+    .container-fluid .about p:nth-of-type(3) {
         font-size: 18px;
         margin: 5% 0;
     }
 
-    .container-fluid .about .row {
-        margin-top: 15%;
-    }
+    .container-fluid .about .row { margin-top: 15%; }
 
     .container-fluid .about > a {
         text-decoration: none;
@@ -94,7 +100,7 @@
 
     .container-fluid .about .row{ margin-bottom: 10rem; }
 
-    .container-fluid .about .row i {
+    .container-fluid .about .row a {
         cursor: pointer;
         font-size: 26px;
         border-radius: 100%;
@@ -110,18 +116,16 @@
         line-height: 1;
     }
 
-    .container-fluid .about .row .fa-facebook-f {
-        padding: 0.9rem 1.3rem;
-    }
-
-    .container-fluid .about .row i:hover { background: #bdcebe; }
+    .container-fluid .about .row .fa-facebook-f { padding: 0.9rem 1.3rem; }
+    .container-fluid .about .row .fa-google-plus-g { padding: 0.9rem 0.7rem; }
+    .container-fluid .about .row a:hover { background: #bdcebe; }
 
     /*
     //Section EDUCATION
     */
     #education { 
         text-align: left; 
-        margin: 20% 0;
+        margin: 15% 0 20% 0;
     }
 
     #education h2 { margin: 5% 0; }
@@ -165,4 +169,61 @@
     #skills ul { padding: 0; }
     #skills ul li a { font-size: 50px; margin: 0 0.5rem; cursor: pointer; }
     #skills ul li a:hover { color: #bdcebe; }
+
+    /*
+    //Section QUALIFICATION
+    */
+    #qualification {
+        text-align: left; 
+        margin: 13% 0 5% 0;
+    }
+
+    #qualification > h2 { margin-bottom: 6%; }
+    #qualification p { font-size: 22px; }
+    #qualification p > a {
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 18px;
+        color: #000;
+    }
+
+    #qualification #accordion .card { background: rgba(189,206,190,0.5); }
+    /* #qualification #accordion .card .card-body { background: rgba(189,206,190,0.5); } */
+
+    #qualification p > a:hover { font-weight: bold; }
+    #qualification p > i { font-size: 28px; }
+
+    /*
+    //SECTION PROJECTS
+    */
+    #projects {
+        text-align: left; 
+        margin: 10% 0 15% 0;
+    }
+
+    #projects a { 
+        cursor: pointer;
+        color: #bdcebe; 
+    }
+
+    #projects a:hover { color: #000; }
+
+    /*
+    //SECTION ENVIRONMENT
+    */
+
+    #environment {
+        text-align: left; 
+        margin: 12% 0 30% 0;
+    }
+
+    #environment a { cursor: pointer; text-decoration: none; }
+    #environment a:hover { color: #bdcebe; }
+
+    #environment img,
+    #qualification img {
+        width: 28px;
+        padding-bottom: 7px;
+    }
 }

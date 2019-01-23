@@ -26,9 +26,8 @@ body {
       & .container {
         display: flex;
         flex-direction: column;
-        & .fa-suse { 
-          font-size: 35px;         
-        }
+
+        & i { font-size: 20px; }
       }    
     }
 }

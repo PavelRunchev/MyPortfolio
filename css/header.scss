@@ -1,0 +1,83 @@
+@import 'mixins';
+
+header {
+    margin-top: 1%;
+    padding: 7%;
+
+    & > #header {
+      @include background-layout-gray();
+      background: linier-gradient(circle, rgba(68,110,155,0.8), rgba(68,110,155,0.8));
+      padding: 5%;
+
+      & #image {
+        cursor: pointer;
+        max-width: 25%;
+        padding: 3px;
+        border: 3px solid gray;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+        -moz-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+        box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+        &:active {
+          transform: scale(1);
+          transition-duration: 0.3s;
+          animation: growImage 0.3s ease-in;
+          animation-fill-mode: both;
+          animation-duration: 0.3s;
+        }
+      }
+
+      & h1 {
+        background: linear-gradient(to top, rgba(150,150,150, 1), rgba(0,0,0, 1)),  none;
+        text-shadow: 3px 3px rgba(255,255,255, 1);
+        //for Edge and FireFox
+        background-clip: text;
+        //For Chrome
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      & #front-end {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;       
+        &:hover { color: rgb(66,107,150); }
+      }
+      & .card div { font-size: 18px; }
+    }
+
+    & #data {
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      color: #000;
+
+      & a:hover,
+      & a:hover i{
+        color: rgb(66,107,150);
+        cursor: pointer;
+      }
+    }
+
+    & #see-more { 
+      color: #fff; 
+      border-color: #fff; 
+      &:hover {
+        color: rgb(33,33,33); 
+        border-color: #fff; 
+        background: #fff;
+      }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    header {
+        & #data {
+            flex-direction: column;
+            text-align: left;
+            margin-left: 30%;
+        }
+    }
+}

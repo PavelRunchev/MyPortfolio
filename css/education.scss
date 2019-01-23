@@ -1,0 +1,30 @@
+@import 'mixins';
+
+#education {
+    cursor: pointer;
+    & > .container { 
+      color: #000;
+      @include background-layout-blue(); 
+      & div { font-size: 18px; } 
+      & #softuni { 
+        width: 100%; 
+        color: #fff;
+        font-size: 20px;
+      }
+      & img { width: 15%; } 
+      
+    } 
+    &:hover {
+      animation: shakeIt 0.5s ease-in-out 0.3s forwards;
+    }
+
+    & #diploma {
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      color: #fff;
+      &:hover { color: #000; }
+    }
+}
+
+  

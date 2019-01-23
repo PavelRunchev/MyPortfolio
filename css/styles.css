@@ -179,7 +179,9 @@ header {
     #education > .container div {
       font-size: 18px; }
     #education > .container #softuni {
-      width: 100%; }
+      width: 100%;
+      color: #fff;
+      font-size: 20px; }
     #education > .container img {
       width: 15%; }
   #education:hover {
@@ -396,13 +398,14 @@ body #csharp .border {
       color: #272727; }
 
 body #csharp img {
-  width: 3%;
+  width: 4%;
   margin-right: 3%;
-  border-radius: 50%; }
+  border-radius: 0.3rem;
+  padding-bottom: 7px; }
 
 body #csharp h2 {
   font-weight: bold;
-  font-size: 45px;
+  font-size: 50px;
   text-shadow: 1px 1px white; }
 
 body .link {
@@ -439,5 +442,5 @@ body {
     body footer .container {
       display: flex;
       flex-direction: column; }
-      body footer .container .fa-suse {
-        font-size: 35px; }
+      body footer .container i {
+        font-size: 20px; }
