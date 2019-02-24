@@ -151,7 +151,7 @@
         padding-bottom: 0;
     }
 
-    #diploma { color: #000; text-decoration: none; }
+    #diploma { cursor: pointer; color: #000; text-decoration: none; }
     #diploma:hover { color: #bdcebe; }
 
     /*
