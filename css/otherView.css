@@ -18,6 +18,9 @@
         height: 100vh;
         padding-top: 2rem;
     }
+
+    #sideNav > a { text-decoration: none; cursor: pointer; }
+    #sideNav > a:hover { color: #fff; }
         
     #image {
         cursor: pointer;
