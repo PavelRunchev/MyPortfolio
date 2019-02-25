@@ -91,6 +91,7 @@
     .container-fluid .about .row { margin-top: 15%; }
 
     .container-fluid .about > a {
+        cursor: pointer;
         text-decoration: none;
         color: #bdcebe;
         color: #000;
