@@ -1,6 +1,7 @@
 @import 'mixins';
 
 #skills {   
+    & > h2 { margin: 10% 0; }
     & > .container {
         @include background-layout-gray(); 
         & .subheading { 
@@ -37,6 +38,17 @@
                 text-align: center;
                 & li { display: block; }
             }
+        }       
+    }
+}
+
+@media screen and (max-width: 500px){
+    #skills {
+        & > h2 { font-size: 22px; }
+        & .container {
+            width: 90%;
+            & .subheading { font-size: 16px; }
+            & ul { padding-left: 0; }
         }       
     }
 }

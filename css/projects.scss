@@ -1,6 +1,7 @@
 @import 'mixins';
 
 #projects {
+    & > h2 { margin: 10% 0; }
     & .container {
       @include background-layout-blue();
       padding: 5%;
@@ -31,8 +32,14 @@
       & #accordion {
         flex-direction: column;
         text-align: left;
-        & .card { width: 95%; }
+        & .card { width: 100%; }
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #projects {
+    & > h2 { font-size: 22px; }
   }
 }

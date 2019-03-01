@@ -68,6 +68,7 @@
   top: 0;
   z-index: 100; }
   #navigation > a {
+    text-decoration: none;
     color: #fff; }
     #navigation > a:hover {
       color: #000; }
@@ -103,8 +104,7 @@
         border-bottom: none; } }
 
 header {
-  margin-top: 1%;
-  padding: 7%; }
+  margin-top: 1%; }
   header > #header {
     background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
     -webkit-box-shadow: 0px 0px 31px -2px black;
@@ -115,7 +115,7 @@ header {
     padding: 5%; }
     header > #header #image {
       cursor: pointer;
-      max-width: 25%;
+      width: 14rem;
       padding: 3px;
       border: 3px solid gray;
       border-radius: 50%;
@@ -162,14 +162,49 @@ header {
       background: #fff; }
 
 @media screen and (max-width: 1200px) {
-  header #data {
+  header #header #data {
     flex-direction: column;
     text-align: left;
+    margin-left: 35%; } }
+
+@media screen and (max-width: 800px) {
+  header {
+    margin-top: 5%; } }
+
+@media screen and (max-width: 500px) {
+  header #header > #image {
+    width: 50%;
+    max-width: unset; }
+  header #header #data {
+    margin-left: 24%; } }
+
+@media screen and (max-width: 400px) {
+  header #header > #image {
+    width: 60%;
+    max-width: unset; }
+  header #header h1 {
+    text-align: left;
+    font-size: 26px; }
+  header #header h5 {
+    text-align: left;
+    font-size: 16px; }
+  header #header #data {
+    margin-left: 0;
+    font-size: 16px; }
+  header #header #accordion .card .card-header h5 #see-more {
     margin-left: 30%; } }
+
+@media screen and (max-width: 270px) {
+  header #header #data {
+    font-size: 10px; } }
 
 #education {
   cursor: pointer; }
+  #education > h2 {
+    margin: 10% 0;
+    font-size: 22px; }
   #education > .container {
+    padding: 5%;
     color: #000;
     background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
     -webkit-box-shadow: 0px 0px 31px -2px black;
@@ -183,7 +218,7 @@ header {
       color: #fff;
       font-size: 20px; }
     #education > .container img {
-      width: 15%; }
+      width: 16%; }
   #education:hover {
     animation: shakeIt 0.5s ease-in-out 0.3s forwards; }
   #education #diploma {
@@ -193,6 +228,15 @@ header {
     color: #fff; }
     #education #diploma:hover {
       color: #000; }
+
+@media screen and (max-width: 500px) {
+  #education .container {
+    width: 90%; }
+    #education .container img {
+      width: 30%; } }
+
+#skills > h2 {
+  margin: 10% 0; }
 
 #skills > .container {
   background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
@@ -224,6 +268,19 @@ header {
     text-align: center; }
     #skills .container ul li {
       display: block; } }
+
+@media screen and (max-width: 500px) {
+  #skills > h2 {
+    font-size: 22px; }
+  #skills .container {
+    width: 90%; }
+    #skills .container .subheading {
+      font-size: 16px; }
+    #skills .container ul {
+      padding-left: 0; } }
+
+#qualification > h2 {
+  margin: 10% 0; }
 
 #qualification .container {
   background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
@@ -266,6 +323,13 @@ header {
     display: flex;
     justify-content: space-around; } }
 
+@media screen and (max-width: 500px) {
+  #qualification > h2 {
+    font-size: 22px; } }
+
+#projects > h2 {
+  margin: 10% 0; }
+
 #projects .container {
   background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
   -webkit-box-shadow: 0px 0px 31px -2px black;
@@ -293,11 +357,17 @@ header {
     flex-direction: column;
     text-align: left; }
     #projects .container #accordion .card {
-      width: 95%; } }
+      width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  #projects > h2 {
+    font-size: 22px; } }
 
 #environment {
   margin-bottom: 3rem;
   cursor: pointer; }
+  #environment > h2 {
+    margin: 10% 0; }
   #environment:hover {
     animation: shake 1.5s ease-in-out 0.3s forwards; }
   #environment > .container {
@@ -359,6 +429,12 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around; } }
+
+@media screen and (max-width: 500px) {
+  #environment > h2 {
+    font-size: 22px; }
+  #environment > .container {
+    width: 90%; } }
 
 body #js-library .border,
 body #javascript .border,
@@ -444,3 +520,7 @@ body {
       flex-direction: column; }
       body footer .container i {
         font-size: 20px; }
+
+@media screen and (max-width: 500px) {
+  #footer {
+    font-size: 12px; } }

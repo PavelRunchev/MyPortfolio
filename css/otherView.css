@@ -1,12 +1,16 @@
 @import url('../fontawesome/css/all');
 
-@media (min-width: 992px) {
+body {
+    margin: 0;
+    padding: 0;
+}
+
     #sideNav {
         background: #bdcebe;
         text-align: center;
         position: fixed;
         top: 0;
-        left: 0;
+        left: 0;    
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -24,7 +28,7 @@
         
     #image {
         cursor: pointer;
-        max-width: 80%;
+        width: 60%;
         padding: 3px;
         margin: 10% 0;
         border: 3px solid gray;
@@ -54,7 +58,11 @@
     }
     #sideNav ul li a:hover { color: #FFF; }     
     
-    #sideNav .development { margin-top: 65%; font-size: 12; }
+    #sideNav .development {
+        position: relative;
+        bottom: -18rem;
+        font-size: 12px; 
+    }
 
      /*
     //Section ABOUT
@@ -64,7 +72,7 @@
         box-sizing: border-box;
         padding: 10% 5% 0 10%;
         margin: 0;
-        width: 82.15%;
+        width: 76%;
         position: relative;
         top: 0;
         left: 21rem;
@@ -100,9 +108,10 @@
         color: #000;
         font-size: 18px;
     }
+    
     .container-fluid .about a:hover { color: #bdcebe; }
 
-    .container-fluid .about .row{ margin-bottom: 10rem; }
+    .container-fluid .about .row { margin-bottom: 10rem; }
 
     .container-fluid .about .row a {
         cursor: pointer;
@@ -230,4 +239,24 @@
         width: 28px;
         padding-bottom: 7px;
     }
+
+@media screen and (max-width: 1394px) {
+    #sideNav { height: 100%; }
+}
+
+@media screen and (max-width: 1051px) {
+    #skills > ul > li > a { font-size: 40px; }
+}
+
+@media screen and (max-width: 935px) {
+    #skills > ul > li > a { font-size: 30px; }
+}
+
+@media screen and (max-width: 796px) {
+    #skills > ul > li {
+        display: block;
+        width: 3rem;
+        margin: 3% auto;
+    }
+    #skills > ul > li > a { font-size: 50px; }
 }

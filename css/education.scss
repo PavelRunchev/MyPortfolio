@@ -1,8 +1,10 @@
 @import 'mixins';
 
 #education {
+    & > h2 { margin: 10% 0; font-size: 22px; }
     cursor: pointer;
     & > .container { 
+      padding: 5%;
       color: #000;
       @include background-layout-blue(); 
       & div { font-size: 18px; } 
@@ -11,7 +13,7 @@
         color: #fff;
         font-size: 20px;
       }
-      & img { width: 15%; } 
+      & img { width: 16%; } 
       
     } 
     &:hover {
@@ -25,6 +27,15 @@
       color: #fff;
       &:hover { color: #000; }
     }
+}
+
+@media screen and (max-width: 500px) {
+  #education {
+    & .container { 
+      width: 90%; 
+      & img { width: 30%; }
+    }
+  }
 }
 
   

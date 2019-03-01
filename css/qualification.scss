@@ -1,6 +1,7 @@
 @import 'mixins';
 
 #qualification {
+    & > h2 { margin: 10% 0; }
     & .container {
       @include background-layout-gray();
 
@@ -52,4 +53,10 @@
             
         }
     }
+}
+
+@media screen and (max-width: 500px){
+  #qualification {
+      & > h2 { font-size: 22px; }
+  }
 }
