@@ -34,9 +34,9 @@
     opacity: 1; }
   100% {
     opacity: 1;
-    -webkit-box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.6); } }
+    -webkit-box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.6); } }
 
 @keyframes shakeIt {
   0% {
@@ -103,63 +103,64 @@
       #navigation .navbar-collapse > ul > li > a:hover {
         border-bottom: none; } }
 
-header {
-  margin-top: 1%; }
-  header > #header {
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
-    -webkit-box-shadow: 0px 0px 31px -2px black;
-    -moz-box-shadow: 0px 0px 31px -2px black;
-    box-shadow: 0px 0px 31px -2px black;
-    border-radius: 1rem;
-    background: linier-gradient(circle, rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
-    padding: 5%; }
-    header > #header #image {
-      cursor: pointer;
-      width: 14rem;
-      padding: 3px;
-      border: 3px solid gray;
-      border-radius: 50%;
-      -webkit-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7);
-      -moz-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7);
-      box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7); }
-      header > #header #image:active {
-        transform: scale(1);
-        transition-duration: 0.3s;
-        animation: growImage 0.3s ease-in;
-        animation-fill-mode: both;
-        animation-duration: 0.3s; }
-    header > #header h1 {
-      background: linear-gradient(to top, #969696, black), none;
-      text-shadow: 3px 3px white;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    header > #header #front-end {
-      cursor: pointer;
-      text-decoration: none;
-      color: #000; }
-      header > #header #front-end:hover {
-        color: #426b96; }
-    header > #header .card div {
-      font-size: 18px; }
-  header #data {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
+header > #header {
+  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+  -webkit-box-shadow: 0px 0px 31px -2px black;
+  -moz-box-shadow: 0px 0px 31px -2px black;
+  box-shadow: 0px 0px 31px -2px black;
+  border-radius: 1rem;
+  background: linier-gradient(circle, rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
+  padding: 5%;
+  margin-top: 6%; }
+  header > #header #image {
+    cursor: pointer;
+    width: 14rem;
+    padding: 3px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 107px -1px rgba(0, 0, 0, 0.7); }
+    header > #header #image:active {
+      transform: scale(1);
+      transition-duration: 0.3s;
+      animation: growImage 0.3s ease-in;
+      animation-fill-mode: both;
+      animation-duration: 0.3s; }
+  header > #header h1 {
+    background: linear-gradient(to top, #969696, black), none;
+    text-shadow: 3px 3px white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  header > #header #front-end {
+    cursor: pointer;
+    text-decoration: none;
     color: #000; }
-    header #data a:hover,
-    header #data a:hover i {
-      color: #426b96;
-      cursor: pointer; }
-  header #see-more {
-    color: #fff;
-    border-color: #fff; }
-    header #see-more:hover {
-      color: #212121;
-      border-color: #fff;
-      background: #fff; }
+    header > #header #front-end:hover {
+      color: #426b96; }
+  header > #header .card div {
+    font-size: 18px; }
+
+header #data {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #000; }
+  header #data a:hover,
+  header #data a:hover i {
+    color: #426b96;
+    cursor: pointer; }
+
+header #see-more {
+  color: #fff;
+  border-color: #fff; }
+  header #see-more:hover {
+    color: #212121;
+    border-color: #fff;
+    background: #fff; }
 
 @media screen and (max-width: 1200px) {
   header #header #data {
@@ -201,8 +202,7 @@ header {
 #education {
   cursor: pointer; }
   #education > h2 {
-    margin: 10% 0;
-    font-size: 22px; }
+    margin: 3rem 0; }
   #education > .container {
     padding: 5%;
     color: #000;
@@ -236,7 +236,7 @@ header {
       width: 30%; } }
 
 #skills > h2 {
-  margin: 10% 0; }
+  margin: 3rem 0; }
 
 #skills > .container {
   background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
@@ -280,7 +280,7 @@ header {
       padding-left: 0; } }
 
 #qualification > h2 {
-  margin: 10% 0; }
+  margin: 3rem 0; }
 
 #qualification .container {
   background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));

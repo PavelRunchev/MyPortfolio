@@ -1,12 +1,11 @@
 @import 'mixins';
 
 header {
-    margin-top: 1%;
-
     & > #header {
       @include background-layout-gray();
       background: linier-gradient(circle, rgba(68,110,155,0.8), rgba(68,110,155,0.8));
       padding: 5%;
+      margin-top: 6%;
 
       & #image {
         cursor: pointer;
