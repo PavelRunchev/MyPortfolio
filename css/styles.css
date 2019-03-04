@@ -110,7 +110,7 @@ header > #header {
   box-shadow: 0px 0px 31px -2px black;
   border-radius: 1rem;
   background: linier-gradient(circle, rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
-  padding: 5%;
+  padding: 2% 5%;
   margin-top: 6%; }
   header > #header #image {
     cursor: pointer;
@@ -202,7 +202,7 @@ header #see-more {
 #education {
   cursor: pointer; }
   #education > h2 {
-    margin: 3rem 0; }
+    margin: 8% 0; }
   #education > .container {
     padding: 5%;
     color: #000;
@@ -235,32 +235,33 @@ header #see-more {
     #education .container img {
       width: 30%; } }
 
-#skills > h2 {
-  margin: 3rem 0; }
-
-#skills > .container {
-  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
-  -webkit-box-shadow: 0px 0px 31px -2px black;
-  -moz-box-shadow: 0px 0px 31px -2px black;
-  box-shadow: 0px 0px 31px -2px black;
-  border-radius: 1rem; }
-  #skills > .container .subheading {
-    font-size: 25px;
-    margin-bottom: 2rem;
-    color: #000; }
-  #skills > .container ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    #skills > .container ul li a {
-      font-size: 60px;
-      text-decoration: none;
-      cursor: pointer;
-      color: #000;
-      font-style: normal;
-      margin: 0.7rem; }
-      #skills > .container ul li a:hover {
-        color: #fff; }
+#skills {
+  margin-bottom: 11%; }
+  #skills > h2 {
+    margin: 8% 0; }
+  #skills > .container {
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
+    border-radius: 1rem; }
+    #skills > .container .subheading {
+      font-size: 25px;
+      margin-bottom: 2rem;
+      color: #000; }
+    #skills > .container ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #skills > .container ul li a {
+        font-size: 60px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+        font-style: normal;
+        margin: 0.7rem; }
+        #skills > .container ul li a:hover {
+          color: #fff; }
 
 @media screen and (max-width: 1000px) {
   #skills .container ul {
@@ -279,44 +280,45 @@ header #see-more {
     #skills .container ul {
       padding-left: 0; } }
 
-#qualification > h2 {
-  margin: 3rem 0; }
-
-#qualification .container {
-  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
-  -webkit-box-shadow: 0px 0px 31px -2px black;
-  -moz-box-shadow: 0px 0px 31px -2px black;
-  box-shadow: 0px 0px 31px -2px black;
-  border-radius: 1rem; }
-  #qualification .container .card {
-    cursor: pointer;
-    color: #fff;
-    transition: background 0.4s ease-in, color 0.4s ease-in;
-    animation: grow 0.4s ease-out; }
-    #qualification .container .card:hover {
-      -webkit-box-shadow: 0px 0px 31px -2px black;
-      -moz-box-shadow: 0px 0px 31px -2px black;
-      box-shadow: 0px 0px 31px -2px black;
-      transform: scale(0.9);
-      transition-duration: 0.3s;
-      animation: small 0.3s ease-in;
-      animation-fill-mode: both;
-      animation-duration: 0.3s;
-      animation: transparency 0.3s ease-in 0.3s forwards; }
-  #qualification .container .card-body {
-    padding: 1rem; }
-  #qualification .container p {
-    margin-bottom: 2rem;
-    font-size: 18px; }
-  #qualification .container .btn {
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0; }
-    #qualification .container .btn:hover {
-      color: black;
-      border-color: black; }
+#qualification {
+  margin-bottom: 4%; }
+  #qualification > h2 {
+    margin: 8% 0; }
+  #qualification .container {
+    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
+    border-radius: 1rem; }
+    #qualification .container .card {
+      cursor: pointer;
+      color: #fff;
+      transition: background 0.4s ease-in, color 0.4s ease-in;
+      animation: grow 0.4s ease-out; }
+      #qualification .container .card:hover {
+        -webkit-box-shadow: 0px 0px 31px -2px black;
+        -moz-box-shadow: 0px 0px 31px -2px black;
+        box-shadow: 0px 0px 31px -2px black;
+        transform: scale(0.9);
+        transition-duration: 0.3s;
+        animation: small 0.3s ease-in;
+        animation-fill-mode: both;
+        animation-duration: 0.3s;
+        animation: transparency 0.3s ease-in 0.3s forwards; }
+    #qualification .container .card-body {
+      padding: 1rem; }
+    #qualification .container p {
+      margin-bottom: 2rem;
+      font-size: 18px; }
+    #qualification .container .btn {
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 0.4rem;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0; }
+      #qualification .container .btn:hover {
+        color: black;
+        border-color: black; }
 
 @media screen and (max-width: 1200px) {
   #qualification .container .row {
@@ -327,30 +329,31 @@ header #see-more {
   #qualification > h2 {
     font-size: 22px; } }
 
-#projects > h2 {
-  margin: 3rem 0; }
-
-#projects .container {
-  background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
-  -webkit-box-shadow: 0px 0px 31px -2px black;
-  -moz-box-shadow: 0px 0px 31px -2px black;
-  box-shadow: 0px 0px 31px -2px black;
-  border-radius: 1rem;
-  padding: 5%; }
-  #projects .container #accordion {
-    display: flex;
-    justify-content: space-between; }
-    #projects .container #accordion .card {
-      width: 30%; }
-      #projects .container #accordion .card button {
-        font-size: 22px; }
-      #projects .container #accordion .card div,
-      #projects .container #accordion .card a {
-        font-size: 18px;
-        color: #446e9b;
-        cursor: pointer; }
-      #projects .container #accordion .card a:hover {
-        color: #272727; }
+#projects {
+  margin-bottom: 9%; }
+  #projects > h2 {
+    margin: 10% 0 5% 0; }
+  #projects .container {
+    background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
+    -webkit-box-shadow: 0px 0px 31px -2px black;
+    -moz-box-shadow: 0px 0px 31px -2px black;
+    box-shadow: 0px 0px 31px -2px black;
+    border-radius: 1rem;
+    padding: 5%; }
+    #projects .container #accordion {
+      display: flex;
+      justify-content: space-between; }
+      #projects .container #accordion .card {
+        width: 30%; }
+        #projects .container #accordion .card button {
+          font-size: 22px; }
+        #projects .container #accordion .card div,
+        #projects .container #accordion .card a {
+          font-size: 18px;
+          color: #446e9b;
+          cursor: pointer; }
+        #projects .container #accordion .card a:hover {
+          color: #272727; }
 
 @media screen and (max-width: 1200px) {
   #projects .container #accordion {
@@ -364,10 +367,10 @@ header #see-more {
     font-size: 22px; } }
 
 #environment {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   cursor: pointer; }
   #environment > h2 {
-    margin: 3rem 0; }
+    margin: 10% 0 6% 0; }
   #environment:hover {
     animation: shake 1.5s ease-in-out 0.3s forwards; }
   #environment > .container {
@@ -510,6 +513,8 @@ body {
   top: 0;
   left: 0;
   background: #eeeeee; }
+  body main hr {
+    opacity: 0; }
   body footer {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     position: relative;

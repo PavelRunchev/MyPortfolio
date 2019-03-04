@@ -1,7 +1,8 @@
 @import 'mixins';
 
 #skills {   
-    & > h2 { margin: 3rem 0; }
+    margin-bottom: 11%;
+    & > h2 { margin: 8% 0; }
     & > .container {
         @include background-layout-gray(); 
         & .subheading { 
