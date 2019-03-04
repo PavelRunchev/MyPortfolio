@@ -328,7 +328,7 @@ header #see-more {
     font-size: 22px; } }
 
 #projects > h2 {
-  margin: 10% 0; }
+  margin: 3rem 0; }
 
 #projects .container {
   background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
@@ -367,7 +367,7 @@ header #see-more {
   margin-bottom: 3rem;
   cursor: pointer; }
   #environment > h2 {
-    margin: 10% 0; }
+    margin: 3rem 0; }
   #environment:hover {
     animation: shake 1.5s ease-in-out 0.3s forwards; }
   #environment > .container {
