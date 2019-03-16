@@ -1,0 +1,38 @@
+@mixin experience-buttons {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+  
+  @mixin global-ancher {
+    text-decoration: none;
+    cursor: pointer;
+    width: 10%;
+    margin: 2rem;
+  }
+  
+  @mixin background-layout-blue {
+    background: linear-gradient(rgba(68,110,155,0.8), rgba(68,110,155,0.8));
+    -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+    box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+    border-radius: 1rem;
+  }
+  
+  @mixin background-layout-gray {
+    background: linear-gradient(rgba(185,186,190,0.9), rgba(185,186,190,0.9));
+    -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+    box-shadow: 0px 0px 31px -2px rgba(0,0,0,1);
+    border-radius: 1rem;
+  }
+  
+  @mixin white-shadow {
+    text-shadow: 1px 1px rgb(255,255,255);
+  } 
+  
+  @mixin black-shadow {
+    text-shadow: 2px 2px rgb(0,0,0);
+  }

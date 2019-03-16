@@ -1,0 +1,46 @@
+@import 'mixins';
+
+#projects {
+    margin-bottom: 9%;
+    & > h2 { margin: 10% 0 5% 0; }
+    & .container {
+      @include background-layout-blue();
+      padding: 5%;
+
+      & #accordion {
+        display: flex;
+        justify-content: space-between;
+
+        & .card {
+          width: 30%;
+          & button { font-size: 22px; }
+          & div,
+          & a { 
+            font-size: 18px; 
+            color: rgb(68,110,155);
+            cursor: pointer;
+        }
+
+        a:hover { color: rgb(39,39,39); }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  #projects {
+    & .container {
+      & #accordion {
+        flex-direction: column;
+        text-align: left;
+        & .card { width: 100%; }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #projects {
+    & > h2 { font-size: 22px; }
+  }
+}

@@ -1,0 +1,56 @@
+@import 'mixins';
+
+#skills {   
+    margin-bottom: 11%;
+    & > h2 { margin: 8% 0; }
+    & > .container {
+        @include background-layout-gray(); 
+        & .subheading { 
+            font-size: 25px; 
+            margin-bottom: 2rem; 
+            color: #000;
+        }
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            & li {
+                & a {
+                    font-size: 60px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: #000;
+                    font-style: normal;
+                    margin: 0.7rem;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #skills {
+        & .container {
+            & ul {
+                flex-direction: column;
+                text-align: center;
+                & li { display: block; }
+            }
+        }       
+    }
+}
+
+@media screen and (max-width: 500px){
+    #skills {
+        & > h2 { font-size: 22px; }
+        & .container {
+            width: 90%;
+            & .subheading { font-size: 16px; }
+            & ul { padding-left: 0; }
+        }       
+    }
+}
+
