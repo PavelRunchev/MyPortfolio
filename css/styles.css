@@ -69,7 +69,8 @@
   z-index: 100; }
   #navigation > a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-size: 22px; }
     #navigation > a:hover {
       color: #000; }
   #navigation .navbar-brand {
@@ -102,6 +103,10 @@
       border-bottom: none; }
       #navigation .navbar-collapse > ul > li > a:hover {
         border-bottom: none; } }
+
+@media screen and (max-width: 200px) {
+  #navigation .navbar-collapse > ul > li > a {
+    margin-left: 0; } }
 
 header > #header {
   background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
@@ -155,6 +160,7 @@ header #data {
     cursor: pointer; }
 
 header #see-more {
+  display: block;
   color: #fff;
   border-color: #fff; }
   header #see-more:hover {
@@ -176,8 +182,12 @@ header #see-more {
   header #header > #image {
     width: 50%;
     max-width: unset; }
-  header #header #data {
-    margin-left: 24%; } }
+  header #header #headingFour > h5 > p {
+    text-align: left; }
+  header #header #accordion .card .card-header h5 #see-more {
+    text-align: center; }
+  header #header #collapseFour {
+    font-size: 16px; } }
 
 @media screen and (max-width: 400px) {
   header #header > #image {
@@ -191,13 +201,18 @@ header #see-more {
     font-size: 16px; }
   header #header #data {
     margin-left: 0;
-    font-size: 16px; }
-  header #header #accordion .card .card-header h5 #see-more {
-    margin-left: 30%; } }
+    font-size: 16px; } }
 
 @media screen and (max-width: 270px) {
   header #header #data {
     font-size: 10px; } }
+
+@media screen and (max-width: 200px) {
+  header #header h1 {
+    text-align: left;
+    font-size: 20px; }
+  header #header #headingFour {
+    padding: 5%; } }
 
 #education {
   cursor: pointer; }
@@ -218,7 +233,7 @@ header #see-more {
       color: #fff;
       font-size: 20px; }
     #education > .container img {
-      width: 16%; }
+      width: 30%; }
   #education:hover {
     animation: shakeIt 0.5s ease-in-out 0.3s forwards; }
   #education #diploma {
@@ -230,95 +245,124 @@ header #see-more {
       color: #000; }
 
 @media screen and (max-width: 500px) {
+  #education > h2 {
+    font-size: 22px; }
   #education .container {
     width: 90%; }
     #education .container img {
-      width: 30%; } }
+      width: 50%; } }
 
-#skills {
-  margin-bottom: 11%; }
-  #skills > h2 {
-    margin: 8% 0; }
-  #skills > .container {
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
-    -webkit-box-shadow: 0px 0px 31px -2px black;
-    -moz-box-shadow: 0px 0px 31px -2px black;
-    box-shadow: 0px 0px 31px -2px black;
-    border-radius: 1rem; }
-    #skills > .container .subheading {
-      font-size: 25px;
-      margin-bottom: 2rem;
-      color: #000; }
-    #skills > .container ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      #skills > .container ul li a {
-        font-size: 60px;
-        text-decoration: none;
-        cursor: pointer;
-        color: #000;
-        font-style: normal;
-        margin: 0.7rem; }
-        #skills > .container ul li a:hover {
-          color: #fff; }
+@media screen and (max-width: 250px) {
+  #education > h2 {
+    font-size: 20px; }
+  #education .container {
+    width: 90%; }
+    #education .container h3 {
+      font-size: 18px; }
+    #education .container img {
+      width: 50%; }
+    #education .container #softuni p {
+      font-size: 14px; }
+    #education .container #diploma {
+      font-size: 16px; } }
+
+#skills > h2 {
+  margin: 8% 0; }
+
+#skills > .container-fluid {
+  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+  -webkit-box-shadow: 0px 0px 31px -2px black;
+  -moz-box-shadow: 0px 0px 31px -2px black;
+  box-shadow: 0px 0px 31px -2px black;
+  border-radius: 1rem; }
+  #skills > .container-fluid .subheading {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    color: #000; }
+  #skills > .container-fluid ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #skills > .container-fluid ul li a {
+      font-size: 60px;
+      text-decoration: none;
+      cursor: pointer;
+      color: #000;
+      font-style: normal;
+      margin: 0.7rem; }
+      #skills > .container-fluid ul li a:hover {
+        color: #fff; }
 
 @media screen and (max-width: 1000px) {
-  #skills .container ul {
+  #skills .container-fluid ul {
     flex-direction: column;
     text-align: center; }
-    #skills .container ul li {
+    #skills .container-fluid ul li {
       display: block; } }
 
 @media screen and (max-width: 500px) {
   #skills > h2 {
     font-size: 22px; }
-  #skills .container {
+  #skills .container-fluid {
     width: 90%; }
-    #skills .container .subheading {
+    #skills .container-fluid .subheading {
       font-size: 16px; }
-    #skills .container ul {
+    #skills .container-fluid ul {
       padding-left: 0; } }
 
-#qualification {
-  margin-bottom: 4%; }
-  #qualification > h2 {
-    margin: 8% 0; }
-  #qualification .container {
-    background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
-    -webkit-box-shadow: 0px 0px 31px -2px black;
-    -moz-box-shadow: 0px 0px 31px -2px black;
-    box-shadow: 0px 0px 31px -2px black;
-    border-radius: 1rem; }
-    #qualification .container .card {
-      cursor: pointer;
-      color: #fff;
-      transition: background 0.4s ease-in, color 0.4s ease-in;
-      animation: grow 0.4s ease-out; }
-      #qualification .container .card:hover {
-        -webkit-box-shadow: 0px 0px 31px -2px black;
-        -moz-box-shadow: 0px 0px 31px -2px black;
-        box-shadow: 0px 0px 31px -2px black;
-        transform: scale(0.9);
-        transition-duration: 0.3s;
-        animation: small 0.3s ease-in;
-        animation-fill-mode: both;
-        animation-duration: 0.3s;
-        animation: transparency 0.3s ease-in 0.3s forwards; }
-    #qualification .container .card-body {
-      padding: 1rem; }
-    #qualification .container p {
-      margin-bottom: 2rem;
-      font-size: 18px; }
-    #qualification .container .btn {
-      text-decoration: none;
-      cursor: pointer;
-      border-radius: 0.4rem;
-      padding: 0.5rem 1rem;
-      margin: 1rem 0; }
-      #qualification .container .btn:hover {
-        color: black;
-        border-color: black; }
+@media screen and (max-width: 250px) {
+  #skills > h2 {
+    font-size: 20px; }
+  #skills .container-fluid {
+    width: 90%;
+    padding: 5%;
+    margin: 0; }
+    #skills .container-fluid .subheading {
+      font-size: 16px; }
+    #skills .container-fluid ul {
+      padding-left: 0; }
+    #skills .container-fluid #skills > div > ul > li:nth-child(1) > a {
+      font-size: 12; } }
+
+#qualification > h2 {
+  margin: 8% 0; }
+
+#qualification .container {
+  background: linear-gradient(rgba(185, 186, 190, 0.9), rgba(185, 186, 190, 0.9));
+  -webkit-box-shadow: 0px 0px 31px -2px black;
+  -moz-box-shadow: 0px 0px 31px -2px black;
+  box-shadow: 0px 0px 31px -2px black;
+  border-radius: 1rem; }
+  #qualification .container .card {
+    cursor: pointer;
+    margin: 2%;
+    color: #fff;
+    transition: background 0.4s ease-in, color 0.4s ease-in;
+    animation: grow 0.4s ease-out; }
+    #qualification .container .card:hover {
+      -webkit-box-shadow: 0px 0px 31px -2px black;
+      -moz-box-shadow: 0px 0px 31px -2px black;
+      box-shadow: 0px 0px 31px -2px black;
+      transform: scale(0.9);
+      transition-duration: 0.3s;
+      animation: small 0.3s ease-in;
+      animation-fill-mode: both;
+      animation-duration: 0.3s;
+      animation: transparency 0.3s ease-in 0.3s forwards; }
+  #qualification .container .card-body {
+    padding: 1rem; }
+  #qualification .container p {
+    margin-bottom: 2rem;
+    font-size: 18px; }
+  #qualification .container .btn {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0; }
+    #qualification .container .btn:hover {
+      color: black;
+      border-color: black; }
 
 @media screen and (max-width: 1200px) {
   #qualification .container .row {
@@ -329,31 +373,40 @@ header #see-more {
   #qualification > h2 {
     font-size: 22px; } }
 
-#projects {
-  margin-bottom: 9%; }
-  #projects > h2 {
-    margin: 10% 0 5% 0; }
-  #projects .container {
-    background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
-    -webkit-box-shadow: 0px 0px 31px -2px black;
-    -moz-box-shadow: 0px 0px 31px -2px black;
-    box-shadow: 0px 0px 31px -2px black;
-    border-radius: 1rem;
-    padding: 5%; }
-    #projects .container #accordion {
-      display: flex;
-      justify-content: space-between; }
-      #projects .container #accordion .card {
-        width: 30%; }
-        #projects .container #accordion .card button {
-          font-size: 22px; }
-        #projects .container #accordion .card div,
-        #projects .container #accordion .card a {
-          font-size: 18px;
-          color: #446e9b;
-          cursor: pointer; }
-        #projects .container #accordion .card a:hover {
-          color: #272727; }
+@media screen and (max-width: 200px) {
+  #qualification > h2 {
+    font-size: 18px; }
+  #qualification .container h3 {
+    font-size: 16px; }
+  #qualification .container a {
+    font-size: 16px; }
+  #qualification .container .card-body {
+    padding: 2%; } }
+
+#projects > h2 {
+  margin: 10% 0 5% 0; }
+
+#projects .container {
+  background: linear-gradient(rgba(68, 110, 155, 0.8), rgba(68, 110, 155, 0.8));
+  -webkit-box-shadow: 0px 0px 31px -2px black;
+  -moz-box-shadow: 0px 0px 31px -2px black;
+  box-shadow: 0px 0px 31px -2px black;
+  border-radius: 1rem;
+  padding: 5%; }
+  #projects .container #accordion {
+    display: flex;
+    justify-content: space-between; }
+    #projects .container #accordion .card {
+      width: 30%; }
+      #projects .container #accordion .card button {
+        font-size: 22px; }
+      #projects .container #accordion .card div,
+      #projects .container #accordion .card a {
+        font-size: 18px;
+        color: #446e9b;
+        cursor: pointer; }
+      #projects .container #accordion .card a:hover {
+        color: #272727; }
 
 @media screen and (max-width: 1200px) {
   #projects .container #accordion {
@@ -365,6 +418,14 @@ header #see-more {
 @media screen and (max-width: 500px) {
   #projects > h2 {
     font-size: 22px; } }
+
+@media screen and (max-width: 200px) {
+  #projects > h2 {
+    font-size: 18px; }
+  #projects .container #accordion .card #headingOne h5 button,
+  #projects .container #accordion .card #headingTwo > h5 > button,
+  #projects .container #accordion .card #headingThree > h5 > button {
+    font-size: 14px; } }
 
 #environment {
   margin-bottom: 5rem;
@@ -439,6 +500,12 @@ header #see-more {
   #environment > .container {
     width: 90%; } }
 
+@media screen and (max-width: 200px) {
+  #environment > h2 {
+    font-size: 20px; }
+  #environment > .container .row .jumbotron h5 {
+    font-size: 18px; } }
+
 body #js-library .border,
 body #javascript .border,
 body #html .border,
@@ -508,6 +575,53 @@ body #html .inner-html {
 body #java .inner-java {
   width: 65%; }
 
+body #javascript .border .container .inner-js,
+body #js-library .border .container .inner-js-library,
+body #java .border .container .inner-java {
+  padding-left: 11%; }
+
+@media screen and (max-width: 770px) {
+  #javascript .border .container h3,
+  #javascript .border .container h4,
+  #js-library .border .container h3,
+  #js-library .border .container h4,
+  #java .border .container h3,
+  #java .border .container h4 {
+    font-size: 22px; }
+  body #javascript .border .container .inner-js,
+  body #js-library .border .container .inner-js-library,
+  body #java .border .container .inner-java {
+    padding: 0; }
+  #javascript .border .container .inner-js p,
+  #js-library .border .container .inner-js-library p,
+  #java .border .container .inner-java p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 580px) {
+  #javascript .border h2,
+  #js-library .border h2,
+  #java .border h2 {
+    font-size: 26px; }
+  #javascript .border .container,
+  #js-library .border .container,
+  #java .border .container {
+    padding: 0; }
+  #javascript .border .container h3,
+  #javascript .border .container h4,
+  #js-library .border .container h3,
+  #js-library .border .container h4,
+  #java .border .container h3,
+  #java .border .container h4 {
+    font-size: 18px; }
+  body #javascript .border .container .inner-js,
+  body #js-library .border .container .inner-js-library,
+  body #java .border .container .inner-java {
+    padding: 0; }
+  #javascript .border .container .inner-js p,
+  #js-library .border .container .inner-js-library p,
+  #java .border .container .inner-java p {
+    font-size: 14px; } }
+
 body {
   position: relative;
   top: 0;
@@ -515,6 +629,8 @@ body {
   background: #eeeeee; }
   body main hr {
     opacity: 0; }
+  body main #hr-about {
+    margin-top: 0; }
   body footer {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     position: relative;
