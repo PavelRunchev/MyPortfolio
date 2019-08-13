@@ -13,7 +13,7 @@
         color: #fff;
         font-size: 20px;
       }
-      & img { width: 16%; } 
+      & img { width: 30%; } 
       
     } 
     &:hover {
@@ -31,11 +31,30 @@
 
 @media screen and (max-width: 500px) {
   #education {
+    & > h2 { font-size: 22px; }
     & .container { 
       width: 90%; 
-      & img { width: 30%; }
+      & img { width: 50%; }
     }
   }
 }
+
+@media screen and (max-width: 250px) {
+  #education {
+    & > h2 { font-size: 20px; }
+    & .container { 
+      width: 90%; 
+      & h3 { font-size: 18px; }
+      & img { width: 50%; }
+      & #softuni p { font-size: 14px; }
+      & #diploma { font-size: 16px; }
+    }
+  }
+}
+
+
+
+
+
 
   

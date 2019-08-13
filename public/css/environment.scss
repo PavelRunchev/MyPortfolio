@@ -94,3 +94,10 @@
   }
 }
 
+@media screen and (max-width: 200px){
+  #environment {
+    & > h2 { font-size: 20px; }
+    & > .container .row .jumbotron h5 { font-size: 18px; }
+  }
+}
+

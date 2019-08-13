@@ -1,7 +1,6 @@
 @import 'mixins';
 
 #projects {
-    margin-bottom: 9%;
     & > h2 { margin: 10% 0 5% 0; }
     & .container {
       @include background-layout-blue();
@@ -42,5 +41,16 @@
 @media screen and (max-width: 500px) {
   #projects {
     & > h2 { font-size: 22px; }
+  }
+}
+
+@media screen and (max-width: 200px) {
+  #projects {
+    & > h2 { font-size: 18px; }
+    & .container {
+      & #accordion .card #headingOne h5 button,
+      & #accordion .card #headingTwo > h5 > button,
+      & #accordion .card #headingThree > h5 > button { font-size: 14px; }
+    } 
   }
 }

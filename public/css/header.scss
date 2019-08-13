@@ -60,6 +60,7 @@ header {
     }
 
     & #see-more { 
+      display: block;
       color: #fff; 
       border-color: #fff; 
       &:hover {
@@ -90,7 +91,9 @@ header {
   header {
     & #header {
        & > #image { width: 50%; max-width: unset; }
-       & #data { margin-left: 24%; }
+       & #headingFour > h5 > p { text-align: left; }
+       & #accordion .card .card-header h5 #see-more { text-align: center; }
+       & #collapseFour { font-size: 16px; }
     }
   }
 }
@@ -104,19 +107,7 @@ header {
         text-align: left;
         font-size: 16px; 
       }
-      & #data { margin-left: 0; font-size: 16px; }
-
-      & #accordion { 
-        & .card {
-          & .card-header {
-            & h5 {
-              & #see-more {
-                margin-left: 30%;
-              }
-            }
-          }
-        }
-      }
+      & #data { margin-left: 0; font-size: 16px; }     
     }
   }
 }
@@ -125,6 +116,15 @@ header {
   header {
     & #header {
        & #data {font-size: 10px; }
+    }
+  }
+}
+
+@media screen and (max-width: 200px){
+  header {
+    & #header {
+      & h1 { text-align: left; font-size: 20px; }
+      & #headingFour { padding: 5%; }
     }
   }
 }

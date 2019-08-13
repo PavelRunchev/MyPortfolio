@@ -7,6 +7,7 @@
     & > a { 
       text-decoration: none;
       color: #fff;
+      font-size: 22px;
       &:hover { color: #000; }
     }
     & .navbar-brand { margin-right: 11%; }
@@ -34,6 +35,15 @@
         &:hover { border-bottom: none;  }
       }
     }
+}
+
+@media screen and (max-width: 200px){
+  #navigation {
+
+    & .navbar-collapse > ul > li > a { 
+      margin-left: 0;
+    }
+  }
 }
 
 

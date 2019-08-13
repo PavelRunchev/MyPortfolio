@@ -1,14 +1,13 @@
 @import 'mixins';
 
 #qualification {
-    margin-bottom: 4%;
     & > h2 { margin: 8% 0; }
     & .container {
       @include background-layout-gray();
 
       & .card {
         cursor: pointer;
-
+        margin: 2%;
         color: #fff;
         transition: background 0.4s ease-in, color 0.4s ease-in;
         animation: grow 0.4s ease-out;
@@ -59,5 +58,14 @@
 @media screen and (max-width: 500px){
   #qualification {
       & > h2 { font-size: 22px; }
+  }
+}
+
+@media screen and (max-width: 200px){
+  #qualification {
+      & > h2 { font-size: 18px; }
+      & .container h3 { font-size: 16px; }
+      & .container a { font-size: 16px; }
+      & .container .card-body { padding: 2%; }
   }
 }

@@ -50,7 +50,10 @@ body {
 
     & #javascript .border .container .inner-js,
     & #js-library .border .container .inner-js-library,
-    & #java .border .container .inner-java { padding-left: 11%; }
+    & #java .border .container .inner-java, 
+    & #html .border .container .inner-html,
+    & #css .border .container .inner-css,
+    & #csharp .border .container .inner-csharp { padding-left: 11%; }
 }
 
 @media screen and (max-width: 770px) {
@@ -59,38 +62,66 @@ body {
   #js-library .border .container h3,
   #js-library .border .container h4,
   #java .border .container h3,
-  #java .border .container h4 { font-size: 22px; }
+  #java .border .container h4,
+  #html .border .container h3,
+  #css .border .container h3,
+  #css .border .container h4,
+  #csharp .border .container h3,
+  #csharp .border .container h4 { font-size: 22px; }
 
   body #javascript .border .container .inner-js,
   body #js-library .border .container .inner-js-library,
-  body #java .border .container .inner-java { padding: 0; }
+  body #java .border .container .inner-java,
+  body #html .border .container .inner-html,
+  body #css .border .container .inner-css,
+  body #csharp .border .container .inner-csharp { padding: 0; }
 
   #javascript .border .container .inner-js p,
   #js-library .border .container .inner-js-library p,
-  #java .border .container .inner-java p {  font-size: 16px; }
+  #java .border .container .inner-java p,
+  #html .border .container .inner-html p,
+  #css .border .container .inner-css p,
+  #csharp .border .container .inner-csharp p {  font-size: 16px; }
 }
 
 @media screen and (max-width: 580px) {
   #javascript .border h2,
   #js-library .border h2,
-  #java .border h2 { font-size: 26px; }
+  #java .border h2,
+  #html .border h2,
+  #css .border h2,
+  #csharp .border h2 { font-size: 26px; }
 
   #javascript .border .container,
   #js-library .border .container,
-  #java .border .container { padding: 0; }
+  #java .border .container,
+  #html .border .container,
+  #css .border .container,
+  #csharp .border .container { padding: 0; }
 
   #javascript .border .container h3,
   #javascript .border .container h4,
   #js-library .border .container h3,
   #js-library .border .container h4,
   #java .border .container h3,
-  #java .border .container h4 { font-size: 18px; }
+  #java .border .container h4,
+  #html .border .container h3,
+  #css .border .container h3,
+  #css .border .container h4,
+  #csharp .border .container h3,
+  #csharp .border .container h4 { font-size: 18px; }
 
   body #javascript .border .container .inner-js,
   body #js-library .border .container .inner-js-library,
-  body #java .border .container .inner-java { padding: 0; }
+  body #java .border .container .inner-java,
+  body #html .border .container .inner-html,
+  body #css .border .container .inner-css,
+  body #csharp .border .container .inner-csharp { padding: 0; }
 
   #javascript .border .container .inner-js p,
   #js-library .border .container .inner-js-library p,
-  #java .border .container .inner-java p {  font-size: 14px; }
+  #java .border .container .inner-java p,
+  #html .border .container .inner-html p,
+  #css .border .container .inner-css p,
+  #csharp .border .container .inner-csharp p {  font-size: 14px; }
 }

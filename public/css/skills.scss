@@ -1,9 +1,8 @@
 @import 'mixins';
 
 #skills {   
-    margin-bottom: 11%;
     & > h2 { margin: 8% 0; }
-    & > .container {
+    & > .container-fluid {
         @include background-layout-gray(); 
         & .subheading { 
             font-size: 25px; 
@@ -33,7 +32,7 @@
 
 @media screen and (max-width: 1000px){
     #skills {
-        & .container {
+        & .container-fluid {
             & ul {
                 flex-direction: column;
                 text-align: center;
@@ -46,10 +45,24 @@
 @media screen and (max-width: 500px){
     #skills {
         & > h2 { font-size: 22px; }
-        & .container {
+        & .container-fluid {
             width: 90%;
             & .subheading { font-size: 16px; }
             & ul { padding-left: 0; }
+        }       
+    }
+}
+
+@media screen and (max-width: 250px){
+    #skills {
+        & > h2 { font-size: 20px; }
+        & .container-fluid {
+            width: 90%;
+            padding: 5%;
+            margin: 0;
+            & .subheading { font-size: 16px; }
+            & ul { padding-left: 0; }
+            & #skills > div > ul > li:nth-child(1) > a { font-size: 12}
         }       
     }
 }

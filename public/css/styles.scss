@@ -19,6 +19,7 @@ body {
   background: rgb(238,238,238);
   main {
     & hr { opacity: 0; }
+    & #hr-about { margin-top: 0; }
   }
 
     footer {

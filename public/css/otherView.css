@@ -18,7 +18,7 @@ body {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 21rem;
+        width: 19rem;
         height: 100vh;
         padding-top: 2rem;
     }
@@ -60,7 +60,7 @@ body {
     
     #sideNav .development {
         position: relative;
-        bottom: -18rem;
+        bottom: -29%;
         font-size: 12px; 
     }
 
@@ -244,8 +244,16 @@ body {
     #sideNav { height: 100%; }
 }
 
-@media screen and (max-width: 1051px) {
+@media screen and (max-width: 1000px) {
+    #sideNav { width: 17rem; }
+    #sideNav > #image { width: 70%; margin: 2% 0; }
+    #sideNav ul li a { font-size: 16px; }
+    #sideNav .development { bottom: 1rem; }
     #skills > ul > li > a { font-size: 40px; }
+    .container-fluid { left: 17rem; width: 76.5%; }
+    .container-fluid { padding: 10% 1% 0 5%; }
+    .container-fluid .about h1 { font-size: 44px; }
+    #about > section.about > p { font-size: 22px; }
 }
 
 @media screen and (max-width: 935px) {
@@ -259,4 +267,17 @@ body {
         margin: 3% auto;
     }
     #skills > ul > li > a { font-size: 50px; }
+}
+
+@media screen and (max-width: 770px) {
+    #sideNav > a { font-size: 20px; }
+    #sideNav > ul > li > a { font-size: 20px; padding: 0; }
+
+    .container-fluid { left: 17rem; width: 100%; margin: 0; }
+    .container-fluid { padding: 10% 1% 0 5%; }
+    .container-fluid .about h1 { font-size: 40px; }
+    .container-fluid .about > p { font-size: 20px; }
+
+
+    .container-fluid #qualification div { max-width: 100%; }
 }
