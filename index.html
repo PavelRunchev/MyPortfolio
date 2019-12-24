@@ -98,7 +98,7 @@
     <main>
       <hr id="hr-education">
 
-      <section id="education">
+      <section id="education" class="container-fluid text-center">
         <h2 class="h2 text-center text-dark font-weight-bold">EDUCATION</h2>
         <div class="container mx-auto text-center">
           <h3 class="h3 text-light mb-5">Software Engineering - Software University</h3>
@@ -114,9 +114,9 @@
 
       <hr id="hr-skills">
 
-      <section id="skills">
+      <section id="skills" class="container-fluid text-center">
         <h2 class="h2 text-uppercase text-center text-dark font-weight-bold">SKILLS</h2>
-        <div class="container-fluid mx-auto">
+        <div class="container mx-auto text-center">
           <div class="subheading text-center font-weight-bold font-italic">Programming Languages &amp; Tools</div>
           <ul>
               <li class="list-inline-item">
@@ -218,7 +218,7 @@
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <i class="fab fa-gulp"></i> Gulp Project
+                      <i class="fab fa-gulp"></i> GULP - Jekyll Project
                     </button>
                   </h5>
                 </div>
@@ -280,13 +280,36 @@
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                   <div class="card-body text-dark">
                     In my project implements following tools - ExpressJS, NodeJS, Mongoose, MongoDB, HandleBars, Bootstrap 4, HTML5, SASS and other libraries!
-                      <div class="text-dark">Link -> <a onclick="window.open('https://boiling-bastion-03398.herokuapp.com/')" class="font-italic">Blogger</a></div>
+                      <div class="text-dark">Link -> <a onclick="window.open('https://nameless-dusk-82332.herokuapp.com')" class="font-italic">SharedTripp</a></div>
+                      <div class="text-dark">View code to GitHub -> <a onclick="window.open('https://github.com/PavelRunchev/SharedTripp')" class="font-italic">SharedTripp</a></div>
+                      <div class="text-dark">Grade - <span class="font-italic">6.00</span></div>
+                      <div class="text-dark">Sertificate -> <a onclick="window.open('sertificates/ExpressJS Fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="accordion" class="flex-row justify-content-center p-0">
+              <div class="card1 my-3 bg-light">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn btn-link collapsed text-dark font-weight-bold " data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                      <i class="fas fa-project-diagram"></i> Last My Project
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body text-dark">
+                    In my project implements following tools - ExpressJS, NodeJS, Mongoose, MongoDB Atlas, HandleBars, Bootstrap 4, HTML5, SASS, secure-URL: JWT,  and other libraries! Deployed to Heroku.
+                      <div class="text-dark">Link to site -> <a onclick="window.open('https://boiling-bastion-03398.herokuapp.com/')" class="font-italic">Blogger</a></div>
                       <div class="text-dark">View code to GitHub -> <a onclick="window.open('https://github.com/PavelRunchev/Blogger')" class="font-italic">Blogger</a></div>
                       
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
       </section>
 
@@ -333,7 +356,7 @@
                       </a>
                   </div>
               </div>                  
-            </div>           
+            </div>      
           </div>
         </div>
       </section>
@@ -358,11 +381,6 @@
         let allimages= document.getElementsByTagName('img')[0];        
         allimages.setAttribute('src', allimages.getAttribute('data-src'));                 
       }, false)
-    </script>
-    <script>
-      function show() {
-        console.log('show');
-      }
     </script>
 </body>
 </html>

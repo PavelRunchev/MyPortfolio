@@ -18,10 +18,22 @@
             font-size: 18px; 
             color: rgb(68,110,155);
             cursor: pointer;
+          }
+        }
+
+        & .card1 {
+            width: 60%;
+            & button { font-size: 22px; }
+            & div,
+            & a { 
+              font-size: 18px; 
+              color: rgb(68,110,155);
+              cursor: pointer;
+            }
         }
 
         a:hover { color: rgb(39,39,39); }
-        }
+        
       }
     }
 }
