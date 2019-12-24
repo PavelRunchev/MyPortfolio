@@ -406,6 +406,8 @@ header #see-more {
         font-size: 18px;
         color: #446e9b;
         cursor: pointer; }
+      #projects .container #accordion .card a:hover {
+        color: #272727; }
     #projects .container #accordion .card1 {
       width: 60%; }
       #projects .container #accordion .card1 button {
@@ -415,8 +417,8 @@ header #see-more {
         font-size: 18px;
         color: #446e9b;
         cursor: pointer; }
-    #projects .container #accordion a:hover {
-      color: #272727; }
+      #projects .container #accordion .card1 a:hover {
+        color: #272727; }
 
 @media screen and (max-width: 1200px) {
   #projects .container #accordion {

@@ -19,6 +19,8 @@
             color: rgb(68,110,155);
             cursor: pointer;
           }
+
+          a:hover { color: rgb(39,39,39); }
         }
 
         & .card1 {
@@ -30,10 +32,9 @@
               color: rgb(68,110,155);
               cursor: pointer;
             }
-        }
 
-        a:hover { color: rgb(39,39,39); }
-        
+            a:hover { color: rgb(39,39,39); }
+        }
       }
     }
 }
