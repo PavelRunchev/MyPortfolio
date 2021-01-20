@@ -1,0 +1,19 @@
+@import '../Settings/settings.colors.scss';
+@import '../Tools/tools.mixins.scss';
+
+.o-hidden {
+	width: 150px;
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	background-color: $background-color-blue-opacity-100;
+	border-radius: 4px;
+	color: $third-color-black;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-style: italic;
+	transform: scale(0);
+	opacity: 0;
+	@include box-shadow-hidden-info;
+}

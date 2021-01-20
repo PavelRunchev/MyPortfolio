@@ -1,0 +1,56 @@
+/* colors */
+/* background colors */
+/* icon colors */
+/* colors */
+/* background colors */
+/* icon colors */
+.c-education {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c-education .c-education-header {
+  width: 200px;
+}
+
+.c-education .c-education-container {
+  width: 100%;
+}
+
+.c-education .c-education-container .c-education-softuni-logo {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+  margin-bottom: 3%;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  -ms-transition: opacity 1s ease-out;
+}
+
+.c-education .c-education-container .c-education-softuni-logo:active {
+  opacity: 0;
+}
+
+.c-education .c-education-container .c-education-diploma-container {
+  width: 180px;
+}
+
+.c-education .c-education-container .c-education-diploma-container .c-education-diploma-btn {
+  width: 100%;
+  text-align: center;
+  color: #36A2C4;
+}
+
+.c-education .c-education-container .c-education-diploma-container .c-education-diploma-btn:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,110 @@
+@import '../Settings/settings.colors.scss';
+@import '../Tools/tools.animations.scss';
+@import '../Tools/tools.mixins.scss';
+
+.c-skills {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+
+	.c-skills-header {
+		width: 200px;
+	}
+
+	.c-skills-container {
+		width: 100%;
+		margin: 0 auto;
+		background-size: cover;
+	
+		.c-skills-primery-container {
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			padding: 5%;
+			@include primary-box-shadow-black;
+	
+			.c-skills-tools-container {
+				padding: 0;
+				@include flex-box(row, space-around, stretch);
+				margin: 5% auto;
+			
+				.c-skills-tools-h3 {
+					text-decoration: underline;
+					margin: 3% 0 7% 0;
+				}
+			
+				.c-skills-tools-item-link {
+					cursor: pointer;
+				}
+			
+				//JS icon
+				.fa-js-square {
+					color: $js-color;
+					&:hover {
+						color: $secondary-color-white;
+					}
+				}
+			
+				//Angular icon
+				.fa-angular {
+					color: $angular-color;
+					animation: angularRotate 8s linear 0s infinite;
+					&:hover {
+						color: $secondary-color-white;
+						animation-play-state: paused;
+					}
+				}
+			
+				//React icon
+				.fa-react {
+					color: $react-color;
+						animation: reactRotate 8s linear 0s infinite;
+					&:hover {
+						color: $secondary-color-white;
+						animation-play-state: paused;
+					}
+				}
+			
+				//Node JS
+				.fa-node {
+					color: $node-js-color;
+					&:hover {
+						color: $secondary-color-white;
+					}
+				}
+			
+				//Sass icon
+				.fa-sass {
+					color: $sass-color;
+					&:hover {
+						color: $secondary-color-white;
+					}
+				}
+			
+				//Npm icon
+				.fa-npm {
+					color: $npm-color;
+					&:hover {
+						color: $secondary-color-white;
+					}
+				}
+			
+				//HTML5 icon
+				.fa-html5 {
+					color: $html5-color;
+					&:hover {
+						color: $secondary-color-white;
+					}
+				}
+			
+				//CSS3 icon
+				.fa-css3-alt {
+					color: $css3-color;
+					&:hover {
+						color: $secondary-color-white;
+					}
+				}
+			}
+		}
+	}
+}
+

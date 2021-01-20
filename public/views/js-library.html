@@ -6,44 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Library and Tools</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/Bootstrap-css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Bootstrap-css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/Bootstrap-css/bootstrap-reboot.min.css">
 
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
-    <main class="container-fluid p-3" id="js-library">
-        <div class="container border p-4 mt-4">
-            <a href="../index.html" class="link float-right font-weight-bold text-dark">Back</a>
-            <h2 class="h2 text-center text-dark p-5"><i class="fab fa-js mr-3"></i>Java Script Library</h2>
-            <div class="container text-center text-dark">
-                <div class="inner-js-library text-left">
+    <main class="container-fluid o-page-container">
+        <div class="o-container">
+            <div class="o-container-btn-back">
+                <a href="../index.html" class="o-buttons o-page-btn-back">Back</a>
+            </div>
+            
+            <div class="o-page-header">
+                <h2 class="text-dark text-center font-weight-bold mt-5 mb-5"><i class="fab fa-js mr-3"></i>JS Libraries</h2>
+            </div>
+            
+            <div class="o-primery-container">
+                <h4 class="h4 font-weight-bold text-dark">Front-End</h4>
+                <div class="o-secondary-container text-dark text-left">
                     <p>1. JQuery - DOM Manipulation</p>
-                     <p>2. Mocha and Chai libraries - Unit testing in JavScript</p>
-                    <p>3. Handlebars and Pug libraries - Templating Engines</p>
-                    <p>4. Sammy - JS framework</p>
-                    <p>5. Gulp - Toolkit for help in your development workflow</p>
-                    <p>6. Bower library - Legacy package manager</p>
+                    <p>2. Handlebars and Pug libraries - Templating Engines</p>
+                    <p>3. Sammy - JS framework</p>
+                    <p>4. Gulp - Toolkit for help in your development workflow</p>
+                    <p>5. Bower library - Legacy package manager</p>
+                    <p>6. Bootstrap 4 - front-end framework</p>
+                    <p>7. Fontawesome - different glyph icons</p>
+                    <p>8. Toastr - is for Gnome / Growl type non-block notifications</p>
+                </div>
+
+                <h4 class="h4 font-weight-bold text-dark">Back-End</h4>
+                <div class="o-secondary-container text-dark text-left">
+                    <p>1. NodeJS - build scalable network applications.</p>
+                    <p>1. Mocha and Chai - JS test framework running on NodeJS.</p>
+                    <p>2. ExpressJS - framework for web application.</p>
+                    <p>3. Nodemon - is tool for automatically restarting node apps.</p>
+                    <p>4. MongoDB - driver for NodeJS</p>
+                    <p>5. Mongoose - is a MongoDB object modeling tool designed in an asynchronous environment.</p>
                 </div>
             </div>
         </div>      
     </main>
     <!-- loading jQuery -->
-    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap-js/jquery.min.js"></script>
     <!-- loading Popper.min.js - needed after respone navigation click show nav menu -->
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/scrolling.js"></script>
+    <script src="../js/bootstrap-js/popper.min.js"></script>
+    <script src="../js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap-js/scrolling.js"></script>
 </body>
 </html>

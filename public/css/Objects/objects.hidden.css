@@ -1,0 +1,21 @@
+/* colors */
+/* background colors */
+/* icon colors */
+.o-hidden {
+  width: 150px;
+  height: 35px;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(229, 241, 251, 0.75);
+  border-radius: 4px;
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-style: italic;
+  transform: scale(0);
+  opacity: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
+}

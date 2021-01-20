@@ -1,43 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('../fontawesome/css/all.css');
+@import url('../fontawesome/css/brands.css');
+
+@import './Generic/generic.reset.scss';
+@import './Settings/settings.font.scss';
+
+@import './Tools/tools.animations.scss';
+@import './Tools/tools.mixins.scss';
+
+@import './Objects/objects.cards.scss';
+@import './Objects/objects.buttons.scss';
+@import './Objects/objects.containers.scss';
+@import './Objects/objects.primery-container.scss';
+@import './Objects/objects.hidden.scss';
+@import './Objects/objects.tools.icons.scss';
+@import './Objects/objects.img.scss';
+
+@import './Elements/elements.img.scss';
+@import './Elements/elements.h2.scss';
+@import './Elements/elements.h3.scss';
+@import './Elements/elements.a.scss';
+@import './Elements/elements.li.scss';
+@import './Elements/elements.p.scss';
+@import './Elements/elements.i.scss';
+@import './Elements/elements.div.scss';
+
+@import './Components/components.navigation.scss';
+@import './Components/components.header.scss';
+@import './Components/components.about.scss';
+@import './Components/components.education.scss';
+@import './Components/components.skills.scss';
+@import './Components/components.qualification.scss';
+@import './Components/components.project.scss';
+@import './Components/components.footer.scss';
 
 
-@import 'mixins';
-@import 'animations';
-@import 'navigation';
-@import 'header';
-@import 'education';
-@import 'skills';
-@import 'qualification';
-@import 'projects';
-@import 'environment';
-@import 'views';
 
-body {
-  position: relative;
-  top: 0;
-  left: 0;
-  background: rgb(238,238,238);
-  main {
-    & hr { opacity: 0; }
-    & #hr-about { margin-top: 0; }
-  }
 
-    footer {
-      background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0.15));
-      position: relative;     
-      z-index: 100;
-      font-size: 18px; 
-      & .container {
-        display: flex;
-        flex-direction: column;
 
-        & i { font-size: 20px; }
-      }    
-    }
-}
 
-@media screen and (max-width: 500px) {
-  #footer {
-    font-size: 12px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

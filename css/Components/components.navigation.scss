@@ -1,0 +1,106 @@
+@import '../Settings/settings.colors.scss';
+@import '../Settings/settings.breakpoints.scss';
+@import '../Tools/tools.mixins.scss';
+@import '../Tools/tools.animations.scss';
+
+.navbar {
+	background-color: $background-color-blue-opacity-100;
+
+	.nav-container {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		@include for-tablet-down {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.nav-btn-container {
+			@include flex-box(row, space-between, stretch);
+		}
+
+		.nav-change-view {
+			text-transform: uppercase;
+			width: 144px;
+			padding: 0px 5px;
+			color: $primary-color-blue;
+			@include transition-all-ease-out(0.3s);
+		
+			&:hover {
+				outline: none;
+				opacity: 0.75;
+				@include transform-scale(0.9);
+			}
+		}
+
+		.navbar-collapse {
+			max-width: 60%;
+
+			@include for-tablet-landscape-up {
+				max-width: 80%;
+			}
+
+			@include for-tablet-down {
+				max-width: 100%;
+			}
+		
+			.navbar-nav {
+				@include flex-box(row, end, stretch);
+				margin-left: auto;
+
+				@include for-tablet-down {
+					width: 100%;
+					max-width: 100%;
+					@include flex-box(column, flex-start ,stretch);
+				}
+
+
+
+				.nav-item {
+					@include for-tablet-down {
+						width: 30%;
+					}
+
+					@include for-tablet-landscape-up {
+						width: auto;
+					}
+
+					@include transition-all-ease-out(0.3s);
+					
+					&:hover {
+						@include transform-scale(0.9);
+					}
+				}
+
+				.nav-list-items-link {
+					text-transform: uppercase;
+					padding: 10px 5px;
+					margin: 0 20px;
+					color: $primary-color-blue;
+					
+					&:hover {
+						@include for-tablet-landscape-up {
+							border-bottom: 1px solid $primary-color-blue;
+						}
+
+						@include for-tablet-down {
+							border-bottom: 1px solid $background-color-blue-opacity-100;
+						}
+						opacity: 0.75;
+					}
+				
+					&:active {
+						@include for-tablet-landscape-up {
+							border-bottom: 1px solid $primary-color-blue;
+						}
+
+						@include for-tablet-down {
+							border-bottom: 1px solid $background-color-blue-opacity-100;
+						}
+						opacity: 0.75;
+					}
+				}
+			}
+		}
+	}
+}

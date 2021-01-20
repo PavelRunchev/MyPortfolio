@@ -9,342 +9,522 @@
     <link rel="apple-touch-icon" sizes="180x280" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="64x64" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/Bootstrap-css/bootstrap.css">
+    <link rel="stylesheet" href="./css/Bootstrap-css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/Bootstrap-css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/Bootstrap-css/mdb.min.css">
+    <link rel="stylesheet" href="./css/Bootstrap-css/mdb.rtl.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-primary" id="navigation">   
-        <a class="nav-link" href="views/changeView.html">Change View</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-                <div class="collapse navbar-collapse mx-5" id="navbarColor01">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-4">
-                      <a class="nav-link" href="#hr-about">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-4">
-                      <a class="nav-link" href="#hr-education">Education</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="#hr-skills">Skills</a>
-                      </li>
-                    <li class="nav-item mr-4">
-                      <a class="nav-link" href="#hr-qualification">Qualification</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                      <a class="nav-link" href="#hr-projects">Projects</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                      <a class="nav-link" href="#hr-environment">Environment</a>
-                    </li>
-                  </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid nav-container">
+        <div class="nav-btn-container">
+          <a class="navbar-brand nav-change-view" href="./views/changeView.html">Change View</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-list-items-link" href="#hr-about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-list-items-link" href="#hr-education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-list-items-link" href="#hr-skills">Skills</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link nav-list-items-link" href="#hr-qualification">Qualification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-list-items-link" href="#hr-projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <hr id="hr-about">
-
-    <header class="container-fluid" id="about">
-      <div class="container mx-auto text-center" id="header">
-          <img src="./image/2.gif" data-src="./image/DSCF0009.JPG" class="mb-4" id="image" alt="photo">
-        
-          <h1 clas="m-4 font-weight-bold">PAVEL RUNCHEV</h1>
-          <h5><i class="fas fa-globe-europe"></i> BULGARIA, <i class="fas fa-map-marker-alt"></i> GABROVO</h5>
-          <h5><i class="fas fa-phone"></i> 0879999436</h5>
-          <h5 class="h5 right-hand"><a class="mt-4" id="front-end" onclick="window.open('sertificates/Diploma.jpg','name','top=200, left=400,width=400,height=600')"><i class="fas fa-hand-point-right"></i> Full Stack Developer</a></h5>
-          <div id="data">
-            <a class="link" onclick="window.open('https://accounts.google.com/');"><i class="fas fa-envelope"></i> pavel.runchev@gmail.com</a>
-            <a class="link" onclick="window.open('https://github.com/PavelRunchev?tab=repositories');"><i class="fab fa-github"></i> PavelRunchev</a>
-            <a class="link" onclick="window.open('https://www.linkedin.com/in/pavel-runchev-b4b58116b');"><i class="fab fa-linkedin-in"></i> Pavel Runchev</a>
-            <a class="link" onclick="window.open('https://www.skype.com/bg/get-skype/');"><i class="fab fa-skype"></i> raidersgb</a>
-            <a class="link"><i class="fab fa-facebook-square"></i> Pavel Runchev</a>
-          </div>
-          <div id="accordion">
-              <div class="card bg-primary">
-                  <div class="card-header" id="headingFour">
-                    <h5 class="mb-0">
-                      <p class="text-left text-light font-weight-normal">I’m a passionate developer who tends to be mindful for the entire product lifetime. I really enjoy being part of a team which creates a friendly and helpful environment. I truly believe our software can make a profound impact for the end users.</p>
-                      <button class="btn btn-outline-light collapsed mx-auto" onclick="setTimeout(autoClosedSeeMore, 6000);" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        See More...
-                      </button>
-                    </h5>
-                    
-                  </div>
-                  <div class="text-center text-light p-3"></div>
-                    <div class="card-body collapse text-left text-light p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
-                      
- 
-                      <h5 class="h5">Hobbies and Interests:</h5>
-                      <p>Apart from being a Web JS Developer, I enjoy most of my time being outdoors. In the cold and dark days i love watch fantasy genre movies and astronomy or playing video games with adventure and logically styles. During the warmer months I enjoy the fresh mountain air exploring strange places related to interesting historical events.</p>
-                      <p>During my free time i exploring the latest technology advancements in the front-end web development world.</p>
-
-                      <h5 class="h5">Knowledge of languages</h5>
-                      <p>B1 (Intermediate English)</p>
-                    </div>
-              </div>
-              
-          </div>
+    <header class="c-header">
+      <!-- Navbar -->
+     
+      <!-- Navbar -->
+      
+      <!-- Background image -->
+      <div
+        class="text-center bg-image c-header-background-image ripple"
+        data-mdb-ripple-color="light"
+        style="
+          background-image: url('image/bg-developer.jpg');
+          height: 600px;
+        "
+      >
+        <div class="mask c-header-mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          
+            <img src="./image/loading.gif" data-src="./image/DSCF0009.JPG" class="c-header-info-image ripple"   alt="photo">
+            <div class="text-white">
+              <h1 clas="h1 m-4 font-weight-bold">PAVEL RUNCHEV</h1>
+              <h5 class="text-light"><i class="fas fa-globe-europe"></i> BULGARIA, <i class="fas fa-map-marker-alt"></i> GABROVO</h5>
+              <h5 class="text-light"><i class="fa fa-mobile"></i> 0879999436</h5>
+              <h5 class="text-light"><i class="fa fa-desktop"></i> Full Stack Developer</h5>
+            </div>
+           
+        </div>
       </div>
-    </header>
-    <main>
+  <!-- Background image -->
+</header>
+
+<main>
+      <hr id="hr-about">
+
+      <section class="container-fluid c-about">
+        <div class="d-block mx-auto c-about-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5">ABOUT</h2>
+        </div>
+        
+
+        <div class="o-container" id="accordion">
+            <div class="o-primery-container">
+
+                <div class="card-header" id="headingFour">
+                    <p class="text-left font-weight-normal">I’m a passionate developer who tends to be mindful for the entire product lifetime. I really enjoy being part of a team which creates a friendly and helpful environment. I truly believe our software can make a profound impact for the end users.</p>
+                    <button class="collapsed .o-button c-about-btn" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Read More
+                    </button>
+                </div>
+                <div class="text-center text-light p-3"></div>
+                <div class="card-body collapse text-left p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
+                  <h3 class="h3 text-center">Hobbies and Interests:</h5>
+                  <p>Apart from being a Web JS Developer, I enjoy most of my time being outdoors. In the cold and dark days i love watch fantasy genre movies and astronomy or playing video games with adventure and logically styles. During the warmer months I enjoy the fresh mountain air exploring strange places related to interesting historical events.</p>
+                  <p>During my free time i exploring the latest technology advancements in the front-end web development world.</p>
+                  <h3 class="h3 text-center">Knowledge of languages</h5>
+                  <p class="text-center">B1 (Intermediate English)</p>
+                </div>
+
+                <div class="c-about-data mb-3">
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-skype"></i>
+                    <span class="o-hidden c-about-data-secondary-info-skype">raidersgb</span>
+                  </span>
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-github"></i>
+                    <span class="o-hidden c-about-data-secondary-info-github">PavelRunchev</span>
+                  </span >
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="o-hidden c-about-data-secondary-info-linkedin">Pavel Runchev</span>
+                  </span>
+                  <span class="c-about-data-secondary-info">
+                    <i class="fas fa-envelope"></i>
+                    <span class="o-hidden c-about-data-secondary-info-gmail">pavel.runchev@gmail.com</span>
+                  </span>
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-facebook-square"></i>
+                    <span class="o-hidden c-about-data-secondary-info-facebook">Pavel Runchev</span>
+                  </span>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
       <hr id="hr-education">
 
-      <section id="education">
-        <h2 class="h2 text-center text-dark font-weight-bold">EDUCATION</h2>
-        <div class="container mx-auto text-center">
-          <h3 class="h3 text-light mb-5">Software Engineering - Software University</h3>
-          <div id="softuni" class="m-auto">
-            <p class="mb-3"><img src="image/softuni.png" class="img-thumbnail" alt="logo"></p>
-            <p class="text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
-            <div>
-              <a id="diploma" onclick="window.open('sertificates/Diploma.jpg','name','top=200, left=400,width=400,height=600')"><i class="fas fa-graduation-cap"></i> Diploma Sertificate...</a>
+      <section class="container-fluid c-education">
+        <div class="d-block mx-auto c-education-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5">EDUCATION</h2>
+        </div>
+        
+        <div class="o-container">
+          <div class="o-primery-container">
+
+            <h3 class="h3 text-dark text-center mb-5 mt-2 w-100">Software Engineering - Software University</h3>
+            <div class="c-education-container">
+  
+              <div>
+                <img src="./image/softuni.png" class="img-thumbnail c-education-softuni-logo" alt="logo">
+              </div>
+              <p class="text-left">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
+              <div class="c-education-diploma-container">
+                <a class="o-buttons c-education-diploma-btn" ><i class="fas fa-graduation-cap"></i> Diploma Sertificate</a>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
 
       <hr id="hr-skills">
 
-      <section id="skills">
-        <h2 class="h2 text-uppercase text-center text-dark font-weight-bold">SKILLS</h2>
-        <div class="container-fluid mx-auto">
-          <div class="subheading text-center font-weight-bold font-italic">Programming Languages &amp; Tools</div>
-          <ul>
+      <section class="container-fluid c-skills">
+        <div class="d-block mx-auto c-skills-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5">SKILLS</h2>
+        </div>
+      
+        <div class="o-container c-skills-container" style="background-image: url('./image/React-Developer-Tools.jpg');">
+          <div class="c-skills-primery-container" >
+
+            <h3 class="c-skills-tools-h3 text-center text-light font-weight-bold font-italic">Programming Languages &amp; Tools</h3>
+            <ul class="c-skills-tools-container">
+              
+                <li class="list-inline-item">
+                  <i class="fab fa-js-square o-tools-icon"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-react o-tools-icon"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-angular o-tools-icon" ></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-node o-tools-icon"></i>
+                </li>
+            </ul>
+
+            <ul class="c-skills-tools-container">
               <li class="list-inline-item">
-                <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5');" class="fab fa-html5 w-25"></a>
+                <i class="fab fa-sass o-tools-icon"></i>
+                
               </li>
               <li class="list-inline-item">
-                  <a onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3');" class="fab fa-css3-alt w-25"></a>
+                <i class="fab fa-npm o-tools-icon"></i>
               </li>
               <li class="list-inline-item">
-                  <a onclick="window.open('https://developer.mozilla.org/bg/docs/Web/JavaScript');" class="fab fa-js-square w-25"></a>
+                <i class="fab fa-css3-alt o-tools-icon"></i>
               </li>
               <li class="list-inline-item">
-                  <a onclick="window.open('https://angular.io/');" class="fab fa-angular w-25"></a>
+                <i class="fab fa-html5 o-tools-icon"></i>
               </li>
-              <li class="list-inline-item">
-                  <a onclick="window.open('https://reactjs.org/');" class="fab fa-react w-25"></a>
-              </li>
-              <li class="list-inline-item">
-                  <a onclick="window.open('https://nodejs.org/en/');" class="fab fa-node-js w-25"></a>
-              </li>
-              <li class="list-inline-item">
-                  <a onclick="window.open('https://sass-lang.com/');" class="fab fa-sass w-25"></a>
-              </li>
-              <li class="list-inline-item">
-                  <a onclick="window.open('https://gulpjs.com/');" class="fab fa-gulp w-25"></a>
-              </li>
-              <li class="list-inline-item">
-                  <a onclick="window.open('https://www.npmjs.com/');" class="fab fa-npm w-25"></a>
-              </li>
-          </ul>
+            </ul>
+
+          </div>
         </div>
       </section>
 
       <hr id="hr-qualification">
+      
+      <section class="container-fluid c-qualification" >
+        <div class="d-block mx-auto c-qualification-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5">QUALIFICATION</h2>
+        </div>
+        
+        <div class="o-container">
+            <div class="o-primery-container">
 
-      <section id="qualification" class="container-fluid text-center">
-            <h2 class="h2 text-dark font-weight-bold">QUALIFICATION</h2>
-            <div class="container">             
-              <div class="row">
-                  <div class="card bg-primary" style="width: 20rem;" id="js">
-                      <h3 class="card-header h3">JS</h3>
-                      <div class="card-body">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text"></p>
-                        <a href="./views/js.html" class="btn btn-outline-light font-weight-bold">See more...</a>
-                      </div>
-                  </div>
-                  <div class="card bg-dark" style="width: 20rem;" id="js-plugins">
-                    <h3 class="card-header h3">JS Library</h3>
-                    <div class="card-body">
-                      <h4 class="card-title"></h4>
-                      <p class="card-text"></p>
-                      <a href="./views/js-library.html" class="btn btn-outline-light font-weight-bold">See more...</a>
-                    </div>
-                  </div>
-                  <div class="card bg-primary" style="width: 20rem;" id="html">
-                        <h3 class="card-header h3">HTML5</h3>
-                        <div class="card-body">
-                          <h4 class="card-title"></h4>
-                          <p class="card-text"></p>
-                          <a href="./views/html.html" class="btn btn-outline-light font-weight-bold">See more...</a>
-                        </div>
-                  </div>
-                  <div class="card bg-dark" style="width: 20rem;" id="css">
-                        <h3 class="card-header h3">CSS3</h3>
-                        <div class="card-body">
-                          <h4 class="card-title"></h4>
-                          <p class="card-text"></p>
-                          <a href="./views/css.html" class="btn btn-outline-light font-weight-bold">See more...</a>
-                        </div>
-                  </div>
-                  <div class="card bg-primary" style="width: 20rem;" id="csharp">
-                        <h3 class="card-header h3">C#</h3>
-                        <div class="card-body">
-                          <h4 class="card-title"></h4>
-                          <p class="card-text"></p>
-                          <a href="./views/csharp.html" class="btn btn-outline-light font-weight-bold">See more...</a>
-                        </div>
-                  </div>
-                  <div class="card bg-dark" style="width: 20rem;" id="java">
-                    <h3 class="card-header h3">Java</h3>
-                    <div class="card-body">
-                      <h4 class="card-title"></h4>
-                      <p class="card-text"></p>
-                      <a href="./views/java.html" class="btn btn-outline-light font-weight-bold">See more...</a>
-                  </div>
+              <div class="c-qualification-container-row-cards">
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-left"  src="./image/javascript-image.jpg" alt="image">
+                  <h3 class="text-center">JS</h3>
+                    <p class="card-text">JavaScript is a scripting or programming language that allows you to implement complex features on web pages every time a web page does more than just sit there and display static information for you to look at displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. You can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
+                    <a href="./views/js.html" class="o-buttons text-center">Read More</a>
                 </div>
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-right" src="./image/nodeJS-Handlebars.jpg" alt="image">
+                  <h3 class="text-center">JS Libraries</h3>
+                  <p class="card-text">There are a billion webpages, and many of them are interactive in some way - in fact, many of them are interactive in the same ways.In JavaScript, the way we do that is by using a library. A library is a JavaScript file that contains a bunch of functions, and those functions accomplish some useful task for your webpage.
+                      How do we know what functions we can use? We could look at the JavaScript file, if it's short, or better, we could look at the documentation. Most libraries have documentation with a list of available functions or a real-world example.</p>
+                  <a href="./views/js-library.html"  class="o-buttons text-center">Read More</a>
+                </div>
+
               </div>
+              <div class="c-qualification-container-row-cards">
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-left" src="./image/HTML-image.jpg" alt="image">
+                  <h3 class="text-center">HTML5</h3>
+                  <p class="card-text">HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                    "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+                  <a href="./views/html.html" class="o-buttons text-center">Read More</a>
+                </div>
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-right" src="./image/CSS-image.png" alt="image">
+                  <h3 class="text-center">CSS3</h3>
+                  <p class="card-text">CSS (Cascading Style Sheets) is a language for styling the webpage. We can change the appearance and the layout of the webpage by using CSS. We can also define how a website’s view changes in different screens like desktops, tablets, and mobile devices.
+                            CSS is not a programming language, like C# or JavaScript. However, CSS is not as easy as it seems. If you try to use it without understanding, you will have difficulties in web development. Therefore, learning CSS is as important as learning a programming language.
+                            Let’s continue with an example to reveal the effect of CSS on a website.</p>
+                  <a href="./views/css.html" class="o-buttons text-center">Read More</a>
+                </div>
+
+              </div>
+              <div class="c-qualification-container-row-cards">
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-left" src="./image/Java-image.jpg" alt="image">
+                  <h3 class="text-center">Java</h3>
+                  <p class="card-text">Java is a computer programming language. It enables programmers to write computer instructions using English-based commands instead of having to write in numeric codes. It’s known as a high-level language because it can be read and written easily by humans. Java has a set of rules that determine how the instructions are written. These rules are known as its syntax. Once a program has been written, the high-level instructions are translated into numeric codes that computers can understand and execute.</p>
+                  <a href="./views/java.html" class="o-buttons text-center">Read More</a>
+                </div>
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-right" src="./image/CSharp-image.jpg" alt="image">
+                  <h3 class="text-center">C#</h3>
+                  <p class="card-text">C Sharp is a general-purpose, modern and object-oriented programming language pronounced as “C Sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team within the .NET initiative and was approved by the European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# is among the languages for Common Language Infrastructure. C Charp (C#) is a lot similar to Java syntactically and is easy for users who have knowledge of C, C++ or Java.</p>
+                  <a href="./views/csharp.html" class="o-buttons text-center">Read More</a>
+                </div>
+
+              </div>
+              
             </div>
+          
+        </div>
       </section>
 
       <hr id="hr-projects">
 
-      <section id="projects" class="container-fluid">
-          <h2 class="h2 text-dark text-center text-uppercase font-weight-bold">PROJECTS</h2>
-          <div class="container font-weight-bold">
-            <div id="accordion">
-              <div class="card my-3 bg-light">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <i class="fab fa-gulp"></i> Gulp Project
-                    </button>
-                  </h5>
-                </div>
-            
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body text-dark">
-                    Тo create my project I used the following tools - HTML5, SASS, GULP, JEKYLL!
-                    <div class="text-dark">Link -> <a onclick="window.open('https://medieval-castles.firebaseapp.com/')" class="font-italic">Medieval Castles</a></div>
-                    <div class="text-dark">View code to GitHub -> <a onclick="window.open('https://github.com/PavelRunchev/Medieval-Castles')" class="font-italic">Medieval Castles</a></div>
-                    <div class="text-dark">Grade - <span class="font-italic">6.00</span></div>
-                    <div class="text-dark">Sertificate -> <a onclick="window.open('sertificates/CSS Advanced.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
-                  </div>
-                </div>
+      <section class="container-fluid c-project">
+        <div class="d-block mx-auto c-project-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5">PROJECTS</h2>
+        </div>
+        
+        <div class="o-container" >
+          <div id="accordion" class="o-primery-container" style="background-image: url('./image/developer_environment.jpeg'); height: auto;">
+            <div class="c-project-background-color" style="background-color: rgba(0,0,0,0.7)">
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingOne">
+                  <button class="collapsed o-button c-project-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fab fa-gulp"></i> Jekyll - Project
+                  </button>
               </div>
-              <div class="card my-3 bg-light">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <i class="fab fa-react"></i> React JS - Project
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body text-dark">
-                    Тo create my project I used the following tools - React, HTML5, Bootstrap, SASS!
-                      <div class="text-dark">Link -> <a class="font-italic" onclick="window.open('https://gems-catalog.firebaseapp.com/')">Gems Catalog</a></div>
-                      <div class="text-dark">Grade - <span class="font-italic">6.00</span></div>
-                      <div class="text-dark">Sertificate -> <a onclick="window.open('sertificates/React Fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">HTML5, SASS, GULP, JEKYLL</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Medieval Castles</span>!</div>
+                  <div class="text-dark">Link to project -> 
+                    <a class="c-project-link deploy-jekyll-project">
+                      <i class="fas fa-link"></i>
+                    </a>
                   </div>
-                </div>
-              </div>
-              <div class="card my-3 bg-light">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed text-dark font-weight-bold" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <i class="fab fa-angular"></i> Angular - Project
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body text-dark">
-                    Тo create my project I used the following tools - HTML5, Bootstrap, Angular 7, Redux, SASS!
-                      <div class="text-dark">Link -> <a onclick="window.open('https://messenger-f616f.firebaseapp.com/home')" class="font-italic">Board Games</a></div>
-                      <div class="text-dark">View code to GitHub -> <a onclick="window.open('https://github.com/PavelRunchev/Angular-Defense')" class="font-italic">Board Games</a></div>
-                      <div class="text-dark">Grade - <span class="font-italic">6.00</span></div>
-                      <div class="text-dark">Sertificate -> <a onclick="window.open('sertificates/Angular Fundamentals.jpg','name','top=200, left=400,width=400,height=600')" class="font-italic">YES</a></div>
+                  <div class="text-dark">View code to GitHub -> 
+                    <a class="c-project-link github-link-jekyll-project">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                  <div class="text-dark ">Sertificate -> 
+                    <a class="font-italic c-project-link sertificate-jekyll-project">YES</a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-      </section>
 
-      <hr id="hr-environment">
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingTwo">
+                  <button class="collapsed o-button c-project-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fab fa-react"></i> React JS - Project
+                  </button>
+              </div>
 
-      <section id="environment">
-          <h2 class="h2 text-dark text-center text-uppercase font-weight-bold">Development Environments</h2>
-          <div class="container text-center text-light p-5">
-            <div class="row justify-content-between">
-              <div class="jumbotron">
-                <h5 class="h5 text-dark font-weight-bold mb-2">JS</h5>
-                <div class="row justify-content-center">
-                    <a class="vs-code mx-3" onclick="window.open('https://code.visualstudio.com/');">
-                      <img src="./image/visual-studio-code-logo.png" alt="logo">
-                    </a>
-                    <a class="webstorm mx-3" onclick="window.open('https://www.jetbrains.com/webstorm/');">
-                      <img src="./image/webstorm_logo_300x300.png">
-                    </a>
-                      <a class="mongo-db mx-3" onclick="window.open('https://www.mongodb.com/brand-resources');">
-                        <img src="./image/mongodb-logo-1.png">
-                    </a>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">React, HTML5, Bootstrap 4, SASS</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Gems Catalog</span>!</div>
+                    <div class="text-dark">Link to project -> 
+                      <a class="c-project-link deploy-react-project">
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">View code to GitHub -> 
+                      <a class="c-project-link github-link-react-project">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                    <div class="text-dark">Sertificate -> 
+                      <a class="font-italic c-project-link sertificate-react-project">YES</a>
+                    </div>
                 </div>
               </div>
-              <div class="jumbotron">
-                  <h5 class="h5 text-dark font-weight-bold mb-2">C#</h5>
-                  <div class="row justify-content-center p2">
-                      <a class="vs-code mx-3" onclick="window.open('https://visualstudio.microsoft.com/');">
-                        <img src="./image/vidualStudio.png">
-                      </a>
-                      <a class="webstorm mx-3" onclick="window.open('https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017');">
-                        <img src="./image/SQL Server Management Studio.png">
-                      </a>
+            </div>
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingThree">
+                  <button class="collapsed o-button c-project-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fab fa-angular"></i> Angular - Project
+                  </button>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold"> Angular 7, Redux, HTML5, SASS, Bootstrap 4</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Board Games</span>!</div>
+                  <div class="text-dark">Link to project -> 
+                    <a class="c-project-link deploy-angular-project">
+                      <i class="fas fa-link"></i>
+                    </a>
                   </div>
+                  <div class="text-dark">View code to GitHub -> 
+                    <a class="c-project-link github-link-angular-project">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                  <div class="text-dark">Sertificate -> 
+                    <a class="font-italic c-project-link sertificate-angular-project">YES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingFour">
+                <button class="collapsed o-button c-project-btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fab fa-node-js"></i> ExpressJS - Project
+                </button>
               </div>
 
-              <div class="jumbotron">
-                  <h5 class="h5 text-dark font-weight-bold mb-2">Java</h5>
-                  <div class="row justify-content-center">
-                      <a class="vs-code mx-3" onclick="window.open('https://www.jetbrains.com/idea/');">
-                        <img src="./image/intellij-idea_logo_300x300.png">
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">ExpressJS, NodeJS, Mongoose, MongoDB, HandleBars, Bootstrap 4, HTML5, SASS</span> and other libraries!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">SharedTripp</span>!</div>
+
+                    <div class="text-dark">Link to project -> 
+                      <a class="c-project-link deploy-ExpressJS-project">
+                        <i class="fas fa-link"></i>
                       </a>
-                      <a class="webstorm mx-3" onclick="window.open('https://www.mysql.com/');">
-                        <img src="./image/MySQL.png">
+                    </div>
+                    <div class="text-dark">View code to GitHub -> 
+                      <a class="c-project-link github-link-ExpressJS-project">
+                        <i class="fab fa-github-alt"></i>
                       </a>
-                  </div>
-              </div>                  
-            </div>           
+                    </div>
+                    <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                    <div class="text-dark">Sertificate -> 
+                      <a  class="font-italic c-project-link sertificate-ExpressJS-project">YES</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingFive">
+                  <button class="collapsed o-button c-project-btn" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <i class="fab fa-node-js"></i> Last Project
+                  </button>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">ExpressJS, NodeJS, Mongoose, MongoDB Atlas, HandleBars, Bootstrap 4, HTML5, SASS, secure-URL: JWT</span>,  and other libraries! Deployed to <span class="font-weight-bold">Heroku</span>.
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Blogger</span>!</div>
+                    <div class="text-dark">Link to site -> 
+                      <a class="c-project-link deploy-ExpressJS-blogger-project">
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">View code to GitHub -> 
+                      <a class="c-project-link github-link-ExpressJS-blogger-project">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">Grade - <span class="font-italic font-weight-bold">has not been grades!</span></div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
           </div>
         </div>
+    </section>
+
+</main>
+<footer class="c-footer" style="background-image: url('./image/dev-center.png'); height: auto;"> 
+
+      <section class="c-footer-development-tools" class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+        <h2 class="h2 text-light text-center text-uppercase">Development Environments</h2>
+  
+          <div class="c-footer-development-tools-container">
+           
+            <div class="c-footer-development-tools-container-C">
+                <h5 class="h5 text-light font-weight-bold mb-2 text-center">C#</h5>
+                <div class="c-footer-development-tools-container-links">
+                    <a class="c-footer-development-tools-container-link visual-studio-link">
+                      <img class="c-footer-development-tools-image" src="./image/visual-studio.png">
+                    </a>
+                    <a class="c-footer-development-tools-container-link sql-server-management-studio-link">
+                      <img class="c-footer-development-tools-image" src="./image/SQL Server Management Studio.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="c-footer-development-tools-container-JS">
+              <h5 class="h5 text-light font-weight-bold mb-2 text-center">JS</h5>
+              <div class="c-footer-development-tools-container-links">
+                  <a class="c-footer-development-tools-container-link vs-code-link">
+                    <img class="c-footer-development-tools-image" src="./image/vscode.jpg" alt="logo">
+                  </a>
+                  <a class="c-footer-development-tools-container-link web-storm-link">
+                    <img class="c-footer-development-tools-image" src="./image/webstorm-image.jpg">
+                  </a>
+                    <a class="c-footer-development-tools-container-link mongoDB-link">
+                      <img class="c-footer-development-tools-image" src="./image/mongodb.png">
+                  </a>
+              </div>
+            </div>
+  
+            <div class="c-footer-development-tools-container-Java">
+                <h5 class="h5 text-light font-weight-bold mb-2 text-center">Java</h5>
+                <div class="c-footer-development-tools-container-links">
+                    <a class="c-footer-development-tools-container-link intellij-idea-link">
+                      <img class="c-footer-development-tools-image" src="./image/intellij-idea.jpg">
+                    </a>
+                    <a class="c-footer-development-tools-container-link mySQL-server-link">
+                      <img class="c-footer-development-tools-image" src="./image/MySQL.png">
+                    </a>
+                </div>
+            </div>                  
+          </div>
+
+          <div class="c-footer-container-support">
+            
+            <a class="c-footer-support-link" href="./views/support.html"><i class="fas fa-thumbs-up mr-2"></i> Support</a>
+          </div>
+          <div class="text-light text-center font-weight-bold">Portfolio Tools:
+            <i class="fab fa-html5 mx-2"></i> 
+            <i class="fab fa-css3-alt mr-3"></i>
+            <i class="fa fa-bold mr-2"></i> 
+            <i class="fab fa-sass mr-2"></i> 
+            <i class="fab fa-js-square mr-2"></i> 
+          </div>
+          <div class="text-light text-center font-weight-bold">&copy; 2019-2021 Powered by Pavel Runchev</div>    
+          <div class="text-light text-center font-weight-bold">All rights reserved!</div>            
       </section>
-      
-    </main>
-    <footer class="container-fluid navbar navbar-expand-lg navbar-dark text-center bg-primary p-4" id="footer">
-      <div class="container">         
-          <div class="text-light text-center font-weight-bold">Portfolio Development:<i class="fab fa-html5 mx-2"></i> <i class="fab fa-css3-alt mr-3"></i><i class="fa fa-bold mr-2"></i> <i class="fab fa-sass mr-2"></i> </div>
-          <div class="text-light font-weight-bold">&copy; 2019 Powered by Pavel Runchev</div>
-      </div>         
-    </footer>
+</footer>
 
     <!-- loading jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap-js/jquery.min.js"></script>
     <!-- loading Popper.min.js - needed after respone navigation click show nav menu -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/scrolling.js"></script>
-    <script>
-      window.addEventListener('load', function() {
-        let allimages= document.getElementsByTagName('img')[0];        
-        allimages.setAttribute('src', allimages.getAttribute('data-src'));                 
-      }, false)
-    </script>
-    <script>
-      function show() {
-        console.log('show');
-      }
-    </script>
+    <script src="./js/bootstrap-js/popper.min.js"></script>
+    <script src="./js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap-js/scrolling.js"></script>
+    <script src="./js/bootstrap-js/mdb.min.js"></script>
+    <script src="./js/ease-loading.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/page-main.js"></script>
+    
 </body>
 </html>
