@@ -1,6 +1,9 @@
 /* colors */
 /* background colors */
 /* icon colors */
+/* colors */
+/* background colors */
+/* icon colors */
 .o-hidden {
   width: 150px;
   height: 35px;
@@ -13,9 +16,10 @@
   padding: 5px 10px;
   font-weight: bold;
   font-style: italic;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   opacity: 0;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.85);
 }
+/*# sourceMappingURL=objects.hidden.css.map */

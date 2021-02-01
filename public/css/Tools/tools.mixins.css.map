@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,YAAY;AAKZ,uBAAuB;AAKvB,iBAAiB",
+    "sources": [
+        "tools.mixins.scss",
+        "../Settings/settings.colors.scss"
+    ],
+    "names": [],
+    "file": "tools.mixins.css"
+}

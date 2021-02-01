@@ -1,5 +1,6 @@
 /* colors */
 /* background colors */
+/* icon colors */
 a {
   cursor: pointer;
   outline: none;
@@ -22,3 +23,4 @@ a:not([href]):not([tabindex]) {
 a:not([href]):not([tabindex]):hover {
   color: #36A2C4;
 }
+/*# sourceMappingURL=elements.a.css.map */

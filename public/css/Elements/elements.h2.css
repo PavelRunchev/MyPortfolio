@@ -1,5 +1,6 @@
 /* colors */
 /* background colors */
+/* icon colors */
 h2 {
   width: 100%;
   margin: 0 auto;
@@ -18,3 +19,4 @@ h2::after {
   left: 20%;
   bottom: -40%;
 }
+/*# sourceMappingURL=elements.h2.css.map */

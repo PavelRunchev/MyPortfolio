@@ -1,0 +1,283 @@
+/* colors */
+/* background colors */
+/* icon colors */
+/* colors */
+/* background colors */
+/* icon colors */
+/* colors */
+/* background colors */
+/* icon colors */
+@keyframes main-picture {
+  from {
+    opacity: 0;
+    border: 2px solid #FBFBFB;
+  }
+  to {
+    border: 2px solid #FBFBFB;
+    transition: all 0.5s ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 0px white;
+    -moz-box-shadow: 0px 0px 20px 0px white;
+    box-shadow: 0px 0px 20px 0px white;
+    transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes reactRotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes angularRotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes smallest {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-box {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.c-navigation {
+  background-color: rgba(229, 241, 251, 0.75);
+  padding: 1% 0 1% 0;
+}
+
+.c-navigation-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media all and (max-width: 992px) {
+  .c-navigation-container {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .c-navigation-container {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+  }
+}
+
+.c-navigation .c-navigation-btn-container {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  -moz-align-items: stretch;
+}
+
+@media all and (max-width: 992px) {
+  .c-navigation .c-navigation-btn-container {
+    width: 100%;
+  }
+}
+
+.c-navigation .c-navigation-change-view {
+  text-transform: uppercase;
+  width: 170px;
+  padding: 0px 20px;
+  color: #36A2C4;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+}
+
+.c-navigation .c-navigation-change-view:hover {
+  outline: none;
+  opacity: 0.75;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.c-navigation .navbar-collapse {
+  max-width: 60%;
+}
+
+@media all and (min-width: 900px) {
+  .c-navigation .navbar-collapse {
+    max-width: 80%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .c-navigation .navbar-collapse {
+    max-width: 100%;
+  }
+}
+
+.c-navigation-ul {
+  width: 700px;
+  margin-left: auto;
+  margin-bottom: 0;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+}
+
+@media all and (min-width: 900px) {
+  .c-navigation-ul {
+    width: 700px;
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .c-navigation-ul {
+    width: 100%;
+    padding: 0;
+    margin-top: 2%;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    -moz-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    -webkit-justify-content: space-around;
+    justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+  }
+}
+
+@media all and (min-width: 1800px) {
+  .c-navigation-ul {
+    width: 40%;
+    font-size: 22px;
+  }
+}
+
+.c-navigation-list-item {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+}
+
+.c-navigation-list-item:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  border-bottom: 1px solid #36A2C4;
+}
+
+@media all and (max-width: 992px) {
+  .c-navigation-list-item {
+    width: inherit;
+    padding: 0 3%;
+  }
+  .c-navigation-list-item:hover {
+    background-color: #FBFBFB;
+    border-bottom: 1px solid transparent;
+  }
+}

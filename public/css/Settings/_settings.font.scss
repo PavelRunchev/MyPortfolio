@@ -1,0 +1,19 @@
+//import fontawesome icons
+@import url('../fontawesome/css/all.css');
+@import url('../fontawesome/css/brands.css');
+
+
+
+body {
+	//import font Roboto 400
+	@font-face {
+	font-family: 'Roboto';
+		src: url('../../fonts/Roboto/Roboto-Regular.eot') format('embedded-opentype');
+		src: url('../../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+		src: url('../../fonts/Roboto/Roboto-Regular.woff') format('woff');
+		src: url('../../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+	}
+
+}
+
+

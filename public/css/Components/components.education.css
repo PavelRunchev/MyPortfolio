@@ -26,7 +26,6 @@
   cursor: pointer;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 3%;
   opacity: 1;
@@ -54,3 +53,4 @@
 .c-education .c-education-container .c-education-diploma-container .c-education-diploma-btn:hover {
   text-decoration: underline;
 }
+/*# sourceMappingURL=components.education.css.map */

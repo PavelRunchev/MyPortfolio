@@ -47,20 +47,22 @@
 }
 
 .c-about .c-about-data {
+  display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
-  flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -moz-justify-content: space-around;
   -ms-justify-content: space-around;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
   -moz-align-items: center;
@@ -262,3 +264,4 @@
   -o-transform: scale(1) translate(-55px, 5px);
   opacity: 1;
 }
+/*# sourceMappingURL=components.about.css.map */

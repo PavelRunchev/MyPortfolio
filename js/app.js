@@ -6,4 +6,3 @@ function openPage(content, isSertificate) {
     ? window.open(`${content}`,'_blank','top=0, left=0,width=450,height=650,', false)
     :	window.open(`${content}`,'_blank', windowFeatures);
 }
-

@@ -1,0 +1,200 @@
+/* colors */
+/* background colors */
+/* icon colors */
+/* colors */
+/* background colors */
+/* icon colors */
+@keyframes main-picture {
+  from {
+    opacity: 0;
+    border: 2px solid #FBFBFB;
+  }
+  to {
+    border: 2px solid #FBFBFB;
+    transition: all 0.5s ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 0px white;
+    -moz-box-shadow: 0px 0px 20px 0px white;
+    box-shadow: 0px 0px 20px 0px white;
+    transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes reactRotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes angularRotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes smallest {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-box {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* colors */
+/* background colors */
+/* icon colors */
+.c-skills {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c-skills-header {
+  width: 200px;
+}
+
+.c-skills-container {
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.c-skills-primery-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5%;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+}
+
+.c-skills-tools-h3 {
+  text-decoration: underline;
+  margin: 3% 0 7% 0;
+}
+
+.c-skills-tools-container {
+  padding: 0;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  -moz-align-items: stretch;
+  margin: 5% auto;
+}
+
+.c-skills-tools-container .fa-js-square {
+  color: #efd81d;
+}
+
+.c-skills-tools-container .fa-js-square:hover {
+  color: #FBFBFB;
+}
+
+.c-skills-tools-container .fa-angular {
+  color: #de2938;
+  animation: angularRotate 8s linear 0s infinite;
+}
+
+.c-skills-tools-container .fa-angular:hover {
+  color: #FBFBFB;
+  animation-play-state: paused;
+}
+
+.c-skills-tools-container .fa-react {
+  color: #57d2f3;
+  animation: reactRotate 8s linear 0s infinite;
+}
+
+.c-skills-tools-container .fa-react:hover {
+  color: #FBFBFB;
+  animation-play-state: paused;
+}
+
+.c-skills-tools-container .fa-node {
+  color: #82c91e;
+}
+
+.c-skills-tools-container .fa-node:hover {
+  color: #FBFBFB;
+}
+
+.c-skills-tools-container .fa-sass {
+  color: #c76494;
+}
+
+.c-skills-tools-container .fa-sass:hover {
+  color: #FBFBFB;
+}
+
+.c-skills-tools-container .fa-npm {
+  color: #c60000;
+}
+
+.c-skills-tools-container .fa-npm:hover {
+  color: #FBFBFB;
+}
+
+.c-skills-tools-container .fa-html5 {
+  color: #dd4b25;
+}
+
+.c-skills-tools-container .fa-html5:hover {
+  color: #FBFBFB;
+}
+
+.c-skills-tools-container .fa-css3-alt {
+  color: #254bdd;
+}
+
+.c-skills-tools-container .fa-css3-alt:hover {
+  color: #FBFBFB;
+}

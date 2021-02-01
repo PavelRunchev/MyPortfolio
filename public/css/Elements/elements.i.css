@@ -1,6 +1,18 @@
 /* colors */
 /* background colors */
 /* icon colors */
+@-webkit-keyframes main-picture {
+  from {
+    opacity: 0;
+    border: 2px solid #FBFBFB;
+  }
+  to {
+    border: 2px solid #FBFBFB;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    opacity: 1;
+  }
+}
 @keyframes main-picture {
   from {
     opacity: 0;
@@ -8,68 +20,147 @@
   }
   to {
     border: 2px solid #FBFBFB;
+    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 0px white;
+    box-shadow: 0px 0px 20px 0px white;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes shake {
   0% {
     -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     -webkit-box-shadow: 0px 0px 20px 0px white;
-    -moz-box-shadow: 0px 0px 20px 0px white;
     box-shadow: 0px 0px 20px 0px white;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   100% {
     -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes reactRotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
 @keyframes reactRotate {
   from {
-    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
   }
   to {
-    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes angularRotate {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
 @keyframes angularRotate {
   from {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes smallest {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes smallest {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes grow-box {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes grow-box {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -77,10 +168,14 @@
 /* background colors */
 /* icon colors */
 .fa-mobile {
-  animation-name: shake;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .fa-skype,
@@ -97,7 +192,8 @@
 .fa-linkedin-in:hover,
 .fa-facebook-square:hover,
 .fa-envelope:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .fa-skype {
@@ -119,3 +215,4 @@
 .fa-envelope {
   color: #E94134;
 }
+/*# sourceMappingURL=elements.i.css.map */
