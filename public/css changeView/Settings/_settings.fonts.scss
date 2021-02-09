@@ -1,0 +1,45 @@
+//import fontawesome icons
+@import url('../fontawesome/css/all.css');
+@import url('../fontawesome/css/brands.css');
+
+//import font Roboto 400
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	//Important relative path is not that, there is a main scss file (changeView.scss)!
+	src: url('../font/Roboto/Roboto-Regular.eot') format('embedded-opentype');
+	src: url('../font/Roboto/Roboto-Regular.ttf') format('truetype');
+	src: url('../font/Roboto/Roboto-Regular.woff') format('woff');
+	src: url('../font/Roboto/Roboto-Regular.woff2') format('woff2');
+}
+
+//import font Montserrat 400
+@font-face {
+	font-family: 'Montserrat';
+	//Important relative path is not that, there is a main scss file (changeView.scss)!
+	src: url('../font/Montserrat/MontserratRegular.eot') format('embedded-opentype');
+	src: url('../font/Montserrat/MontserratRegular.ttf') format('truetype');
+	src: url('../font/Montserrat/MontserratRegular.woff') format('woff');
+}
+
+//import font Lato 400
+@font-face {
+	font-family: 'Lato';
+	//Important relative path is not that, there is a main scss file (changeView.scss)!
+	src: url('../font/Lato/Lato-Regular.eot') format('embedded-opentype');
+	src: url('../font/Lato/Lato-Regular.ttf') format('truetype');
+	src: url('../font/Lato/Lato-Regular.woff') format('woff');
+	src: url('../font/Lato/Lato-Regular.woff2') format('woff2');
+}
+
+body {
+	font-family: 'Roboto';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat';
+}
+
+button {
+	font-family: 'Lato';
+}
+

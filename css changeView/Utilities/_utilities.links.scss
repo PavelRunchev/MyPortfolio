@@ -1,0 +1,12 @@
+@import '../Settings/_settings.colors';
+@import '../Tools/_tools.mixins';
+
+.u-links {
+	display: inline-block;
+	color: $secondary-color-green;
+	@include transition-all-ease-out(0.3s);
+	&:hover {
+		color: $primary-color-black !important;
+		@include transform-translate-and-scale(20px, 0px, 1.2);
+	}
+}

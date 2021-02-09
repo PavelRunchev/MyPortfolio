@@ -21,11 +21,12 @@ document.querySelector('.fa-linkedin-in').addEventListener('click', function() {
 document.querySelector('.fa-envelope').addEventListener('click', function() {
   openPage('https://www.google.com/intl/bg/gmail/about', false);
 });
-  
+
 //to Facebook
 document.querySelector('.fa-facebook-square').addEventListener('click', function() {
   openPage('https://www.facebook.com', false);
 });
+
   
 //show diploma page
 document.querySelector('.c-education-diploma-btn').addEventListener('click', function() {
@@ -50,7 +51,7 @@ document.querySelector('.fa-angular').addEventListener('click', function() {
   openPage('https://angular.io', false);
 });
 //guide to NodeJS
-document.querySelector('.fa-node').addEventListener('click', function() {
+document.querySelector('.fa-node-js').addEventListener('click', function() {
   openPage('https://nodejs.org', false);
 });
 //guide to SASS
