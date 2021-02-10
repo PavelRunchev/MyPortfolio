@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pavel Runchev</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Portfolio</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" type="image/png" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Roboto -->
+    <link href="./fonts/roboto/Roboto-Regular.eot" type="font/eot" rel="stylesheet">
+    <link href="./fonts/roboto/Roboto-Regular.ttf" type="font/ttf" rel="stylesheet">
+    <link href="./fonts/roboto/Roboto-Regular.woff" type="font/woff" rel="stylesheet">
+    <link href="./fonts/roboto/Roboto-Regular.woff2" type="font/woff2" rel="stylesheet">
 
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="./bootstrap-resource/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap-resource/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./bootstrap-resource/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="./bootstrap-resource/bootstrap-social.css">
-    <link rel="stylesheet" href="./bootstrap-resource/mdb.lite.min.css">
     <link rel="stylesheet" href="./bootstrap-resource/mdb.min.css">
-    <link rel="stylesheet" href="./bootstrap-resource/mdb.rtl.min.css">
-    <link rel="stylesheet" href="./bootstrap-resource/animations-extended.min.css">
 
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
@@ -81,7 +83,7 @@
       >
         <div class="mask c-header-mask" style="background-color: rgba(0, 0, 0, 0.6)">
           
-            <img src="./image/loading.gif" data-src="./image/DSCF0009.JPG" class="e-header-info-image ripple"   alt="photo">
+            <img src="./image/loading.gif" data-src="./image/DSCF0009.JPG" class="e-header-info-image c-header-info-image ripple"   alt="photo">
             <div class="text-white">
               <h1 class="m-4 font-weight-bold o-visible-element">PAVEL RUNCHEV</h1>
               <h5 class="text-light o-visible-element"><i class="fas fa-globe-europe"></i> BULGARIA, <i class="fas fa-map-marker-alt"></i> GABROVO</h5>
@@ -114,11 +116,11 @@
                 </div>
                 <div class="text-center text-light p-3"></div>
                 <div class="card-body collapse text-left p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
-                  <h3 class="h3 text-center o-visible-element">Hobbies and Interests:</h5>
+                  <h3 class="text-center o-visible-element">Hobbies and Interests:</h5>
                   <p class="o-visible-element">Apart from being a Web JS Developer, I enjoy most of my time being outdoors. In the cold and dark days i love watch fantasy genre movies and astronomy or playing video games with adventure and logically styles. During the warmer months I enjoy the fresh mountain air exploring strange places related to interesting historical events.</p>
                   <p class="o-visible-element">During my free time i exploring the latest technology advancements in the front-end web development world.</p>
-                  <h3 class="h3 text-center o-visible-element">Knowledge of languages</h5>
-                  <p class="text-center o-visible-element">B1 (Intermediate English)</p>
+                  <h3 class="text-center o-visible-element">Knowledge of languages</h5>
+                  <p class="text-center o-visible-element"><span class="font-weight-bold">B1</span> (Intermediate English)</p>
                 </div>
 
                 <div class="c-about-data my-5">
@@ -158,7 +160,7 @@
         <div class="o-container">
           <div class="o-primery-container">
 
-            <h3 class="h3 text-dark text-center mb-5 mt-2 w-100 o-visible-element">Software Engineering - Software University</h3>
+            <h3 class="text-dark text-center mb-5 mt-2 w-100 o-visible-element">Software Engineering - Software University</h3>
             <div class="c-education-container">
               <div class="c-education-softuni-image-container o-visible-element">
                 <img class="image c-img-1" src="./image/softuni-logo.jpg" alt="photo">
@@ -177,7 +179,7 @@
 
       <hr id="hr-skills">
 
-      <section class="container-fluid c-skills">
+      <section class="container-fluid c-skills ripple" data-mdb-ripple-color="light">
         <div class="d-block mx-auto c-skills-header">
           <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">SKILLS</h2>
         </div>
@@ -325,7 +327,7 @@
 
       <hr id="hr-projects">
 
-      <section class="container-fluid c-project">
+      <section class="container-fluid c-project ripple" data-mdb-ripple-color="light">
         <div class="d-block mx-auto c-project-header">
           <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">PROJECTS</h2>
         </div>
@@ -487,15 +489,17 @@
     </section>
 
 </main>
-<footer class="c-footer" style="background-image: url('./image/dev-center.png'); height: auto;"> 
+<footer class="c-footer ripple" 
+  data-mdb-ripple-color="light"
+  style="background-image: url('./image/dev-center.png'); height: auto;"> 
 
       <section class="c-footer-development-tools" class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
-        <h2 class="h2 text-light text-center text-uppercase o-visible-element">Development Environments</h2>
+        <h2 class="text-light text-center text-uppercase o-visible-element">Development Environments</h2>
   
           <div class="c-footer-development-tools-container">
            
             <div class="c-footer-development-tools-container-C o-visible-element">
-                <h5 class="h5 text-light font-weight-bold mb-2 text-center">C#</h5>
+                <h5 class="text-light font-weight-bold mb-2 text-center">C#</h5>
                 <div class="c-footer-development-tools-container-links">
                     <a class="c-footer-development-tools-container-link visual-studio-link">
                       <img class="c-footer-development-tools-image" src="./image/visual-studio.png">
@@ -507,7 +511,7 @@
             </div>
 
             <div class="c-footer-development-tools-container-JS o-visible-element">
-              <h5 class="h5 text-light font-weight-bold mb-2 text-center">JS</h5>
+              <h5 class="text-light font-weight-bold mb-2 text-center">JS</h5>
               <div class="c-footer-development-tools-container-links">
                   <a class="c-footer-development-tools-container-link vs-code-link">
                     <img class="c-footer-development-tools-image" src="./image/vscode.jpg" alt="logo">
@@ -522,7 +526,7 @@
             </div>
   
             <div class="c-footer-development-tools-container-Java o-visible-element">
-                <h5 class="h5 text-light font-weight-bold mb-2 text-center">Java</h5>
+                <h5 class="text-light font-weight-bold mb-2 text-center">Java</h5>
                 <div class="c-footer-development-tools-container-links">
                     <a class="c-footer-development-tools-container-link intellij-idea-link">
                       <img class="c-footer-development-tools-image" src="./image/intellij-idea.jpg">

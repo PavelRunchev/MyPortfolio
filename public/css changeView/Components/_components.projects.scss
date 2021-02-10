@@ -1,7 +1,3 @@
-@import '../Settings/_settings.colors';
-@import '../Settings/_settings.breakpoints';
-@import '../Tools/_tools.mixins';
-@import '../Tools/_tools.animations';
 
 .c-projects {
 	@include for-phone-only {

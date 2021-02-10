@@ -1,15 +1,17 @@
-@import '../Settings/_settings.colors';
-@import '../Settings/_settings.breakpoints';
-@import '../Tools/_tools.mixins';
 
 .c-footer {
+	background-color: $secondary-color-green;
+	display: block;
+	@include grid-child-columns-rows(1, 3, 8, 9);
+	text-align: center;
+	padding: 5% 0;
+
 	@include for-phone-only {
-		background-color: $secondary-color-green;
-		display: block;
-		@include grid-child-columns-rows(1, 3, 8, 9);
-		text-align: center;
-		padding: 5% 0;
-		font-size: 20px;
+		font-size: 16px;
+	}
+
+	@include for-phone-mini {
+		font-size: 12px;
 	}
 	
 	@include for-tablet-portrait-up {

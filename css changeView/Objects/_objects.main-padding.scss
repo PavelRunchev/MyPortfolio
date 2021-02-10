@@ -1,6 +1,6 @@
-@import '../Settings/settings.breakpoints';
 
 .o-main-padding {
+	color: $primary-color-black;
 	@include for-phone-only {
 		padding: 7% 3% 0 5%;
 	}

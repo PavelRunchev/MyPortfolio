@@ -1,3 +1,5 @@
+'strict mode'
+
 //ease loading picture.
 window.addEventListener('load', function() {
 	"use strict";

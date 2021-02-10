@@ -1,12 +1,10 @@
 
-@import '../Settings/_settings.breakpoints';
-
 .e-h3 {
 	text-align: left;
 	font-weight: bold;
 
 	@include for-phone-only {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	@include for-tablet-portrait-up {

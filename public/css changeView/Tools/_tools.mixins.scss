@@ -1,5 +1,3 @@
-@import '../Settings/_settings.breakpoints';
-@import './_tools.animations';
 
 @mixin primary-box-shadow-black {
 	-webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
@@ -20,11 +18,11 @@
 }
 
 @mixin flex-box($flex, $content, $items) {
-	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: -moz-flex;
+	display: flex;
 	
 	-webkit-flex-flow: $flex wrap;
 	-moz-flex-flow: $flex wrap;
@@ -43,10 +41,10 @@
 }
 
 @mixin grid($coloumn, $row, $content, $items) {
-	display: grid;
 	display: -ms-grid;
 	display: -webkit-grid;
 	display: -moz-grid;
+	display: grid;
 	
 	-webkit-grid-template-columns: $coloumn;
 	-moz-grid-template-columns: $coloumn;

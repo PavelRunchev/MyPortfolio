@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACT,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;CAChB;;AAED,AAAA,iBAAiB,AAAA,IAAK,CAAA,WAAW,EAAE;EAClC,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,CAAC;CACf;;AAED,AAAA,iBAAiB,CAAC;EACjB,MAAM,EAAE,IAAI;CACZ",
-    "sources": [
-        "elements.li.scss"
-    ],
-    "names": [],
-    "file": "elements.li.css"
-}

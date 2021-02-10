@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACb,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,OAAO;CACf",
-    "sources": [
-        "objects.tools.icons.scss"
-    ],
-    "names": [],
-    "file": "objects.tools.icons.css"
-}

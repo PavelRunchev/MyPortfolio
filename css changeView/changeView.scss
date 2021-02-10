@@ -10,6 +10,7 @@
 
 @import './Objects/_objects.main-padding';
 @import './Objects/_objects.header.container';
+@import './Objects/_objects.nav-links';
 
 @import './Elements/_element.link';
 @import './Elements/_elements.h2';
@@ -17,7 +18,7 @@
 @import './Elements/_elements.h4';
 @import './Elements/_elements.paragraph';
 
-@import './Utilities/_utilities.main';
+@import './Utilities/_utilities.main-container';
 @import './Utilities/_utilities.icons';
 @import './Utilities/_utilities.links';
 @import './Utilities/_utilities.sertificate.font-size';
@@ -31,6 +32,9 @@
 @import './Components/_components.projects';
 @import './Components/_components.environments';
 @import './Components/_components.footer';
+
+
+
 
 
 
