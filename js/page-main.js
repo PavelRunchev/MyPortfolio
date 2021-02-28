@@ -150,6 +150,22 @@ document.querySelector('.deploy-ExpressJS-blogger-project').addEventListener('cl
 document.querySelector('.github-link-ExpressJS-blogger-project').addEventListener('click', function() {
   openPage('https://github.com/PavelRunchev/Blogger', false);
 });
+
+//*
+//Jekyl Project
+//*
+//My Blog link to deploy
+document.querySelector('.deploy-jekyll-project-my-blog').addEventListener('click', function() {
+  openPage('https://my-blog-1564d.firebaseapp.com', false);
+});
+//My Blog link to github
+document.querySelector('.github-link-jekyll-project-my-blog').addEventListener('click', function() {
+  openPage('https://github.com/PavelRunchev/MyBlog', false);
+});
+//My Blog sertificate
+document.querySelector('.sertificate-jekyll-project-my-blog').addEventListener('click', function() {
+  openPage('./sertificates/Web Fundamentals.jpg', true);
+});
   
   
 //*

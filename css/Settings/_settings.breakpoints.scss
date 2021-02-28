@@ -22,6 +22,12 @@
 	}
 }
 
+@mixin for-tablet-up {
+	@media screen and (min-width: 993px) {
+		@content;
+	}
+}
+
 @mixin for-desktop-up {
 	@media screen and (min-width: 1200px) {
 		@content;

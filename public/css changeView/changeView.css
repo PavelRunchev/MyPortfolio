@@ -860,12 +860,12 @@ button, a {
     -o-grid-template-columns: 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -webkit-grid-template-rows: auto 300px 1fr 200px;
-    -moz-grid-template-rows: auto 300px 1fr 200px;
-    -ms-grid-template-rows: auto 300px 1fr 200px;
-    -o-grid-template-rows: auto 300px 1fr 200px;
-    -ms-grid-rows: auto 300px 1fr 200px;
-        grid-template-rows: auto 300px 1fr 200px;
+    -webkit-grid-template-rows: auto 300px 1fr 90px;
+    -moz-grid-template-rows: auto 300px 1fr 90px;
+    -ms-grid-template-rows: auto 300px 1fr 90px;
+    -o-grid-template-rows: auto 300px 1fr 90px;
+    -ms-grid-rows: auto 300px 1fr 90px;
+        grid-template-rows: auto 300px 1fr 90px;
     -moz-justify-content: normal;
     -ms-justify-content: normal;
     -webkit-box-pack: normal;
@@ -961,7 +961,7 @@ button, a {
   width: 200px;
 }
 
-.c-navigation-container-links {
+.c-navigation-list {
   display: -ms-flexbox;
   display: -ms-flex;
   display: -moz-flex;
@@ -986,6 +986,7 @@ button, a {
 
 .c-navigation-item {
   margin: 3% 0;
+  position: relative;
 }
 
 @media screen and (max-width: 599px) {
@@ -1015,17 +1016,33 @@ button, a {
   display: inline-block;
   color: #2D2D2D;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  font-size: 22px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .c-navigation-link:hover {
   color: #fff;
-  transform: translate(10px, 0px) scale(0.9);
-  -webkit-transform: translate(10px, 0px) scale(0.9);
-  -ms-transform: translate(10px, 0px) scale(0.9);
-  -moz-transform: translate(10px, 0px) scale(0.9);
-  -o-transform: translate(10px, 0px) scale(0.9);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.c-navigation .fa-caret-right {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 4px;
+  left: -14px;
+  font-size: 26px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.c-navigation-link:hover ~ .fa-caret-right {
+  opacity: 1;
+  color: #fff;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 @media screen and (max-width: 599px) {
@@ -1044,7 +1061,7 @@ button, a {
 
 @media screen and (min-width: 600px) {
   .c-navigation-footer {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -2218,6 +2235,7 @@ button, a {
 
 .c-environment {
   padding-top: 0;
+  padding-bottom: 5%;
 }
 
 @media screen and (max-width: 599px) {
@@ -2257,18 +2275,18 @@ button, a {
     display: -webkit-grid;
     display: -moz-grid;
     display: grid;
-    -webkit-grid-template-columns: 3;
-    -moz-grid-template-columns: 3;
-    -ms-grid-template-columns: 3;
-    -o-grid-template-columns: 3;
-    -ms-grid-columns: 3;
-        grid-template-columns: 3;
-    -webkit-grid-template-rows: 1;
-    -moz-grid-template-rows: 1;
-    -ms-grid-template-rows: 1;
-    -o-grid-template-rows: 1;
-    -ms-grid-rows: 1;
-        grid-template-rows: 1;
+    -webkit-grid-template-columns: 250px 250px 250px;
+    -moz-grid-template-columns: 250px 250px 250px;
+    -ms-grid-template-columns: 250px 250px 250px;
+    -o-grid-template-columns: 250px 250px 250px;
+    -ms-grid-columns: 250px 250px 250px;
+        grid-template-columns: 250px 250px 250px;
+    -webkit-grid-template-rows: 150px;
+    -moz-grid-template-rows: 150px;
+    -ms-grid-template-rows: 150px;
+    -o-grid-template-rows: 150px;
+    -ms-grid-rows: 150px;
+        grid-template-rows: 150px;
     -moz-justify-content: left;
     -ms-justify-content: left;
     -webkit-box-pack: left;
@@ -2287,8 +2305,31 @@ button, a {
   }
 }
 
+.c-environment-js-container {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-align-items: left;
+  -moz-align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
 @media screen and (min-width: 1800px) {
   .c-environment-js-container {
+    height: 100%;
     -webkit-grid-column-start: 1;
     -webkit-grid-column-end: 2;
     -ms-grid-column: 1;
@@ -2302,8 +2343,31 @@ button, a {
   }
 }
 
+.c-environment-csharp-container {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-align-items: left;
+  -moz-align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
 @media screen and (min-width: 1800px) {
   .c-environment-csharp-container {
+    height: 100%;
     -webkit-grid-column-start: 2;
     -webkit-grid-column-end: 3;
     -ms-grid-column: 2;
@@ -2317,8 +2381,31 @@ button, a {
   }
 }
 
+.c-environment-java-container {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-align-items: left;
+  -moz-align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
 @media screen and (min-width: 1800px) {
   .c-environment-java-container {
+    height: 100%;
     -webkit-grid-column-start: 3;
     -webkit-grid-column-end: 4;
     -ms-grid-column: 3;

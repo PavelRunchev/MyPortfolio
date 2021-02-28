@@ -136,7 +136,7 @@ document.querySelector('.sertificate-web-angular').addEventListener('click', fun
 //Web Fundamentals Module
 //Project MyBlog
 document.querySelector('.web-fundamentals-myBlog-link').addEventListener('click', function() {
-	openPage('https://pavelrunchev.github.io/MyBlog', false);
+	openPage('https://my-blog-1564d.firebaseapp.com', false);
 });
 
 //Web Fundamentals sertificate
@@ -277,7 +277,25 @@ document.querySelector('.deploy-jekyll-project').addEventListener('click', funct
   document.querySelector('.github-link-ExpressJS-blogger-project').addEventListener('click', function() {
 	openPage('https://github.com/PavelRunchev/Blogger', false);
   });
+
+  //*
+  //Jekyll Project
+  //*
+  //My Blog link to deploy
+  document.querySelector('.deploy-jekyll-project-my-blog').addEventListener('click', function() {
+    openPage('https://my-blog-1564d.firebaseapp.com', false);
+  });
+  //My Blog link to github
+  document.querySelector('.github-link-jekyll-project-my-blog').addEventListener('click', function() {
+    openPage('https://github.com/PavelRunchev/MyBlog', false);
+  });
+  //My Blog sertificate
+  document.querySelector('.sertificate-web-fundamentals-project').addEventListener('click', function() {
+    openPage('./sertificates/Web Fundamentals.jpg', true);
+  });
 	
+
+
 //*
 //Development Environment Section events
 //*

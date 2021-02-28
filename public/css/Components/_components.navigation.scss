@@ -1,6 +1,9 @@
 .c-navigation {
 	background-color: $background-color-blue-opacity-100;
-	padding: 1% 0 1% 0;
+	padding: 1% 0 0.7% 0;
+	position: sticky;
+	top: 0;
+	z-index: 999;
 
 	&-container {
 		padding-left: 0 !important;
@@ -17,10 +20,12 @@
 	}
 
 	.c-navigation-btn-container {
+		height: 40px;
 		@include flex-box(row, space-between, stretch);
 
 		@include for-tablet-down {
 			width: 100%;
+			height: auto;
 		}
 	}
 
@@ -51,7 +56,8 @@
 	
 	}
 
-	&-ul {
+	&-list {
+		list-style: none;
 		width: 700px;
 		margin-left: auto;
 		margin-bottom: 0;
@@ -66,39 +72,75 @@
 			width: 100%;
 			padding: 0;
 			margin-top: 2%;
-			@include flex-box(column, flex-start, center);
+			@include flex-box(column, flex-start, left);
 		}
 
 		@include for-big-desktop-up {
 			width: 50%;
 			font-size: 22px;
+			padding-left: 0 !important;
 		}
 	}
 
-	&-list-item {
+	&-item {
+		position: relative;
+		height: 45px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@include for-tablet-down {
+			width: 100%;
+		}
+	}
+
+	&-link {
 		cursor: pointer;
-		list-style: none;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 20px;
 		height: 40px;
 		display: flex;
 		align-items: center;
-		border-bottom: 1px solid transparent;
+		color: $primary-color-blue;
 		@include transition-all-ease-out(0.3s);
-
-		&:hover {
-			@include transform-scale(0.9);
-			border-bottom: 1px solid $primary-color-blue;
-		}
 
 		@include for-tablet-down {
 			width: inherit;
 			padding: 0 3%;
 			&:hover {
 				background-color: $secondary-color-white;
-				border-bottom: 1px solid transparent;
 			}
+		}
+
+		@include for-tablet-up {
+			&:hover {
+				@include transform-scale(0.96);
+			}
+		}
+	}
+
+	&-bottom-border {
+		@include for-tablet-down {
+			opacity: 0;
+		}
+
+		@include for-tablet-up {
+			width: 0;
+			opacity: 1;
+			height: 2px;
+			background-color: $primary-color-blue;
+			position: absolute;
+			left: 0;
+			top: 45px;
+			transition: all ease-out 0.3s;
+		}
+	}
+
+	&-link:hover ~ &-bottom-border {
+		@include for-tablet-up {
+			width: 100%;
+			left: 0;
 		}
 	}
 }

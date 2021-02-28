@@ -26,7 +26,7 @@
 		top: 0;
 		left: 0;
 		@include grid-child-columns-rows(1, 2, 1, 7);
-		@include grid(1fr, auto 300px 1fr 200px, normal, stretch);
+		@include grid(1fr, auto 300px 1fr 90px, normal, stretch);
 	}
 	
 	&-change-view-btn {
@@ -85,13 +85,14 @@
 		}
 	}
 
-	&-container-links {
+	&-list {
 		@include flex-box(column, center, stretch);
 		list-style: none;
 	}
 
 	&-item {
 		margin: 3% 0;
+		position: relative;
 		@include for-phone-only {
 			width: 95%;
 			font-size: 28px;
@@ -116,11 +117,28 @@
 		display: inline-block;
 		color: $primary-color-black;
 		text-transform: uppercase;
-		@include transition-all-ease-out(0.3s);
+		font-size: 22px;
+		@include transition-all-ease-out(0.2s);
 		&:hover {
 			color: $third-color-white;
-			@include transform-translate-and-scale(10px, 0px, 0.9);
+			transform:  translateX(10px);
 		}
+	}
+
+	.fa-caret-right {
+		display: inline-block;
+		position: absolute;
+		opacity: 0;
+		top: 4px;
+		left: -14px;
+		font-size: 26px;
+		@include transition-all-ease-out(0.2s);
+	}
+
+	&-link:hover ~ .fa-caret-right {
+		opacity: 1;
+		color: $third-color-white;
+		transform: translateX(10px);
 	}
 
 	&-footer {
@@ -137,7 +155,7 @@
 
 	&-footer {
 		@include for-tablet-portrait-up {
-			font-size: 16px;
+			font-size: 12px;
 		}
 	}
 }

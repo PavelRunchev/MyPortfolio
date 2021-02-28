@@ -6,7 +6,7 @@
 //Web Fundamentals Module
 //Project MyBlog
 document.querySelector('.web-fundamentals-myBlog-link').addEventListener('click', function() {
-	openPage('https://pavelrunchev.github.io/MyBlog', false);
+	openPage('https://my-blog-1564d.firebaseapp.com', false);
 });
 
 //Web Fundamentals sertificate
@@ -17,7 +17,7 @@ document.querySelector('.sertificate-web-fundamentals').addEventListener('click'
 //CSS Advanced Module
 //Project Medieval Castles
 document.querySelector('.css-advanced-medieval-castles-link').addEventListener('click', function() {
-	openPage('https://pavelrunchev.github.io/Medieval-Castles', false);
+	openPage('https://medieval-castles.firebaseapp.com', false);
 });
 
 //CSS Advanced sertificate

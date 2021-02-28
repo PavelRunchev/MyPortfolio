@@ -40,17 +40,18 @@
 	align-items: $items;
 }
 
-@mixin grid($coloumn, $row, $content, $items) {
+@mixin grid($column, $row, $content, $items) {
 	display: -ms-grid;
 	display: -webkit-grid;
 	display: -moz-grid;
 	display: grid;
 	
-	-webkit-grid-template-columns: $coloumn;
-	-moz-grid-template-columns: $coloumn;
-	-ms-grid-template-columns: $coloumn;
-	-o-grid-template-columns: $coloumn;
-	grid-template-columns: $coloumn;
+	-webkit-grid-template-columns: $column;
+	-moz-grid-template-columns: $column;
+	-ms-grid-template-columns: $column;
+	-o-grid-template-columns: $column;
+	grid-template-columns: $column;
+
 	-webkit-grid-template-rows: $row;
 	-moz-grid-template-rows: $row;
 	-ms-grid-template-rows: $row;

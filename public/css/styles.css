@@ -356,6 +356,14 @@ hr {
 
 @font-face {
   font-family: 'Open Sans';
+  src: url("../fonts/open-sans/OpenSans-Light.eot") format("embedded-opentype");
+  src: url("../fonts/open-sans/OpenSans-Light.ttf") format("truetype");
+  src: url("../fonts/open-sans/OpenSans-Light.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-Light.woff2") format("woff2");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.eot") format("embedded-opentype");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2");
   src: url("../fonts/open-sans/OpenSans-Regular.eot") format("embedded-opentype");
   src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
   src: url("../fonts/open-sans/OpenSans-Regular.woff") format("woff");
@@ -1375,8 +1383,12 @@ div {
 }
 
 .c-navigation {
-  background-color: rgba(229, 241, 251, 0.75);
-  padding: 1% 0 1% 0;
+  background-color: rgba(229, 241, 251, 0.95);
+  padding: 1% 0 0.7% 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .c-navigation-container {
@@ -1418,6 +1430,7 @@ div {
 }
 
 .c-navigation .c-navigation-btn-container {
+  height: 40px;
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
@@ -1443,6 +1456,7 @@ div {
 @media screen and (max-width: 992px) {
   .c-navigation .c-navigation-btn-container {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -1484,7 +1498,8 @@ div {
   }
 }
 
-.c-navigation-ul {
+.c-navigation-list {
+  list-style: none;
   width: 700px;
   margin-left: auto;
   margin-bottom: 0;
@@ -1510,14 +1525,14 @@ div {
 }
 
 @media screen and (min-width: 900px) {
-  .c-navigation-ul {
+  .c-navigation-list {
     width: 700px;
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .c-navigation-ul {
+  .c-navigation-list {
     width: 100%;
     padding: 0;
     margin-top: 2%;
@@ -1535,25 +1550,46 @@ div {
             justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    -moz-align-items: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-align-items: left;
+    -ms-align-items: left;
+    -moz-align-items: left;
   }
 }
 
 @media screen and (min-width: 1800px) {
-  .c-navigation-ul {
+  .c-navigation-list {
     width: 50%;
     font-size: 22px;
+    padding-left: 0 !important;
   }
 }
 
-.c-navigation-list-item {
+.c-navigation-item {
+  position: relative;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .c-navigation-item {
+    width: 100%;
+  }
+}
+
+.c-navigation-link {
   cursor: pointer;
-  list-style: none;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
@@ -1564,7 +1600,7 @@ div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid transparent;
+  color: #36A2C4;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -1572,23 +1608,50 @@ div {
   -ms-transition: all 0.3s ease-out;
 }
 
-.c-navigation-list-item:hover {
-  transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  border-bottom: 1px solid #36A2C4;
-}
-
 @media screen and (max-width: 992px) {
-  .c-navigation-list-item {
+  .c-navigation-link {
     width: inherit;
     padding: 0 3%;
   }
-  .c-navigation-list-item:hover {
+  .c-navigation-link:hover {
     background-color: #FBFBFB;
-    border-bottom: 1px solid transparent;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .c-navigation-link:hover {
+    transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    -moz-transform: scale(0.96);
+    -o-transform: scale(0.96);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .c-navigation-bottom-border {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .c-navigation-bottom-border {
+    width: 0;
+    opacity: 1;
+    height: 2px;
+    background-color: #36A2C4;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .c-navigation-link:hover ~ .c-navigation-bottom-border {
+    width: 100%;
+    left: 0;
   }
 }
 
