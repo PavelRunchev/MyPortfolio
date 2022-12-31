@@ -166,6 +166,30 @@ document.querySelector('.github-link-jekyll-project-my-blog').addEventListener('
 document.querySelector('.sertificate-jekyll-project-my-blog').addEventListener('click', function() {
   openPage('./sertificates/Web Fundamentals.jpg', true);
 });
+
+//*
+//Number Convertor
+//*
+//Number convertor link to deploy
+document.querySelector('.deploy-number-convertor').addEventListener('click', function() {
+  openPage('https://number-convert-168d1.firebaseapp.com', false);
+});
+//Number convertor link to github
+document.querySelector('.github-link-number-convertor').addEventListener('click', function() {
+  openPage('https://github.com/PavelRunchev/Number-Convertor', false);
+});
+
+//*
+//Web Technologies
+//*
+//Number convertor link to deploy
+document.querySelector('.deploy-web-technologies').addEventListener('click', function() {
+  openPage('https://web-technologies-958a6.web.app', false);
+});
+//Number convertor link to github
+document.querySelector('.github-link-web-technologies').addEventListener('click', function() {
+  openPage('https://github.com/PavelRunchev/Web-Technologies', false);
+});
   
   
 //*
